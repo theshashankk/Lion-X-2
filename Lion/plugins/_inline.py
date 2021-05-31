@@ -94,11 +94,11 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                 text=f"**𝙻𝙸𝙾𝙽 𝚄𝙱 𝚂𝚃𝙰𝚃𝚂 𝙾𝙵 𝚃𝙷𝙴 [{DEFAULTUSER}](tg://user?id={myid})**\n\n__𝙱𝙾𝚃 𝙸𝚂 𝚂𝙼𝙾𝙾𝚃𝙷𝙻𝚈 𝚁𝚄𝙽𝙽𝙸𝙽𝙶, 𝙼𝙰𝚂𝚃𝙴𝚁!__\n\n(c) @LionXsupport",
                 buttons=[
                     [custom.Button.inline("Stats", data="statcheck")],
-                    [Button.url("Repo", "https://github.com/xditya/Lion")],
+                    [Button.url("Repo", "https://github.com/Mdnoor786/Lion")],
                     [
                         Button.url(
-                            "Deploy Now!",
-                            "https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2Fxditya%2FLion&template=https%3A%2F%2Fgithub.com%2Fxditya%2FLion",
+                            "𝙳𝙴𝙿𝙻𝙾𝚈 𝙽𝙾𝚆!",
+                            "https://heroku.com/deploy?template=https://github.com/Mdnoor786/Lion-X",
                         )
                     ],
                 ],
@@ -110,11 +110,11 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                 text=TELEBT,
                 buttons=[
                     [
-                        custom.Button.inline("Request ", data="req"),
-                        custom.Button.inline("Chat 💭", data="chat"),
+                        custom.Button.inline("𝚁𝙴𝚀𝚄𝙴𝚂𝚃 🥺, ", data="req"),
+                        custom.Button.inline("𝙲𝙷𝙰𝚃 💭", data="chat"),
                     ],
-                    [custom.Button.inline("To spam 🚫", data="heheboi")],
-                    [custom.Button.inline("What is this ❓", data="pmclick")],
+                    [custom.Button.inline("𝚃𝙾 𝚂𝙿𝙰𝙼 🚫", data="heheboi")],
+                    [custom.Button.inline("𝚆𝙷𝙰𝚃 𝙸𝚂 𝚃𝙷𝙸𝚂 ❓", data="pmclick")],
                 ],
             )
         elif event.query.user_id == bot.uid and query == "repo":
@@ -123,33 +123,33 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                 text=f"Lion - Telegram Userbot.",
                 buttons=[
                     [
-                        Button.url("Repo", "https://github.com/xditya/Lion"),
+                        Button.url("𝙻𝙸𝙾𝙽 𝚁𝙴𝙿𝙾", "https://github.com/Mdnoor786/Lion"),
                         Button.url(
-                            "Deploy",
-                            "https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2Fxditya%2FLion&template=https%3A%2F%2Fgithub.com%2Fxditya%2FLion",
+                            "𝙳𝙴𝙿𝙻𝙾𝚈 𝙽𝙾𝚆",
+                            "https://heroku.com/deploy?template=https://github.com/Mdnoor786/Lion-X",
                         ),
                     ],
-                    [Button.url("Support", "https://t.me/LionXsupport")],
+                    [Button.url("𝚂𝚄𝙿𝙿𝙾𝚁𝚃 𝙲𝙷𝙰𝚃", "https://t.me/LionXsupport")],
                 ],
             )
         else:
             result = builder.article(
-                "Source Code",
+                "𝚂𝙾𝚄𝚁𝙲𝙴 𝙲𝙾𝙳𝙴",
                 text="**Welcome to Lion**\n\n`Click below buttons for more`",
                 buttons=[
-                    [custom.Button.url("Creator👨‍🦱", "https://t.me/its_xditya")],
+                    [custom.Button.url("🚑 Support Group 🚑", "https://t.me/lionXsupport")],
                     [
                         custom.Button.url(
-                            "👨‍💻Source Code‍💻", "https://github.com/xditya/Lion"
+                            "👨‍💻Source Code‍💻", "https://github.com/Mdnoor786/Lion"
                         ),
                         custom.Button.url(
                             "Deploy 🌀",
-                            "https://dashboard.heroku.com/new?template=https%3A%2F%2Fgithub.com%2Fxditya%2FLion",
+                            "https://heroku.com/deploy?template=https://github.com/Mdnoor786/Lion-X",
                         ),
                     ],
                     [
                         custom.Button.url(
-                            "Updates and Support Group↗️", "https://t.me/LionXsupport"
+                            "Updates ↗️", "https://t.me/LionHelpChat"
                         )
                     ],
                 ],
