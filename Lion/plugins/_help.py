@@ -21,7 +21,7 @@ from Lion.LionConfig import Config
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Lion User"
 CMD_HNDLR = Config.CMD_HNDLR
-CUSTOM_HELP_EMOJI = os.environ.get("CUSTOM_HELP_EMOJI", "⚡")
+CUSTOM_HELP_EMOJI = os.environ.get("CUSTOM_HELP_EMOJI", "🇮🇳")
 
 if CMD_HNDLR is None:
     CMD_HNDLR = "."
@@ -48,7 +48,7 @@ async def cmd_list(event):
                         out_file,
                         force_document=True,
                         allow_cache=False,
-                        caption="**COMMANDS**",
+                        caption="**𝘾𝙊𝙈𝙈𝘼𝙉𝘿𝙎**",
                         reply_to=reply_to_id,
                     )
                     await event.delete()
@@ -56,7 +56,7 @@ async def cmd_list(event):
                 await event.edit(string)
         elif input_str:
             if input_str in CMD_LIST:
-                string = "**Commands available in {}** \n\n".format(input_str)
+                string = "**𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗦 𝗜𝗡 {}** \n\n".format(input_str)
                 if input_str in CMD_HELP:
                     for i in CMD_HELP[input_str]:
                         string += i
@@ -69,9 +69,9 @@ async def cmd_list(event):
                     string += "\n**© @LionXsupport**"
                     await event.edit(string)
             else:
-                await event.edit(input_str + " is not a valid plugin!")
+                await event.edit(input_str + " 𝙸𝚂 𝙽𝙾𝚃 𝙰 𝚅𝙰𝙻𝙸𝙳 𝙿𝙻𝚄𝙶𝙸𝙽!!")
         else:
-            help_string = f"""`Userbot Helper for {DEFAULTUSER} to reveal all the commands of `**[Lion](https://xditya.gitbook.io/Lion/)**\n\n"""
+            help_string = f"""`𝙻𝙸𝙾𝙽 𝚄𝙱 𝙷𝙴𝙻𝙿𝙴𝚁 𝙵𝙾𝚁 {DEFAULTUSER} 𝚃𝙾 𝚁𝙴𝚅𝙴𝙰𝙻 𝙰𝙻𝙻 𝚃𝙷𝙴 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂 𝙾𝙵 `**[Lion](t.me/LionXsupport)**\n\n"""
             try:
                 results = await bot.inline_query(  # pylint:disable=E0602
                     tgbotusername, help_string
@@ -82,5 +82,5 @@ async def cmd_list(event):
                 await event.delete()
             except BaseException:
                 await event.edit(
-                    f"This bot has inline disabled. Please enable it to use `{CMD_HNDLR}help`.\nGet help from [here](t.me/LionHelpChat)"
+                    f"𝚃𝙷𝙸𝚂 𝙱𝙾𝚃 𝙸𝙽𝙻𝙸𝙽𝙴 𝙸𝚂 𝙳𝙸𝚂𝙰𝙱𝙻𝙴. 𝙿𝙻𝙴𝙰𝚂𝙴 𝚄𝙽𝙰𝙱𝙻𝙴 𝚃𝙾 𝚄𝚂𝙴 `{CMD_HNDLR}help`.\n𝙵𝙾𝚁 𝙰𝙽𝚃 𝙷𝙴𝙻𝙿 [here](t.me/LionHelpChat)"
                 )
