@@ -12,7 +12,7 @@ echo "
 
 
 "
-# Kᴀɴɢᴇʀ ᴋᴇᴇᴘ ᴄʀᴇᴅɪᴛs
+#Kanger Keep credits
 echo Starting dependency installation in 5 seconds...
 sleep 5
 apt-get update
