@@ -401,8 +401,8 @@ def start_mybot(shortname):
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(mod)
-        print("Initialising TGBot.")
-        print("TGBot - Imported " + shortname)
+        print("𝙸𝙼𝙿𝙾𝚁𝚃𝙸𝙽𝙶 𝙼𝙾𝙳𝚄𝙻𝙴𝚂 𝙿𝙻𝙴𝙰𝚂𝙴 𝚆𝙰𝙸𝚃.")
+        print("𝙻𝙸𝙾𝙽 - 𝙸𝙼𝙿𝙾𝚁𝚃𝙴𝙳 " + shortname)
     else:
         import importlib
         import sys
@@ -415,7 +415,7 @@ def start_mybot(shortname):
         mod.tgbot = bot.tgbot
         spec.loader.exec_module(mod)
         sys.modules["Lion.plugins.mybot" + shortname] = mod
-        print("TGBot Has imported " + shortname)
+        print("𝚃𝙶 𝙱𝙾𝚃 𝙷𝙰𝚂 𝙸𝙼𝙿𝙾𝚁𝚃𝙴𝙳 " + shortname)
 
 
 def load_pmbot(shortname):
@@ -431,8 +431,8 @@ def load_pmbot(shortname):
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(mod)
-        print("Initialising PMBot.")
-        print("PMBot - Imported " + shortname)
+        print("𝙸𝙼𝙿𝙾𝚁𝚃𝙸𝙽𝙶 𝙿𝙼 𝙿𝙴𝚁𝙼𝙸𝚃 .")
+        print("𝙿𝙼 𝙱𝙾𝚃 - 𝙸𝙼𝙿𝙾𝚁𝚃𝙴𝙳 " + shortname)
     else:
         import importlib
         import sys
@@ -445,4 +445,4 @@ def load_pmbot(shortname):
         mod.tgbot = bot.tgbot
         spec.loader.exec_module(mod)
         sys.modules["Lion.plugins.mybot.pmbot." + shortname] = mod
-        print("PMBot Has imported " + shortname)
+        print("𝙿𝙼 𝙱𝙾𝚃 𝙷𝙰𝚂 𝙸𝙼𝙿𝙾𝚁𝚃𝙴𝙳 " + shortname)
