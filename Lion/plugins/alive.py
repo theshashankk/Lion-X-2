@@ -98,7 +98,7 @@ async def amireallyalive(alive):
         sticker.seek(0)
         await borg.send_message(
             alive.chat_id,
-            f"**𝐘𝐎𝐎!! 𝐘𝐎𝐔𝐑 𝐋𝐈𝐎𝐍 𝐈𝐒 𝐀𝐋𝐈𝐕𝐄 **\n\n"
+            f"**𝐘𝐎𝐎!! 𝐋𝐈𝐎𝐍 𝐈𝐒 𝐀𝐋𝐈𝐕𝐄 **\n\n"
             f"`{CUSTOM_ALIVE}`\n\n"
             f"{telemoji} **𝚃𝙴𝙻𝙴𝚃𝙷𝙾𝙽 𝚅𝙴𝚁𝚂𝙸𝙾𝙽**: `1.17`\n{telemoji} **Python**: `3.8.3`\n"
             f"{telemoji} **𝙻𝙸𝙾𝙽 𝚄𝙱 𝚅𝙴𝚁𝚂𝙸𝙾𝙽**: `{telever}`\n"
