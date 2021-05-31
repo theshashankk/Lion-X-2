@@ -64,4 +64,4 @@ RUN mkdir /root/Lion/bin/
 WORKDIR /root/Lion/
 RUN chmod +x /usr/local/bin/*
 RUN pip3 install -r requirements.txt
-CMD ["python","-m","./resources/Lionstart.py"]
+CMD ["bash","./resources/Lionstart.py"]
