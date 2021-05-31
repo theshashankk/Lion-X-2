@@ -89,7 +89,7 @@ async def kang(args):
     if photo:
         splat = args.text.split()
         if not emojibypass:
-            emoji = "🔰"
+            emoji = "🇮🇳"
         pack = 1
         if len(splat) == 3:
             pack = splat[2]  # User sent both
@@ -108,7 +108,7 @@ async def kang(args):
         packnick = (
             f"{telename} Vol.{pack}"
             if telename
-            else f"@{user.username}'s Lion Vol.{pack}"
+            else f"✘ @{user.username}'s 𝙻𝙸𝙾𝙽 𝚅𝙾𝙻.{pack} ✘"
         )
         cmd = "/newpack"
         file = io.BytesIO()
@@ -193,7 +193,7 @@ async def kang(args):
                         await args.edit(
                             f"`Sticker added in a Different Pack !\
                             \nThis Pack is Newly created!\
-                            \nYour pack can be found [here](t.me/addstickers/{packname})",
+                            \nYour pack can be found ✘ [here](t.me/addstickers/{packname}) ✘",
                             parse_mode="md",
                         )
                         return
