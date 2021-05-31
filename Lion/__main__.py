@@ -8,7 +8,7 @@ from pathlib import Path
 import telethon.utils
 from Lion import CMD_HNDLR
 
-TELE = Var.PRIVATE_GROUP_ID
+LION = Var.PRIVATE_GROUP_ID
 BOTNAME = Var.TG_BOT_USER_NAME_BF_HER
 LOAD_MYBOT = Var.LOAD_MYBOT
 
