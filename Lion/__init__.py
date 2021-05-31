@@ -18,7 +18,7 @@ else:
     bot = TelegramClient(session_name, Var.APP_ID, Var.API_HASH)
 
 StartTime = time.time()
-lionver = "5.0.1"
+lionver = "0.1"
 
 CMD_LIST = {}
 CMD_HELP = {}
