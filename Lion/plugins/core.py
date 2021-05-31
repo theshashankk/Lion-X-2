@@ -56,7 +56,7 @@ async def send(event):
         end = datetime.now()
         time_taken_in_ms = (end - start).seconds
         await pro.edit(
-            f"**► Plugin Name:** `{input_str}`\n**► Uploaded in {time_taken_in_ms} seconds.**\n**► Uploaded by:** [{DEFAULTUSER}](tg://user?id={hmm})\n\n© @LionXsupport"
+            f"**✘ Plugin Name:** `{input_str}` ✘\n**⫸ Uploaded in {time_taken_in_ms} seconds.**\n**⫸ Uploaded by:** [{DEFAULTUSER}](tg://user?id={hmm})\n\n© @LionXsupport"
         )
         await asyncio.sleep(DELETE_TIMEOUT)
     else:
@@ -80,7 +80,7 @@ async def install(event):
                 shortname = path1.stem
                 load_module(shortname.replace(".py", ""))
                 await event.edit(
-                    "Lion Succesfully Installed The Plugin `{}`".format(
+                    "Plugin Succesfully Installed The Plugin `{}`".format(
                         os.path.basename(downloaded_file_name)
                     )
                 )
@@ -159,7 +159,7 @@ async def install(event):
             shortname = path1.stem
             try:
                 load_module(shortname.replace(".py", ""))
-                text += f"**• Installed** `{(os.path.basename(downloaded_file_name))}` **successfully.**\n"
+                text += f"**✘ Installed** `{(os.path.basename(downloaded_file_name))}` ✘ **successfully.**\n"
             except BaseException:
                 text += f"**• Error installing** `{(os.path.basename(downloaded_file_name))}`\n"
         else:
