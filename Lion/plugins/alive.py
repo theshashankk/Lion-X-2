@@ -15,10 +15,10 @@ from Lion.LionConfig import Config, Var
 CUSTOM_ALIVE = (
     Var.CUSTOM_ALIVE
     if Var.CUSTOM_ALIVE
-    else "Hey! I'm alive. All systems online and functioning normally!"
+    else "𝚈𝙾𝙾!! 𝚈𝙾𝚄𝚁 𝙻𝙸𝙾𝙽 𝚄𝙱 𝙸𝚂 𝙰𝙻𝙸𝚅𝙴"
 )
 ALV_PIC = Var.ALIVE_PIC if Var.ALIVE_PIC else None
-telemoji = Var.CUSTOM_ALIVE_EMOJI if Var.CUSTOM_ALIVE_EMOJI else "**✵**"
+telemoji = Var.CUSTOM_ALIVE_EMOJI if Var.CUSTOM_ALIVE_EMOJI else "**✘**"
 if Config.SUDO_USERS:
     sudo = "Enabled"
 else:
@@ -70,17 +70,17 @@ async def amireallyalive(alive):
         tele = f"**Welcome To Lion **\n\n"
         tele += f"`{CUSTOM_ALIVE}`\n\n"
         tele += (
-            f"{telemoji} **Telethon version**: `1.17`\n{telemoji} **Python**: `3.8.3`\n"
+            f"{telemoji} **𝚃𝙴𝙻𝙴𝚃𝙷𝙾𝙽 𝚅𝙴𝚁𝚂𝙸𝙾𝙽**: `1.17`\n{telemoji} **Python**: `3.8.3`\n"
         )
-        tele += f"{telemoji} **Lion Version**: `{telever}`\n"
-        tele += f"{telemoji} **More Info**: @LionXsupport\n"
-        tele += f"{telemoji} **Sudo** : `{sudo}`\n"
-        tele += f"{telemoji} **Lion Uptime**: `{uptime}`\n"
-        tele += f"{telemoji} **Database Status**: `All OK 👌!`\n"
+        tele += f"{telemoji} **𝙻𝙸𝙾𝙽 𝚄𝙱 𝚅𝙴𝚁𝚂𝙸𝙾𝙽**: `{telever}`\n"
+        tele += f"{telemoji} **𝙻𝙸𝙾𝙽 𝚂𝚄𝙿𝙿𝙾𝚁𝚃**: @LionXsupport\n"
+        tele += f"{telemoji} **𝚂𝚄𝙳𝙾** : `{sudo}`\n"
+        tele += f"{telemoji} **𝙻𝙸𝙾𝙽 𝚄𝙿𝚃𝙸𝙼𝙴**: `{uptime}`\n"
+        tele += f"{telemoji} **𝙳𝙰𝚃𝙰𝙱𝙰𝚂𝙴 𝚂𝚃𝙰𝚃𝚄𝚂**: `𝙰𝙻𝙻 𝙾𝙺 👌!`\n"
         tele += (
-            f"{telemoji} **My pro owner** : [{DEFAULTUSER}](tg://user?id={myid})\n\n"
+            f"{telemoji} **𝙼𝚈 𝙿𝙴𝚁𝙾 𝙼𝙰𝚂𝚃𝙴𝚁** : [{DEFAULTUSER}](tg://user?id={myid})\n\n"
         )
-        tele += "    [✨ GitHub Repository ✨](https://github.com/xditya/Lion)"
+        tele += "    [✨ Gɪᴛʜᴜʙ Rᴇᴘᴏsɪᴛᴏʀʏ ✨](https://github.com/Mdnoor786/Lion)"
         await alive.get_chat()
         await alive.delete()
         """ For .alive command, check if the bot is running.  """
@@ -98,16 +98,16 @@ async def amireallyalive(alive):
         sticker.seek(0)
         await borg.send_message(
             alive.chat_id,
-            f"**Welcome To Lion **\n\n"
+            f"**𝐘𝐎𝐎!! 𝐘𝐎𝐔𝐑 𝐋𝐈𝐎𝐍 𝐈𝐒 𝐀𝐋𝐈𝐕𝐄 **\n\n"
             f"`{CUSTOM_ALIVE}`\n\n"
-            f"{telemoji} **Telethon version**: `1.17`\n{telemoji} **Python**: `3.8.3`\n"
-            f"{telemoji} **Lion Version**: `{telever}`\n"
-            f"{telemoji} **More Info**: @LionXsupport\n"
-            f"{telemoji} **Sudo** : `{sudo}`\n"
-            f"{telemoji} **Lion Uptime**: `{uptime}`\n"
-            f"{telemoji} **Database Status**: `All OK 👌!`\n"
-            f"{telemoji} **My pro owner** : [{DEFAULTUSER}](tg://user?id={myid})\n\n"
-            "    [✨ GitHub Repository ✨](https://github.com/xditya/Lion)",
+            f"{telemoji} **𝚃𝙴𝙻𝙴𝚃𝙷𝙾𝙽 𝚅𝙴𝚁𝚂𝙸𝙾𝙽**: `1.17`\n{telemoji} **Python**: `3.8.3`\n"
+            f"{telemoji} **𝙻𝙸𝙾𝙽 𝚄𝙱 𝚅𝙴𝚁𝚂𝙸𝙾𝙽**: `{telever}`\n"
+            f"{telemoji} **𝙻𝙸𝙾𝙽 𝚂𝚄𝙿𝙿𝙾𝚁𝚃**: @LionXsupport\n"
+            f"{telemoji} **𝚂𝚄𝙳𝙾** : `{sudo}`\n"
+            f"{telemoji} **𝙻𝙸𝙾𝙽 𝚄𝙿𝚃𝙸𝙼𝙴**: `{uptime}`\n"
+            f"{telemoji} **𝙳𝙰𝚃𝙰𝙱𝙰𝚂𝙴 𝚂𝚃𝙰𝚃𝚄𝚂**: `All OK 👌!`\n"
+            f"{telemoji} **𝙼𝚈 𝙿𝙴𝚁𝙾 𝙼𝙰𝚂𝚃𝙴𝚁** : [{DEFAULTUSER}](tg://user?id={myid})\n\n"
+            "    [✨ gιтнυв яєρσѕιтσяу ✨](https://github.com/Mdnoor786/Lion)",
             link_preview=False,
         )
         await borg.send_file(alive.chat_id, file=sticker)
