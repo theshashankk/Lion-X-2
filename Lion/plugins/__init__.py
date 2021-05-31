@@ -48,13 +48,13 @@ else:
 
 TELEUSER = str(ALIVE_NAME) if ALIVE_NAME else "@LionXsupport"
 
-tele = f"Lion Version: {telever}\n"
-tele += f"Log Group: {log}\n"
-tele += f"Assistant Bot: {bots}\n"
-tele += f"Lydia: {lyd}\n"
-tele += f"Sudo: {sudo}\n"
-tele += f"PMSecurity: {pm}\n"
-tele += f"\nVisit @LionXsupport for assistance.\n"
+tele = f"𝙻𝙸𝙾𝙽 𝚅𝙴𝚁𝚂𝙸𝙾𝙽: {telever}\n"
+tele += f"𝙻𝙾𝙶 𝙶𝚁𝙾𝚄𝙿: {log}\n"
+tele += f"𝙼𝚈 𝙰𝚂𝚂𝙸𝚂𝚃𝙰𝙽𝚃 𝙱𝙾𝚃: {bots}\n"
+tele += f"𝙻𝚈𝙳𝙸𝙰: {lyd}\n"
+tele += f"𝚂𝚄𝙳𝙾 𝚄𝚂𝙴𝚁: {sudo}\n"
+tele += f"𝙿𝙼 𝚂𝙴𝙲𝚄𝚁𝙸𝚃𝚈: {pm}\n"
+tele += f"\n𝚅𝙸𝚂𝙸𝚃 @LionXsupport 𝙵𝙾𝚁 𝙰𝚂𝚂𝙸𝚂𝚃𝙰𝙽𝚃.\n"
 telestats = f"{tele}"
 
 TELE_NAME = bot.me.first_name
