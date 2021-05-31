@@ -196,6 +196,6 @@ async def upstream(ups):
             "`Successfully Updated!\n" "Bot is restarting... Wait for a second!`"
         )
         # Spin a new instance of bot
-        args = [sys.executable, "-m", "userbot"]
+        args = [sys.executable, "-m", "Lion"]
         execle(sys.executable, *args, environ)
         return
