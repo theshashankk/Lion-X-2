@@ -63,5 +63,5 @@ RUN git clone https://github.com/MdNoor786/Lion /root/Lion
 RUN mkdir /root/Lion/bin/
 WORKDIR /root/Lion/
 RUN chmod +x /usr/local/bin/*
-RUN pip3 install -r lionsetup.txt
-CMD ["python3","theshashank.py"]
+RUN pip3 install -r requirements.txt
+CMD ["python","Lion"]
