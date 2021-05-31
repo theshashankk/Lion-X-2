@@ -1,1 +1,1 @@
-telebot: python -m Lion
+worker: python3 theshashank.py
