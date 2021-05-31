@@ -17,7 +17,7 @@
 from telethon.tl.types import Channel
 
 from Lion import *
-from Lion import ALIVE_NAME, bot, lionver
+from Lion import ALIVE_NAME, bot
 from Lion.LionConfig import Config, Var
 
 # stats
