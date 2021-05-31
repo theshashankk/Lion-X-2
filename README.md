@@ -23,16 +23,14 @@
 ## 𝚂𝙴𝙻𝙵 𝙷𝙾𝚂𝚃 𝙵𝙾𝚁 𝙳𝙴𝚅 👨‍💻
 
 ```
-# Install Git First (apt-instll git)
-$ git clone https://github.com/theshashankk/HinataBot
-$ cd HinataBot
-# Upgrade sources
-$ bash deploy.sh
-# Install All Requirements 
-$ pip(3) install -r requirements.txt
-# Rename ./hinataBot/sample_config.py to config.py and fill
-# Start Bot 
-$ python(3) -m hinataBot
+git clone https://github.com/Mdnoor786/Lion
+cd Lion
+virtualenv -p /usr/bin/python3 venv
+. ./venv/bin/activate
+pip install -r requirements.txt
+# <Create local_config.py with variables as given below>
+python3 -m Lion
+
 ```
 
 ## 𝙲𝚁𝙴𝙳𝙸𝚃𝚂 
