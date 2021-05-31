@@ -17,7 +17,7 @@
 from telethon.tl.types import Channel
 
 from Lion import *
-from Lion import ALIVE_NAME, bot
+from Lion import ALIVE_NAME, bot, lionver
 from Lion.LionConfig import Config, Var
 
 # stats
@@ -48,7 +48,7 @@ else:
 
 LIONUSER = str(ALIVE_NAME) if ALIVE_NAME else "@LionXsupport"
 
-lion = f"𝙻𝙸𝙾𝙽 𝚅𝙴𝚁𝚂𝙸𝙾𝙽: 0.1\n"
+lion = f"𝙻𝙸𝙾𝙽 𝚅𝙴𝚁𝚂𝙸𝙾𝙽: {lionver}\n"
 lion += f"𝙻𝙾𝙶 𝙶𝚁𝙾𝚄𝙿: {log}\n"
 lion += f"𝙼𝚈 𝙰𝚂𝚂𝙸𝚂𝚃𝙰𝙽𝚃 𝙱𝙾𝚃: {bots}\n"
 lion += f"𝙻𝚈𝙳𝙸𝙰: {lyd}\n"
