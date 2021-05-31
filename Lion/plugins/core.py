@@ -27,7 +27,7 @@ from Lion.utils import admin_cmd, load_module, remove_plugin
 from .. import ALIVE_NAME
 
 DELETE_TIMEOUT = 5
-thumb_image_path = "./resources/Lion.jpeg"
+thumb_image_path = "./resources/Lion.jpg"
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Lion User"
 
 
