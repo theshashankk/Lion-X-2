@@ -59,7 +59,7 @@ async def main(event):
 
     # Owner @NihiNivi
     await event.edit(
-        "**Starting Gamer Profile Pic.\n\nModded by[Lion](https://github.com/xditya/Lion)"
+        "**Starting Gamer Profile Pic.\n\n𝙼𝙾𝙳𝙳𝙴𝙳 𝙱𝚈 𝙻𝙸𝙾𝙽 𝚄𝙱"
     )
 
     while True:
