@@ -48,13 +48,13 @@ else:
 
 LIONUSER = str(ALIVE_NAME) if ALIVE_NAME else "@LionXsupport"
 
-LION = f"𝙻𝙸𝙾𝙽 𝚅𝙴𝚁𝚂𝙸𝙾𝙽: {lionver}\n"
-LION += f"𝙻𝙾𝙶 𝙶𝚁𝙾𝚄𝙿: {log}\n"
-LION += f"𝙼𝚈 𝙰𝚂𝚂𝙸𝚂𝚃𝙰𝙽𝚃 𝙱𝙾𝚃: {bots}\n"
-LION += f"𝙻𝚈𝙳𝙸𝙰: {lyd}\n"
-LION += f"𝚂𝚄𝙳𝙾 𝚄𝚂𝙴𝚁: {sudo}\n"
-LION += f"𝙿𝙼 𝚂𝙴𝙲𝚄𝚁𝙸𝚃𝚈: {pm}\n"
-LION += f"\n𝚅𝙸𝚂𝙸𝚃 @LionXsupport 𝙵𝙾𝚁 𝙰𝚂𝚂𝙸𝚂𝚃𝙰𝙽𝚃.\n"
+lion = f"𝙻𝙸𝙾𝙽 𝚅𝙴𝚁𝚂𝙸𝙾𝙽: 0.1\n"
+lion += f"𝙻𝙾𝙶 𝙶𝚁𝙾𝚄𝙿: {log}\n"
+lion += f"𝙼𝚈 𝙰𝚂𝚂𝙸𝚂𝚃𝙰𝙽𝚃 𝙱𝙾𝚃: {bots}\n"
+lion += f"𝙻𝚈𝙳𝙸𝙰: {lyd}\n"
+lion += f"𝚂𝚄𝙳𝙾 𝚄𝚂𝙴𝚁: {sudo}\n"
+lion += f"𝙿𝙼 𝚂𝙴𝙲𝚄𝚁𝙸𝚃𝚈: {pm}\n"
+lion += f"\n𝚅𝙸𝚂𝙸𝚃 @LionXsupport 𝙵𝙾𝚁 𝙰𝚂𝚂𝙸𝚂𝚃𝙰𝙽𝚃.\n"
 lionstats = f"{lion}"
 
 LION_NAME = bot.me.first_name
