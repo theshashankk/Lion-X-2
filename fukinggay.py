@@ -12,6 +12,6 @@ process = subprocess.Popen(
 out, er = process.communicate()
 if er:
     LOGS.warning(er.decode())
-print("::::::::::::::")
+print("𝙶𝙾𝚃 𝙰𝙽 𝙴𝚁𝚁𝙾𝚁 𝚁𝙴𝙿𝙾𝚁𝚃 𝙸𝚃 𝚃𝙾 𝙾𝚄𝚁 𝙰𝙳𝙼𝙸𝙽𝚂")
 if out:
     LOGS.info(out.decode())
