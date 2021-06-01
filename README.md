@@ -1,4 +1,4 @@
-[![lion](https://img.shields.io/badge/A%20Powerfull%20telegram%20userbot-blue?style=for-the-badge&logo=telegram)](t.me/Lionxsupport)
+<p align="left"><a href="https://telegram.dog/LionXsupport"> <img src="https://img.shields.io/badge/A%20Powerfull%20telegram%20userbot-blue?style=for-the-badge&logo=telegram" width="220" height="38.45"/></a></p>
 
 
 <p align="center">
