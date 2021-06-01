@@ -25,11 +25,13 @@
   },
   "APP_ID": {
    "description": "Get this value from my.telegram.org! Please do not steal",
-   "value": ""
+   "value": "",
+   "required": true
   },
   "API_HASH": {
    "description": "Get this value from my.telegram.org! Please do not steal",
-   "value": ""
+   "value": "",
+   "required": true
   },
   "STRING_SESSION": {
    "description": "Get this value by running python3 telesetup.py locally or https://telebot-sessionstring-generator.xditya.repl.run online.",
@@ -56,11 +58,6 @@
   },  
   "GIT_REPO_NAME": {
    "description": "Your repo name Example: MdNoor786/Lion, but GITHUB_ACCESS_TOKEN must be setup first.",
-   "value": "",
-   "required": false
-  },
-  "LYDIA_API_KEY": {
-   "description": "Needed for Lydia AI. Create a Intellivoid Account by visting https://coffeehouse.intellivoid.info/ to get your API.",
    "value": "",
    "required": false
   },
