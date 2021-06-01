@@ -123,7 +123,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                 text=f"Lion - Telegram Userbot.",
                 buttons=[
                     [
-                        Button.url("𝙻𝙸𝙾𝙽 𝚁𝙴𝙿𝙾", "https://github.com/Mdnoor786/Lion"),
+                        Button.url("𝙻𝙸𝙾𝙽 𝚁𝙴𝙿𝙾", "https://github.com/Mdnoor786/Lion-X"),
                         Button.url(
                             "𝙳𝙴𝙿𝙻𝙾𝚈 𝙽𝙾𝚆",
                             "https://heroku.com/deploy?template=https://github.com/Mdnoor786/Lion-X",
@@ -140,7 +140,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                     [custom.Button.url("🚑 Support Group 🚑", "https://t.me/lionXsupport")],
                     [
                         custom.Button.url(
-                            "👨‍💻Source Code‍💻", "https://github.com/Mdnoor786/Lion"
+                            "👨‍💻Source Code‍💻", "https://github.com/Mdnoor786/Lion-X"
                         ),
                         custom.Button.url(
                             "Deploy 🌀",
