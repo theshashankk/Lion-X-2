@@ -21,7 +21,7 @@ async def _(event):
         await eor(event, input_str)
 
         animation_chars = [
-            "https://github.com/Mdnoor786/Lion",
+            "https://github.com/Mdnoor786/Lion-X",
                     ]
 
         for i in animation_ttl:
