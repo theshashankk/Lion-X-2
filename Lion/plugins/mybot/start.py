@@ -169,7 +169,7 @@ async def settings(event):
 async def settings(event):
     await event.delete()
     await tgbot.send_message(event.chat_id,
-                             f"This is the personal help bot of {TELE_NAME}. You can contact me using this bot if necessary, or if I missed out your PM.",
+                             f"This is the personal help bot of {LION_NAME}. You can contact me using this bot if necessary, or if I missed out your PM.",
                              buttons=[
                                      [Button.inline(
                                          "Deploy me for yourself", data="deployme")]
