@@ -1,14 +1,10 @@
-FROM python:3.9.2-slim-buster
+FROM kalilinux/kali-rolling
+ARG DEBIAN_FRONTEND=noninteractive
+ENV TERM xterm-256color
+RUN apt-get update && apt upgrade -y && apt-get install sudo -y
 
 
-RUN mkdir /app
-RUN chmod 777 /app
-WORKDIR /app
-
-RUN apt -qq update
-ENV DEBIAN_FRONTEND=noninteractive
-ENV TZ=Asia/Kolkata
-RUN apt update && apt upgrade -y && apt install --no-install-recommends -y \
+RUN apt-get install -y\
         debian-keyring \
         debian-archive-keyring \
         bash \
