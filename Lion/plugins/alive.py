@@ -70,15 +70,15 @@ async def amireallyalive(alive):
         lion = f"**Welcome To Lion **\n\n"
         lion += f"`{CUSTOM_ALIVE}`\n\n"
         lion += (
-            f"{telemoji} **𝚃𝙴𝙻𝙴𝚃𝙷𝙾𝙽 𝚅𝙴𝚁𝚂𝙸𝙾𝙽**: `1.17`\n{lionemoji} **Python**: `3.8.3`\n"
+            f"{lionmoji} **𝚃𝙴𝙻𝙴𝚃𝙷𝙾𝙽 𝚅𝙴𝚁𝚂𝙸𝙾𝙽**: `1.17`\n{lionmoji} **Python**: `3.8.3`\n"
         )
-        lion += f"{lionemoji} **𝙻𝙸𝙾𝙽 𝚄𝙱 𝚅𝙴𝚁𝚂𝙸𝙾𝙽**: `{lionver}`\n"
-        lion += f"{lionemoji} **𝙻𝙸𝙾𝙽 𝚂𝚄𝙿𝙿𝙾𝚁𝚃**: @LionXsupport\n"
-        lion += f"{lionemoji} **𝚂𝚄𝙳𝙾** : `{sudo}`\n"
-        lion += f"{lionemoji} **𝙻𝙸𝙾𝙽 𝚄𝙿𝚃𝙸𝙼𝙴**: `{uptime}`\n"
-        lion += f"{lionemoji} **𝙳𝙰𝚃𝙰𝙱𝙰𝚂𝙴 𝚂𝚃𝙰𝚃𝚄𝚂**: `𝙰𝙻𝙻 𝙾𝙺 👌!`\n"
+        lion += f"{lionmoji} **𝙻𝙸𝙾𝙽 𝚄𝙱 𝚅𝙴𝚁𝚂𝙸𝙾𝙽**: `{lionver}`\n"
+        lion += f"{lionmoji} **𝙻𝙸𝙾𝙽 𝚂𝚄𝙿𝙿𝙾𝚁𝚃**: @LionXsupport\n"
+        lion += f"{lionmoji} **𝚂𝚄𝙳𝙾** : `{sudo}`\n"
+        lion += f"{lionmoji} **𝙻𝙸𝙾𝙽 𝚄𝙿𝚃𝙸𝙼𝙴**: `{uptime}`\n"
+        lion += f"{lionmoji} **𝙳𝙰𝚃𝙰𝙱𝙰𝚂𝙴 𝚂𝚃𝙰𝚃𝚄𝚂**: `𝙰𝙻𝙻 𝙾𝙺 👌!`\n"
         lion += (
-            f"{lionemoji} **𝙼𝚈 𝙿𝙴𝚁𝙾 𝙼𝙰𝚂𝚃𝙴𝚁** : [{DEFAULTUSER}](tg://user?id={myid})\n\n"
+            f"{lionmoji} **𝙼𝚈 𝙿𝙴𝚁𝙾 𝙼𝙰𝚂𝚃𝙴𝚁** : [{DEFAULTUSER}](tg://user?id={myid})\n\n"
         )
         lion += "    [✨ Gɪᴛʜᴜʙ Rᴇᴘᴏsɪᴛᴏʀʏ ✨](https://github.com/Mdnoor786/Lion-X)"
         await alive.get_chat()
@@ -100,14 +100,14 @@ async def amireallyalive(alive):
             alive.chat_id,
             f"**𝐘𝐎𝐎!! 𝐋𝐈𝐎𝐍 𝐈𝐒 𝐀𝐋𝐈𝐕𝐄 **\n\n"
             f"`{CUSTOM_ALIVE}`\n\n"
-            f"{lionemoji} **𝚃𝙴𝙻𝙴𝚃𝙷𝙾𝙽 𝚅𝙴𝚁𝚂𝙸𝙾𝙽**: `1.17`\n"
-            f"{lionemoji} **𝙿𝚈𝚃𝙷𝙾𝙽 𝚅𝙴𝚁𝚂𝙸𝙾𝙽**: `1.17`\n"
-            f"{lionemoji} **𝙻𝙸𝙾𝙽 𝚄𝙱 𝚅𝙴𝚁𝚂𝙸𝙾𝙽**: `{lionver}`\n"
-            f"{lionemoji} **𝙻𝙸𝙾𝙽 𝚂𝚄𝙿𝙿𝙾𝚁𝚃**: @LionXsupport\n"
-            f"{lionemoji} **𝚂𝚄𝙳𝙾** : `{sudo}`\n"
-            f"{lionemoji} **𝙻𝙸𝙾𝙽 𝚄𝙿𝚃𝙸𝙼𝙴**: `{uptime}`\n"
-            f"{lionemoji} **𝙳𝙰𝚃𝙰𝙱𝙰𝚂𝙴 𝚂𝚃𝙰𝚃𝚄𝚂**: `All OK 👌!`\n"
-            f"{lionemoji} **𝙼𝚈 𝙿𝙴𝚁𝙾 𝙼𝙰𝚂𝚃𝙴𝚁** : [{DEFAULTUSER}](tg://user?id={myid})\n\n"
+            f"{lionmoji} **𝚃𝙴𝙻𝙴𝚃𝙷𝙾𝙽 𝚅𝙴𝚁𝚂𝙸𝙾𝙽**: `1.17`\n"
+            f"{lionmoji} **𝙿𝚈𝚃𝙷𝙾𝙽 𝚅𝙴𝚁𝚂𝙸𝙾𝙽**: `1.17`\n"
+            f"{lionmoji} **𝙻𝙸𝙾𝙽 𝚄𝙱 𝚅𝙴𝚁𝚂𝙸𝙾𝙽**: `{lionver}`\n"
+            f"{lionmoji} **𝙻𝙸𝙾𝙽 𝚂𝚄𝙿𝙿𝙾𝚁𝚃**: @LionXsupport\n"
+            f"{lionmoji} **𝚂𝚄𝙳𝙾** : `{sudo}`\n"
+            f"{lionmoji} **𝙻𝙸𝙾𝙽 𝚄𝙿𝚃𝙸𝙼𝙴**: `{uptime}`\n"
+            f"{lionmoji} **𝙳𝙰𝚃𝙰𝙱𝙰𝚂𝙴 𝚂𝚃𝙰𝚃𝚄𝚂**: `All OK 👌!`\n"
+            f"{lionmoji} **𝙼𝚈 𝙿𝙴𝚁𝙾 𝙼𝙰𝚂𝚃𝙴𝚁** : [{DEFAULTUSER}](tg://user?id={myid})\n\n"
             "[✨ gιтнυв яєρσѕιтσяу ✨](https://github.com/Mdnoor786/Lion-X)",
             link_preview=False,
         )
