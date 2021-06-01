@@ -40,7 +40,7 @@ pylast
 pymongo
 python-barcode
 python-dotenv
-python-magic
+python-magic 
 pytube
 pytz
 qrcode
