@@ -92,10 +92,10 @@ async def amireallyalive(alive):
     file = BytesIO(req.content)
     file.seek(0)
     img = Image.open(file)
-    with BytesIO() as sticker:
-        img.save(sticker, "webp")
-        sticker.name = "sticker.webp"
-        sticker.seek(0)
+    with BytesIO() as photo:
+        img.save(img, "jpg")
+        img.name = "lionuserbot.jpg"
+        img.seek(0)
         await borg.send_message(
             alive.chat_id,
             f"**𝐘𝐎𝐎!! 𝐋𝐈𝐎𝐍 𝐈𝐒 𝐀𝐋𝐈𝐕𝐄 **\n\n"
@@ -111,7 +111,7 @@ async def amireallyalive(alive):
             "[✨ gιтнυв яєρσѕιтσяу ✨](https://github.com/Mdnoor786/Lion-X)",
             link_preview=False,
         )
-        await borg.send_file(alive.chat_id, file=sticker)
+        await borg.send_file(alive.chat_id, file=img)
         await alive.delete()
 
 
