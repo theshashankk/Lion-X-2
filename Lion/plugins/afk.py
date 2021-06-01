@@ -96,11 +96,11 @@ async def on_afk(event):
         return False
     if USER_AFK and not (await event.get_sender()).bot:
         msg = None
-        if reason is not None and tele == "True":
+        if reason is not None and lion == "True":
             message_to_reply = "**AFK**\n{}\n\n**Last active** `{}` **ago.**\n\n**Reason** : {}".format(
                 CUSTOM_AFK, endtime, reason
             )
-        elif tele == "False":
+        elif lion == "False":
             message_to_reply = "**AFK**\n{}\n\n**Last active** `{}` **ago.**\n\n**Reason** - {}".format(
                 CUSTOM_AFK, endtime, reason
             )
