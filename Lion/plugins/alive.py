@@ -7,7 +7,7 @@ from io import BytesIO
 import requests
 from PIL import Image
 
-from Lion import ALIVE_NAME, CMD_HELP, telever
+from Lion import ALIVE_NAME, CMD_HELP, lionver
 from Lion.__init__ import StartTime
 from Lion.LionConfig import Config, Var
 
@@ -18,7 +18,7 @@ CUSTOM_ALIVE = (
     else "𝚈𝙾𝙾!! 𝚈𝙾𝚄𝚁 𝙻𝙸𝙾𝙽 𝚄𝙱 𝙸𝚂 𝙰𝙻𝙸𝚅𝙴"
 )
 ALV_PIC = Var.ALIVE_PIC if Var.ALIVE_PIC else None
-telemoji = Var.CUSTOM_ALIVE_EMOJI if Var.CUSTOM_ALIVE_EMOJI else "**✘**"
+lionmoji = Var.CUSTOM_ALIVE_EMOJI if Var.CUSTOM_ALIVE_EMOJI else "**✘**"
 if Config.SUDO_USERS:
     sudo = "Enabled"
 else:
@@ -67,20 +67,20 @@ async def amireallyalive(alive):
     (end - start).microseconds / 1000
     uptime = get_readable_time((time.time() - StartTime))
     if ALV_PIC:
-        tele = f"**Welcome To Lion **\n\n"
-        tele += f"`{CUSTOM_ALIVE}`\n\n"
-        tele += (
-            f"{telemoji} **𝚃𝙴𝙻𝙴𝚃𝙷𝙾𝙽 𝚅𝙴𝚁𝚂𝙸𝙾𝙽**: `1.17`\n{telemoji} **Python**: `3.8.3`\n"
+        lion = f"**Welcome To Lion **\n\n"
+        lion += f"`{CUSTOM_ALIVE}`\n\n"
+        lion += (
+            f"{telemoji} **𝚃𝙴𝙻𝙴𝚃𝙷𝙾𝙽 𝚅𝙴𝚁𝚂𝙸𝙾𝙽**: `1.17`\n{lionemoji} **Python**: `3.8.3`\n"
         )
-        tele += f"{telemoji} **𝙻𝙸𝙾𝙽 𝚄𝙱 𝚅𝙴𝚁𝚂𝙸𝙾𝙽**: `{lionver}`\n"
-        tele += f"{telemoji} **𝙻𝙸𝙾𝙽 𝚂𝚄𝙿𝙿𝙾𝚁𝚃**: @LionXsupport\n"
-        tele += f"{telemoji} **𝚂𝚄𝙳𝙾** : `{sudo}`\n"
-        tele += f"{telemoji} **𝙻𝙸𝙾𝙽 𝚄𝙿𝚃𝙸𝙼𝙴**: `{uptime}`\n"
-        tele += f"{telemoji} **𝙳𝙰𝚃𝙰𝙱𝙰𝚂𝙴 𝚂𝚃𝙰𝚃𝚄𝚂**: `𝙰𝙻𝙻 𝙾𝙺 👌!`\n"
-        tele += (
-            f"{telemoji} **𝙼𝚈 𝙿𝙴𝚁𝙾 𝙼𝙰𝚂𝚃𝙴𝚁** : [{DEFAULTUSER}](tg://user?id={myid})\n\n"
+        lion += f"{lionemoji} **𝙻𝙸𝙾𝙽 𝚄𝙱 𝚅𝙴𝚁𝚂𝙸𝙾𝙽**: `{lionver}`\n"
+        lion += f"{lionemoji} **𝙻𝙸𝙾𝙽 𝚂𝚄𝙿𝙿𝙾𝚁𝚃**: @LionXsupport\n"
+        lion += f"{lionemoji} **𝚂𝚄𝙳𝙾** : `{sudo}`\n"
+        lion += f"{lionemoji} **𝙻𝙸𝙾𝙽 𝚄𝙿𝚃𝙸𝙼𝙴**: `{uptime}`\n"
+        lion += f"{lionemoji} **𝙳𝙰𝚃𝙰𝙱𝙰𝚂𝙴 𝚂𝚃𝙰𝚃𝚄𝚂**: `𝙰𝙻𝙻 𝙾𝙺 👌!`\n"
+        lion += (
+            f"{lionemoji} **𝙼𝚈 𝙿𝙴𝚁𝙾 𝙼𝙰𝚂𝚃𝙴𝚁** : [{DEFAULTUSER}](tg://user?id={myid})\n\n"
         )
-        tele += "    [✨ Gɪᴛʜᴜʙ Rᴇᴘᴏsɪᴛᴏʀʏ ✨](https://github.com/Mdnoor786/Lion)"
+        lion += "    [✨ Gɪᴛʜᴜʙ Rᴇᴘᴏsɪᴛᴏʀʏ ✨](https://github.com/Mdnoor786/Lion)"
         await alive.get_chat()
         await alive.delete()
         """ For .alive command, check if the bot is running.  """
@@ -107,7 +107,7 @@ async def amireallyalive(alive):
             f"{telemoji} **𝙻𝙸𝙾𝙽 𝚄𝙿𝚃𝙸𝙼𝙴**: `{uptime}`\n"
             f"{telemoji} **𝙳𝙰𝚃𝙰𝙱𝙰𝚂𝙴 𝚂𝚃𝙰𝚃𝚄𝚂**: `All OK 👌!`\n"
             f"{telemoji} **𝙼𝚈 𝙿𝙴𝚁𝙾 𝙼𝙰𝚂𝚃𝙴𝚁** : [{DEFAULTUSER}](tg://user?id={myid})\n\n"
-            "    [✨ gιтнυв яєρσѕιтσяу ✨](https://github.com/Mdnoor786/Lion)",
+            "[✨ gιтнυв яєρσѕιтσяу ✨](https://github.com/Mdnoor786/Lion)",
             link_preview=False,
         )
         await borg.send_file(alive.chat_id, file=sticker)
