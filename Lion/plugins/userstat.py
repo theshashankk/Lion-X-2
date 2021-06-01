@@ -30,14 +30,14 @@ async def _(event):
     sender = await event.get_sender()
     me = await event.client.get_me()
     if not sender.id == me.id:
-        tele = await event.reply("`Processing...`")
+        lion = await event.reply("`Processing...`")
     else:
-        tele = await event.edit("`Processing...`")
+        lion = await event.edit("`Processing...`")
     if event.fwd_from:
         return
     tuser, rdhs = await get_full_user(event)
     if tuser is None:
-        await tele.edit("Error! Please mention user to check his stats!!")
+        await lion.edit("Error! Please mention user to check his stats!!")
         return False
     user_id = tuser.user.id
     first_name = html.escape(tuser.user.first_name)
