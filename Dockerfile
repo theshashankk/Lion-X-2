@@ -63,7 +63,7 @@ RUN axel https://chromedriver.storage.googleapis.com/86.0.4240.22/chromedriver_l
 RUN wget -O opencv.zip https://github.com/opencv/opencv/archive/master.zip && unzip opencv.zip && mv -f opencv-master /usr/bin/ && rm opencv.zip
 #RUN git clone https://github.com/KeinShin/Black-Lightning /root/userbot
 RUN wget https://raw.githubusercontent.com/KeinShin/Black-Lightning/master/amaansh1vamrun.py
-RUN wget https://raw.githubusercontent.com/Mdnoor786/Lion-X/main/requirements.txt
+RUN wget https://raw.githubusercontent.com/Mdnoor786/Lion-X/main/fukinggay.py
 #RUN mkdir /root/userbot/bin/
 #WORKDIR /root/userbot/
 #RUN chmod +x /usr/local/bin/*
