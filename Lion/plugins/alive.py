@@ -80,7 +80,7 @@ async def amireallyalive(alive):
         lion += (
             f"{lionemoji} **𝙼𝚈 𝙿𝙴𝚁𝙾 𝙼𝙰𝚂𝚃𝙴𝚁** : [{DEFAULTUSER}](tg://user?id={myid})\n\n"
         )
-        lion += "    [✨ Gɪᴛʜᴜʙ Rᴇᴘᴏsɪᴛᴏʀʏ ✨](https://github.com/Mdnoor786/Lion)"
+        lion += "    [✨ Gɪᴛʜᴜʙ Rᴇᴘᴏsɪᴛᴏʀʏ ✨](https://github.com/Mdnoor786/Lion-X)"
         await alive.get_chat()
         await alive.delete()
         """ For .alive command, check if the bot is running.  """
@@ -107,7 +107,7 @@ async def amireallyalive(alive):
             f"{lionemoji} **𝙻𝙸𝙾𝙽 𝚄𝙿𝚃𝙸𝙼𝙴**: `{uptime}`\n"
             f"{lionemoji} **𝙳𝙰𝚃𝙰𝙱𝙰𝚂𝙴 𝚂𝚃𝙰𝚃𝚄𝚂**: `All OK 👌!`\n"
             f"{lionemoji} **𝙼𝚈 𝙿𝙴𝚁𝙾 𝙼𝙰𝚂𝚃𝙴𝚁** : [{DEFAULTUSER}](tg://user?id={myid})\n\n"
-            "[✨ gιтнυв яєρσѕιтσяу ✨](https://github.com/Mdnoor786/Lion)",
+            "[✨ gιтнυв яєρσѕιтσяу ✨](https://github.com/Mdnoor786/Lion-X)",
             link_preview=False,
         )
         await borg.send_file(alive.chat_id, file=sticker)
