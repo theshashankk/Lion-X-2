@@ -1,6 +1,6 @@
 # special thanks to Sur_vivor
 # Re-written for Lion by @its_xditya
-
+"""
 import time
 from datetime import datetime
 
@@ -56,3 +56,4 @@ async def _(event):
 
 
 CMD_HELP.update({"ping": ".ping\nUse - See the ping stats and uptime of userbot."})
+"""
