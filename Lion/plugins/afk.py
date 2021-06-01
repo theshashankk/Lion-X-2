@@ -146,7 +146,7 @@ async def _(event):
     global afk_start
     global afk_end
     global reason
-    global tele
+    global lion
     USER_AFK = {}
     afk_time = None
     last_afk_message = {}
