@@ -21,7 +21,7 @@ from Lion.plugins import OWNER_ID
 
 
 @tgbot.on(events.NewMessage(pattern="^/stats", from_users=OWNER_ID))
-async def tele(event):
+async def lion(event):
     allu = len(full_userbase())
     blu = len(all_bl_users())
     await tgbot.send_message(event.chat_id,
