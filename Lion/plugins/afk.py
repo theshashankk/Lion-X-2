@@ -95,18 +95,19 @@ async def on_afk(event):
         # https://core.telegram.org/bots/faq#why-doesn-39t-my-bot-see-messages-from-other-bots
         return False
     if USER_AFK and not (await event.get_sender()).bot:
-msg = None
-        message_to_reply = (
-            f"**𝙷𝙴𝚈𝚈!! 𝙼𝚈 𝙼𝙰𝚂𝚃𝙴𝚁 𝙸𝚂 𝙲𝚄𝚁𝚁𝙴𝙽𝚃𝙻𝚈 𝙾𝙵𝙵𝙻𝙸𝙽𝙴...**\n\n**𝙵𝙾𝚁** `{total_afk_time}`\n"
-            + f"\n\n__𝙱𝚃 𝙷𝙴 𝙻𝙴𝙵𝚃 𝙰 𝚁𝙴𝙰𝚂𝙾𝙽 ◉‿◉__ :-\n{reason}"
-            if reason
-            else f"**𝙷𝙴𝚈!!**\n__𝙸'𝙼 𝙲𝚄𝚁𝚁𝙴𝙽𝚃𝙻𝚈 𝙱𝚄𝚉𝚈...\n\nFᴏʀ `{total_afk_time}` .__\n\n𝚆𝙷𝙴𝙽 𝙸 𝚆𝙸𝙻𝙺 𝙲𝙾𝙼𝙴 𝙱𝙰𝙲𝙺? __𝚆𝙷𝙴𝙽 𝙴𝚅𝙴𝚁 𝙸 𝙵𝙴𝙴𝙻 𝙸 𝚆𝙸𝙻𝙻 𝙲𝙾𝙼𝙴__🤧🚶🚶  "
-        )
-        msg = await event.reply(message_to_reply)
-        await asyncio.sleep(5)
-        if event.chat_id in last_afk_message:  # pylint:disable=E0602
-            await last_afk_message[event.chat_id].delete()  # pylint:disable=E0602
-        last_afk_message[event.chat_id] = msg
+        msg = None
+        if reason is not None and lion == "True":
+            message_to_reply = "**AFK**\n{}\n\n**Last active** `{}` **ago.**\n\n**Reason** : {}".format(
+                CUSTOM_AFK, endtime, reason
+            )
+        elif lion == "False":
+            message_to_reply = "**AFK**\n{}\n\n**Last active** `{}` **ago.**\n\n**Reason** - {}".format(
+                CUSTOM_AFK, endtime, reason
+            )
+        else:
+            message_to_reply = "**AFK**\n{}\n\n**Last active** {} **ago.**".format(
+                CUSTOM_AFK, endtime
+            )
         if event.chat_id not in Config.UB_BLACK_LIST_CHAT:
             msg = await event.reply(message_to_reply)
         if event.chat_id in last_afk_message:
