@@ -89,7 +89,7 @@ async def _(event):
     caption += f"**Banned in CAS:** {sbot} [?](http://cas.chat)\n"
     if sn:
         caption += f"**Reason:** `{sn}`\n\n"
-    await tele.edit(caption)
+    await lion.edit(caption)
 
 
 async def get_full_user(event):
