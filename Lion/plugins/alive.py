@@ -100,13 +100,13 @@ async def amireallyalive(alive):
             alive.chat_id,
             f"**𝐘𝐎𝐎!! 𝐋𝐈𝐎𝐍 𝐈𝐒 𝐀𝐋𝐈𝐕𝐄 **\n\n"
             f"`{CUSTOM_ALIVE}`\n\n"
-            f"{telemoji} **𝚃𝙴𝙻𝙴𝚃𝙷𝙾𝙽 𝚅𝙴𝚁𝚂𝙸𝙾𝙽**: `1.17`\n{telemoji} **Python**: `3.8.3`\n"
-            f"{telemoji} **𝙻𝙸𝙾𝙽 𝚄𝙱 𝚅𝙴𝚁𝚂𝙸𝙾𝙽**: `{telever}`\n"
-            f"{telemoji} **𝙻𝙸𝙾𝙽 𝚂𝚄𝙿𝙿𝙾𝚁𝚃**: @LionXsupport\n"
-            f"{telemoji} **𝚂𝚄𝙳𝙾** : `{sudo}`\n"
-            f"{telemoji} **𝙻𝙸𝙾𝙽 𝚄𝙿𝚃𝙸𝙼𝙴**: `{uptime}`\n"
-            f"{telemoji} **𝙳𝙰𝚃𝙰𝙱𝙰𝚂𝙴 𝚂𝚃𝙰𝚃𝚄𝚂**: `All OK 👌!`\n"
-            f"{telemoji} **𝙼𝚈 𝙿𝙴𝚁𝙾 𝙼𝙰𝚂𝚃𝙴𝚁** : [{DEFAULTUSER}](tg://user?id={myid})\n\n"
+            f"{lionemoji} **𝚃𝙴𝙻𝙴𝚃𝙷𝙾𝙽 𝚅𝙴𝚁𝚂𝙸𝙾𝙽**: `1.17`\n{lionemoji} **Python**: `3.8.3`\n"
+            f"{lionemoji} **𝙻𝙸𝙾𝙽 𝚄𝙱 𝚅𝙴𝚁𝚂𝙸𝙾𝙽**: `{lionver}`\n"
+            f"{lionemoji} **𝙻𝙸𝙾𝙽 𝚂𝚄𝙿𝙿𝙾𝚁𝚃**: @LionXsupport\n"
+            f"{lionemoji} **𝚂𝚄𝙳𝙾** : `{sudo}`\n"
+            f"{lionemoji} **𝙻𝙸𝙾𝙽 𝚄𝙿𝚃𝙸𝙼𝙴**: `{uptime}`\n"
+            f"{lionemoji} **𝙳𝙰𝚃𝙰𝙱𝙰𝚂𝙴 𝚂𝚃𝙰𝚃𝚄𝚂**: `All OK 👌!`\n"
+            f"{lionemoji} **𝙼𝚈 𝙿𝙴𝚁𝙾 𝙼𝙰𝚂𝚃𝙴𝚁** : [{DEFAULTUSER}](tg://user?id={myid})\n\n"
             "[✨ gιтнυв яєρσѕιтσяу ✨](https://github.com/Mdnoor786/Lion)",
             link_preview=False,
         )
