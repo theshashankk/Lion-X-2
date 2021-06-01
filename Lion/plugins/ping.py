@@ -6,7 +6,7 @@ from datetime import datetime
 
 from Lion import CMD_HELP
 from Lion.__init__ import StartTime
-from Lion.plugins import OWNER_ID, TELE_NAME
+from Lion.plugins import OWNER_ID, LION
 
 
 def get_readable_time(seconds: int) -> str:
