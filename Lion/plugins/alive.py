@@ -53,7 +53,7 @@ def get_readable_time(seconds: int) -> str:
 TG = str(TG_GRUP) if TG_GRUP else "Not  Yet😁😁"
 TG_CHANN = str(TG_CHANNEL) if TG_CHANNEL else "Not Yet😁😁"
 
- BOT_USERNAME = VAR.TG_BOT_USER_NAME if TG_BOT_USER_NAME else none
+ BOT_USERNAME = VAR.TG_BOT_USER_NAME_BF_HER if TG_BOT_USER_NAME_BF_HER else none
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "@LionXsupport"
 
 SHASANKXD = VAR.ALIVE_PIC if ALIVE_PIC else "https://telegra.ph/file/9c919ae0a8f31d70a8dfe.jpg"
