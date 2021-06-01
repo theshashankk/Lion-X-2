@@ -347,7 +347,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
 def paginate_help(page_number, loaded_plugins, prefix):
     number_of_rows = HELP_ROWS
     number_of_cols = HELP_COLOUMNS
-    tele = CUSTOM_HELP_EMOJI
+    lion = CUSTOM_HELP_EMOJI
     helpable_plugins = []
     for p in loaded_plugins:
         if not p.startswith("_"):
@@ -355,7 +355,7 @@ def paginate_help(page_number, loaded_plugins, prefix):
     helpable_plugins = sorted(helpable_plugins)
     modules = [
         custom.Button.inline(
-            "{} {} {}".format(tele, x, tele), data="us_plugin_{}".format(x)
+            "{} {} {}".format(lion, x, lion), data="us_plugin_{}".format(x)
         )
         for x in helpable_plugins
     ]
