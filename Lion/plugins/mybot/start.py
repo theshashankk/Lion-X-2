@@ -24,7 +24,7 @@ import asyncio
 import os
 import requests
 from Lion.plugins.mybot.sql.blacklist_sql import all_bl_users
-from Lion.plugins import TELE_NAME
+from Lion.plugins import LION_NAME
 from Lion.plugins.mybot.sql.userbase_sql import add_to_userbase, present_in_userbase, full_userbase
 from datetime import datetime
 from telethon import events
