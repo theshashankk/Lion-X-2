@@ -24,7 +24,7 @@ from telethon import Button, custom, events, functions
 from telethon.tl.functions.users import GetFullUserRequest
 
 from Lion import ALIVE_NAME, CMD_HELP, CMD_LIST, CUSTOM_PMPERMIT, bot
-from Lion.plugins import telestats
+from Lion.plugins import lionstats
 from Lion.LionConfig import Var
 
 PMPERMIT_PIC = os.environ.get("PMPERMIT_PIC", None)
