@@ -1,6 +1,6 @@
 # special thanks to Sur_vivor
 # Re-written for Lion by @its_xditya
-"""
+
 import time
 from datetime import datetime
 
@@ -51,7 +51,7 @@ async def _(event):
     ms = (end - start).microseconds / 1000
     uptime = get_readable_time((time.time() - StartTime))
     await x.edit(
-        f"⪼ **ριηg** : `{ms}`\n⪼ **υρтιмε** : `{uptime}`\n⪼ **мү мαsтεя** : [{TELE_NAME}](tg://user?id={OWNER_ID})"
+        f"⪼ **ριηg** : `{ms}`\n⪼ **υρтιмε** : `{uptime}`\n⪼ **мү мαsтεя** : [{LION_NAME}](tg://user?id={OWNER_ID})"
     )
 
 
