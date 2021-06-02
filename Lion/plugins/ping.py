@@ -6,7 +6,7 @@ from datetime import datetime
 
 from Lion import CMD_HELP
 from Lion.__init__ import StartTime
-from Lion.plugins import OWNER_ID, LION
+from Lion.plugins import OWNER_ID, ALIVE_NAME
 
 
 def get_readable_time(seconds: int) -> str:
@@ -51,9 +51,9 @@ async def _(event):
     ms = (end - start).microseconds / 1000
     uptime = get_readable_time((time.time() - StartTime))
     await x.edit(
-        f"⪼ **ριηg** : `{ms}`\n⪼ **υρтιмε** : `{uptime}`\n⪼ **мү мαsтεя** : [{LION_NAME}](tg://user?id={OWNER_ID})"
+        f"⪼ **ριηg** : `{ms}`\n⪼ **υρтιмε** : `{uptime}`\n⪼ **мү мαsтεя** : [{ALIVE_NAME}](tg://user?id={OWNER_ID})"
     )
-
+ALIVE_NAME = DEFAULT_USER
 
 CMD_HELP.update({"ping": ".ping\nUse - See the ping stats and uptime of userbot."})
 
