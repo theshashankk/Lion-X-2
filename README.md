@@ -92,3 +92,9 @@ Fortunately there are no Mandatory vars for the UniBorg Support Config.
 #### • 𝚃𝙴𝙻𝙴𝙱𝙾𝚃 - 𝚇𝙳𝙸𝚃𝚈𝙰   »»  <a href="https://github.com/Xditya/Telebot" alt="Telebot"> <img src="https://img.shields.io/badge/Telebot%20Xditya-800080?logo=github" /></a>
 
 #### • 𝙺𝙴𝙸𝙽𝚂𝙷𝙸𝙽 »»  <a href="https://github.com/KeinShin" alt="Keinshin"> <img src="https://img.shields.io/badge/Keinshin-536eff?logo=github" /></a>
+
+## 𝙳𝙴𝚅  »» 
+
+#### • 𝚂𝙷𝙰𝚂𝙷𝙰𝙽𝙺𝚇𝙳 - 𝙳𝙴𝚅  »»  <a href="https://github.com/shashankxD" alt="ShashankxD"> <img src="https://img.shields.io/badge/ShashankxD-536eff?logo=github" /></a>
+
+#### • 𝙼𝙳 𝙽𝙾𝙾𝚁 - 𝙳𝙴𝚅  »»  <a href="https://github.com/Mdnoor786" alt="Mdnoor"> <img src="https://img.shields.io/badge/Md%20Noor-536eff?logo=github" /></a>
