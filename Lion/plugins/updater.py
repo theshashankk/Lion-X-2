@@ -19,7 +19,7 @@ from git.exc import GitCommandError, InvalidGitRepositoryError, NoSuchPathError
 from Lion import CMD_HNDLR
 
 requirements_path = path.join(
-    path.dirname(path.dirname(path.dirname(__file__))), "requirements.txt"
+    path.dirname(path.dirname(path.dirname(__file__))), "Xsetup.txt"
 )
 
 HEROKU_API_KEY = Var.HEROKU_API_KEY
