@@ -85,8 +85,7 @@ async def callback_query_handler(event):
         theshashank += "𝙷𝙴𝚁𝙴 𝙸𝚂 𝙼𝚈 𝚁𝙴𝙿𝙾𝚂𝙸𝚃𝙾𝚁𝚈"
         BUTTONS = [[Button.url("Rᴇᴘᴏsɪᴛᴏʀʏ", "https://github.com/Mdnoor786/Lion-X"")
         await event.edit(text=theshashank, buttons=BUTTONS)        
-        await alive.get_chat()
-        await alive.delete()
+        
         """ For .alive command, check if the bot is running.  """
         
 CMD_HELP.update({"αℓιvε": "➤ `.alive`\nUse - Check if your bot is working."})
