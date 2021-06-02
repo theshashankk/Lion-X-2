@@ -14,7 +14,9 @@
 
 
 
-## 𝙇𝙄𝙊𝙉 𝙓 𝙐𝙎𝙀𝙍𝘽𝙊𝙏
+## 𝙇𝙄𝙊𝙉 𝙓 𝙐𝙎𝙀𝙍𝘽𝙊𝙏 
+
+<p align="left"><a href="t.me/LionXsupport"> <img src="https://img.shields.io/badge/Support%20Group-🚑-white?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
 
 ## 𝙷𝙾𝚆 𝚃𝙾 𝙷𝙾𝚂𝚃 𝚃𝙷𝙴 𝙱𝙾𝚃 🤖
 
