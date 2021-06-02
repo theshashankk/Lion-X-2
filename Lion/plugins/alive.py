@@ -75,19 +75,18 @@ async def amireallyalive(alive):
         theshashank += "𝙈𝙔 𝘿𝙀𝙑 👇👇\n"
         theshashank += "[✘ 𝐒𝐇𝐀𝐒𝐇𝐀𝐍𝐊 ✘](t.me/shashankxD)\n"
         theshashank += "[✘ 𝐌𝐃 𝐍𝐎𝐎𝐑 ✘](t.me/SimpleBoy786)"
-        theshashank += [[Button.url("✨ REPOSITORY ✨", data="LionX")]]
+        BUTTONS += [[Button.url("✨ REPOSITORY ✨", data="LionX")]]
         await event.edit(text=f"𝙰𝙻𝙻 𝙳𝙴𝚃𝙰𝙸𝙻𝚂 𝙾𝙵 𝚁𝙴𝙿𝙾𝚂𝙸𝚃𝙾𝚁𝚈", buttons=LionX)
-
+        await borg.send_file(alive.chat_id, ALV_PIC, caption=theshashank, buttons=BUTTONS, link_preview=False)
+        
 @Lion.on(events.callbackquery.CallbackQuery(data=re.compile(b"LionX")))
 async def callback_query_handler(event):
         theshashank += "𝙷𝙴𝚈 𝚃𝙷𝙸𝚂 𝙸𝚂 𝚃𝙴𝙰𝙼 𝙻𝙸𝙾𝙽 𝚄𝙱"
         theshashank += "𝙷𝙴𝚁𝙴 𝙸𝚂 𝙼𝚈 𝚁𝙴𝙿𝙾𝚂𝙸𝚃𝙾𝚁𝚈"
-        BUTTONS = [[Button.url("Hᴇʀᴏᴋᴜ", "https://heroku.com/deploy?template=https://github.com/mdnoor786/lion-X""), Button.url(f"{BOT} 𝚁𝙴𝙿𝙾", "https://github.com/LEGENDXOP/LEGEND-BOT")]]
-        BUTTONS += [[custom.Button.inline("Rᴇᴘᴏsɪᴛᴏʀʏ", "https://github.com/Mdnoor786/Lion-X")]]
+        BUTTONS = [[Button.url("Rᴇᴘᴏsɪᴛᴏʀʏ", "https://github.com/Mdnoor786/Lion-X"")
         await event.edit(text=theshashank, buttons=BUTTONS)        
         await alive.get_chat()
         await alive.delete()
         """ For .alive command, check if the bot is running.  """
-        await borg.send_file(alive.chat_id, ALV_PIC, caption=theshashank, buttons=BUTTONS, link_preview=False)
-        await alive.delete()
+        
 CMD_HELP.update({"αℓιvε": "➤ `.alive`\nUse - Check if your bot is working."})
