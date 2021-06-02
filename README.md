@@ -12,12 +12,10 @@
 
 ![hinata](https://user-images.githubusercontent.com/78837537/120152150-c37ad280-c20a-11eb-92ce-64b9124b05ed.jpg)
 
-
-
-## 𝙇𝙄𝙊𝙉 𝙓 𝙐𝙎𝙀𝙍𝘽𝙊𝙏 
-
 <a href="https://t.me/LionXupdates"><img src="https://img.shields.io/badge/Join-Updates%20Channel-536eff.svg?style=for-the-badge&logo=Telegram"></a>
 <a href="https://t.me/LionXsupport"><img src="https://img.shields.io/badge/Join-Support%20Group-536eff.svg?style=for-the-badge&logo=Telegram"></a>
+
+## 𝙇𝙄𝙊𝙉 𝙓 𝙐𝙎𝙀𝙍𝘽𝙊𝙏 
 
 ## 𝙷𝙾𝚆 𝚃𝙾 𝙷𝙾𝚂𝚃 𝚃𝙷𝙴 𝙱𝙾𝚃 🤖
 
