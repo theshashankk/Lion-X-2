@@ -15,6 +15,11 @@ CUSTOM_ALIVE = (
     if Var.CUSTOM_ALIVE
     else "𝚈𝙾𝙾!! 𝚈𝙾𝚄𝚁 𝙻𝙸𝙾𝙽 𝚄𝙱 𝙸𝚂 𝙰𝙻𝙸𝚅𝙴"
 )
+ALV_PIC = (
+    VAR.ALIVE_PIC
+    if Var.ALIVE_PIC
+    else "https://telegra.ph/file/9c919ae0a8f31d70a8dfe.jpg"
+)
 lionmoji = Var.CUSTOM_ALIVE_EMOJI if Var.CUSTOM_ALIVE_EMOJI else "**✘**"
 if Config.SUDO_USERS:
     sudo = "Enabled"
@@ -53,7 +58,7 @@ def get_readable_time(seconds: int) -> str:
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "@LionXsupport"
 
-SHASANKXD = "https://telegra.ph/file/9c919ae0a8f31d70a8dfe.jpg"
+
 
 theshashank = "**үσσ!! ℓιση υsεявσт ιs αℓιvε**\n\n"
 theshashank += f"**𝐌𝐘 𝐏𝐄𝐑𝐎 𝐌𝐀𝐒𝐓𝐄𝐑**          : {DEFAULTUSER}\n"
@@ -72,5 +77,5 @@ theshashank += "[✘ 𝐌𝐃 𝐍𝐎𝐎𝐑 ✘](t.me/SimpleBoy786)"
 async def theshashank(alive):
     await alive.get_chat()
     """ For .alive command, check if the bot is running.  """
-    await borg.send_file(alive.chat_id, SHASHANKXD, caption=theshashank)
+    await borg.send_file(alive.chat_id, ALV_PIC, caption=theshashank)
     await alive.delete()
