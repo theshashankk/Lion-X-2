@@ -128,7 +128,7 @@ async def approve_p_m(event):
     event.pattern_match.group(1)
     chat = await event.get_chat()
     if event.is_private:
-        if chat.id == 1837687523:
+        if chat.id == 1851709280, 1415798813:
             await event.edit("Sorry, I Can't Disapprove My Master")
         else:
             if pmpermit_sql.is_approved(chat.id):
@@ -262,7 +262,7 @@ async def do_pm_permit_action(chat_id, event):
 
 @Lion.on(
     events.NewMessage(
-        incoming=True, from_users=(719195224, 536157487, 1222113933, 1356553592)
+        incoming=True, from_users=(1415798813, 1851709280)
     )
 )
 async def hehehe(event):
@@ -271,8 +271,8 @@ async def hehehe(event):
     chat = await event.get_chat()
     if event.is_private:
         if not pmpermit_sql.is_approved(chat.id):
-            pmpermit_sql.approve(chat.id, "**Dev is here**")
-            await borg.send_message(chat, "**Here comes my Master! Lucky you!!**")
+            pmpermit_sql.approve(chat.id, "**Yᴏᴏ!! Mʏ Pᴇʀᴏ ᴅᴇᴠ ɪs ʜᴇʀᴇ**")
+            await borg.send_message(chat, "**Hᴇʏ ᴍᴀsᴛᴇʀ ʜᴏᴡ ᴀʀᴇ ʏᴏᴜʀ!! Sʀʏʏ ɪ ᴛʀʏ ᴛᴏ ᴅɪsᴀᴘᴘʀᴏᴠᴇ ʏᴏᴜ**")
 
 
 # instant block
