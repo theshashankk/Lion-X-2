@@ -52,7 +52,7 @@ async def _(event):
     ms = (end - start).microseconds / 1000
     uptime = get_readable_time((time.time() - StartTime))
     await x.edit(
-        f"⪼ **ριηg** : `{ms}`\n⪼ **υρтιмε** : `{uptime}`\n⪼ **мү мαsтεя** : [{DEFAULTUSER}](tg://user?id={OWNER_ID})"
+        f"✘ **ριиg** : `{ms}`\n✘ **υρтιмє** : `{uptime}`\n✘ **𝐌𝐘 𝐏𝐄𝐑𝐎 𝐌𝐀𝐒𝐓𝐄𝐑** : [{DEFAULTUSER}](tg://user?id={OWNER_ID})\n\n© 𝙻𝙸𝙾𝙽 𝚇 𝚄𝚂𝙴𝚁𝙱𝙾𝚃"
     )
 
 
