@@ -1,1 +1,1 @@
-worker: python3 -m Lion
+worker: python3 yourstepsis.py
