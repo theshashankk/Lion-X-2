@@ -79,7 +79,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         builder = event.builder
         result = None
         query = event.text
-        if event.query.user_id == bot.uid and query.startswith("`Userbot"):
+        if event.query.user_id == bot.uid and query.startswith("`𝙻𝙸𝙾𝙽"):
             rev_text = query[::-1]
             buttons = paginate_help(0, CMD_LIST, "helpme")
             result = builder.article(
@@ -88,7 +88,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                 buttons=buttons,
                 link_preview=False,
             )
-        elif event.query.user_id == bot.uid and query == "stats":
+        elif event.query.user_id == bot.uid and query.startswith("stats"):
             result = builder.article(
                 title="Stats",
                 text=f"**𝙻𝙸𝙾𝙽 𝚄𝙱 𝚂𝚃𝙰𝚃𝚂 𝙾𝙵 𝚃𝙷𝙴 [{DEFAULTUSER}](tg://user?id={myid})**\n\n__𝙱𝙾𝚃 𝙸𝚂 𝚂𝙼𝙾𝙾𝚃𝙷𝙻𝚈 𝚁𝚄𝙽𝙽𝙸𝙽𝙶, 𝙼𝙰𝚂𝚃𝙴𝚁!__\n\n(c) @LionXsupport",
