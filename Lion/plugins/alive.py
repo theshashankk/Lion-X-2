@@ -50,9 +50,6 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 
-TG = str(TG_GRUP) if TG_GRUP else "Not  Yet😁😁"
-TG_CHANN = str(TG_CHANNEL) if TG_CHANNEL else "Not Yet😁😁"
-
 BOT_USERNAME = VAR.TG_BOT_USER_NAME_BF_HER if TG_BOT_USER_NAME_BF_HER else none
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "@LionXsupport"
 
