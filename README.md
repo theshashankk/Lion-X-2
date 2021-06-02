@@ -1,4 +1,4 @@
-<p align="left"><a href="https://telegram.dog/LionXsupport"> <img src="https://img.shields.io/badge/A%20Powerfull%20telegram%20userbot-blue?style=for-the-badge&logo=telegram" width="220" height="38.45"/></a></p>
+
 
 
 <p align="center">
@@ -25,6 +25,9 @@
 ## Sᴛʀɪɴɢ Sᴇssɪᴏɴ
 
 <p align="left"><a href="https://replit.com/@LionUB/stringsession#main.py"> <img src="https://img.shields.io/badge/String%20Session-✘-purple?style=for-the-badge&logo=repl" width="220" height="38.45"/></a></p>
+
+##### Documention coming soon 🔜
+
 
 ## 𝚂𝙴𝙻𝙵 𝙷𝙾𝚂𝚃 𝙵𝙾𝚁 𝙳𝙴𝚅 👨‍💻
 
