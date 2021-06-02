@@ -55,8 +55,8 @@ def get_readable_time(seconds: int) -> str:
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "ℓιση υsεя"
 
 
-@lion.on(admin_cmd(outgoing=True, pattern="alive"))
-@lion.on(sudo_cmd(outgoing=True, pattern="alive", allow_sudo=True))
+@Lion.on(admin_cmd(outgoing=True, pattern="alive"))
+@Lion.on(sudo_cmd(outgoing=True, pattern="alive", allow_sudo=True))
 async def amireallyalive(alive):
     start = datetime.now()
     myid = bot.uid
