@@ -76,7 +76,6 @@ async def amireallyalive(alive):
         theshashank += "[✘ 𝐒𝐇𝐀𝐒𝐇𝐀𝐍𝐊 ✘](t.me/shashankxD)\n"
         theshashank += "[✘ 𝐌𝐃 𝐍𝐎𝐎𝐑 ✘](t.me/SimpleBoy786)"
         BUTTONS += [[Button.url("✨ REPOSITORY ✨", data="LionX")]]
-        await event.edit(text=f"𝙰𝙻𝙻 𝙳𝙴𝚃𝙰𝙸𝙻𝚂 𝙾𝙵 𝚁𝙴𝙿𝙾𝚂𝙸𝚃𝙾𝚁𝚈", buttons=LionX)
         await borg.send_file(alive.chat_id, ALV_PIC, caption=theshashank, buttons=BUTTONS, link_preview=False)
         
 @Lion.on(events.callbackquery.CallbackQuery(data=re.compile(b"LionX")))
