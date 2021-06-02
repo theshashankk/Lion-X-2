@@ -31,7 +31,7 @@ PMPERMIT_PIC = os.environ.get("PMPERMIT_PIC", None)
 TELEPIC = (
     PMPERMIT_PIC
     if PMPERMIT_PIC
-    else "https://telegra.ph/file/92cfbab6598148837c2e4.jpg"
+    else "https://telegra.ph/file/bfa06df35913425dbcbc1.jpg"
 )
 PM_WARNS = {}
 PREV_REPLY_MESSAGE = {}
@@ -68,7 +68,7 @@ elif Var.LOAD_MYBOT == "False":
         )
     )
 
-CUSTOM_HELP_EMOJI = os.environ.get("CUSTOM_HELP_EMOJI", "⚡")
+CUSTOM_HELP_EMOJI = os.environ.get("CUSTOM_HELP_EMOJI", "🇮🇳")
 HELP_ROWS = int(os.environ.get("HELP_ROWS", 6))
 HELP_COLOUMNS = int(os.environ.get("HELP_COLOUMNS", 4))
 
@@ -79,7 +79,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         builder = event.builder
         result = None
         query = event.text
-        if event.query.user_id == bot.uid and query.startswith("`Lion"):
+        if event.query.user_id == bot.uid and query.startswith("`Lion`"):
             rev_text = query[::-1]
             buttons = paginate_help(0, CMD_LIST, "helpme")
             result = builder.article(
