@@ -16,7 +16,8 @@
 
 ## 𝙇𝙄𝙊𝙉 𝙓 𝙐𝙎𝙀𝙍𝘽𝙊𝙏 
 
-<p align="left"><a href="t.me/LionXsupport"> <img src="https://img.shields.io/badge/Support%20Group-🚑-white?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
+<a href="https://t.me/LionXupdates"><img src="https://img.shields.io/badge/Join-Updates%20Channel-536eff.svg?style=for-the-badge&logo=Telegram"></a>
+<a href="https://t.me/LionXsupport"><img src="https://img.shields.io/badge/Join-Support%20Group-536eff.svg?style=for-the-badge&logo=Telegram"></a>
 
 ## 𝙷𝙾𝚆 𝚃𝙾 𝙷𝙾𝚂𝚃 𝚃𝙷𝙴 𝙱𝙾𝚃 🤖
 
