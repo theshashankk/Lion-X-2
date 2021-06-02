@@ -79,3 +79,4 @@ async def amireallyalive(alive):
         """ For .alive command, check if the bot is running.  """
         await borg.send_file(alive.chat_id, ALV_PIC, caption=theshashank, link_preview=False)
         await alive.delete()
+CMD_HELP.update({"αℓιvε": "➤ `.alive`\nUse - Check if your bot is working."})
