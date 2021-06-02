@@ -1,3 +1,9 @@
+"""
+
+
+
+
+
 from git import Repo
 from telethon.tl.functions.channels import ExportMessageLinkRequest as GetLink
 
@@ -48,3 +54,4 @@ async def updava(event):
         force_document=False,
         buttons=Button.inline("Changelogs", data="changes"),
     ) 
+"""
