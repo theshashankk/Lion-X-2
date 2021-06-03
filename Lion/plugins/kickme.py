@@ -4,7 +4,7 @@
 
 """
 
-.bye
+.kickme
 
 """
 
@@ -17,7 +17,7 @@ from Lion import CMD_HELP
 from Lion.utils import admin_cmd
 
 
-@Lion.on(admin_cmd(pattern="bye", outgoing=True))
+@Lion.on(admin_cmd(pattern="kickme", outgoing=True))
 async def leave(e):
     x = bot.me
     name = x.first_name
