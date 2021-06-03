@@ -1,5 +1,5 @@
-
-from telethon import events, Button, custom
+import platform
+from telethon import events, Button, custom, version
 import time
 from datetime import datetime
 from io import BytesIO
@@ -7,7 +7,7 @@ from io import BytesIO
 import requests
 from PIL import Image
 
-from Lion import ALIVE_NAME, CMD_HELP, lionver
+from Lion import ALIVE_NAME, CMD_HELP, lionver, HEROKU_API_KEY, HEROKU_APP_NAME
 from Lion.__init__ import StartTime
 from Lion.LionConfig import Config, Var
 
@@ -53,6 +53,13 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 
+try:
+   Heroku = heroku3.from_key(HEROKU_API_KEY)                         
+   app = Heroku.app(HEROKU_APP_NAME)
+   herokurk = 'cσηηεcтε∂'
+except:
+	herokurk = 'ғαιℓε∂ тσ cσηηεcт
+	pass 
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "ℓιση υsεя"
 
@@ -71,12 +78,14 @@ async def amireallyalive(alive):
         fuking_text = f"**{CUSTOM_ALIVE)**\n\n"
         fuking_text += "**Aʟʟ sʏsᴛᴇᴍs ᴡᴏʀᴋɪɴɢ ᴘʀᴏᴘᴇʀʟʏ...🤓**\n"
         fuking_text += f"**Lɪᴏɴ Vᴇʀsɪᴏɴ** : `0.02.0`\n"
-        fuking_text += f"**Pᴇʀᴏ Mᴀsᴛᴇʀ** : [Pᴇʀᴏ](https://t.me/tg://user?id={tag})\n"
+        fuking_text += f"**Tᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ** : `{version.__version__}`\n"
+        fuking_text += f"**Pʏᴛʜᴏɴ Vᴇʀsɪᴏɴ** : `{platform.python_version()}`
         fuking_text += "**Tʜɪs Bᴏᴛ ɪs ᴜᴘ-ᴛᴏ-ᴅᴀᴛᴇ...**\n"
-        fuking_text += "**Tᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ** : `1.21.1`\n"
+        fuking_text += f"**Hᴇʀᴏᴋᴜ sᴛᴀᴛᴜs**: ** {herokurk} **\n"
+        fuking_text += f"**Pᴇʀᴏ Mᴀsᴛᴇʀ** : [{DEFAULTUSER}](tg://user?id={tag})\n"
         fuking_text += "**Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ** :[ʜᴇʀᴇ](t.me/LionXsupport)\n"
         fuking_text += "**Tᴇᴀᴍ Lɪᴏɴ** :[ʜᴇʀᴇ](t.me/TeamLionUB)"
-        await borg.send_file(alive.chat_id, ALV_PIC, caption=fuking_text, link_preview=False)          #Dont replace repo with real one tilk userbot not complete
+        await borg.send_file(alive.chat_id, ALV_PIC, caption=fuking_text, link_preview=False)          """#Dont replace repo with real one tilk userbot not complete"""
         await alive.delete()
         """ For .alive command, check if the bot is running.  """
         
