@@ -22,11 +22,6 @@ if Config.SUDO_USERS:
     sudo = "Enabled"
 else:
     sudo = "Disabled"
-    
-fuking_bot = (
-    Var.TG_BOT_USER_NAME_BF_HER
-    if Var.TG_BOT_USER_NAME_BF_HER
-    else "ℓισи υѕєявσт"
 # ======CONSTANTS=========#
 
 
@@ -73,32 +68,15 @@ async def amireallyalive(alive):
     if ALV_PIC:
         fuking_text = "**ʏօօ!! ʏօʊʀ ʟɨօռ ʊֆɛʀɮօȶ ɨֆ ǟʟɨʋɛ**\n\n"
         fuking_text += "**му αℓℓ ѕуѕтєм ιѕ ѕмσσтℓу яυииιg**\n"
-        fuking_text += f"**{fukingbot} νєяѕισи**: 1.0\n"
+        fuking_text += f"**ℓισи νєяѕισи**: 1.0\n"
         fuking_text += "**тнιѕ вσт ιѕ fυℓℓу υρ-тσ-∂αтє**\n"
         fuking_text += "**тєℓєтнσи νєяѕισи**: 1.2\n"
-        fuking_text += f"**уσυя αѕѕιѕтαия**: {fuking_bot}\n"
-        fuking_button = [[Custom.Button.inline("Mʏ ᴅᴇᴠ", data="developer")]]
-        fuking_button += [[Custom.Button.inline("Rᴇᴘᴏsɪᴛᴏʀʏ", data="gay")]]
+        fuking_text += f"**тникѕ fσя cнεcкιиg мε🤓**\n"
+        fuking_button = [[Custom.Button.inline("Mʏ ᴅᴇᴠ✨", "https://github.com/Mdnoor786/Lion-X/graphs/contributors"")]]
+        fuking_button += [[Custom.Button.inline("Rᴇᴘᴏsɪᴛᴏʀʏ", "https://github.com/Mdnoor786/Lion-X")]]
         await borg.send_file(event.chat_id, ALV_PIC, captions=fuking_text, buttons=fuking_button)
         await alive.delete()
   
-  @Lion.on(events.callbackquery.CallbackQuery(data=re.compile(b"developer")))
-  async def callback_query_handler(event):
-    gay = "𝐌𝐘 𝐃𝐄𝐕\n"
-    gay += "[Sʜᴀsʜᴀɴᴋ xD](https://github.com/theshashankk)\n"
-    gay += "[Mᴅ ɴᴏᴏʀ](https://github.com/mdnoor786)\n"
-    await borg.send_message(event.chat_id, captions=gay)
-  
-  @Lion.on(events.callbackquery.CallbackQuery(data=re.compile(b"gay")))
-  async def callback_query_handler(event):
-    gay_text = "нєяє ιѕ ℓισи υѕєявσт gιтнυв яєρσѕιтσяу αи∂ нєяσкυ ℓιик\n\n"
-    gay_text += "𝘾𝙊𝙋𝙔𝙍𝙄𝙂𝙃𝙏 Sʜᴀsʜᴀɴᴋ [DEV] AND Mᴅ ɴᴏᴏʀ [DEV]\n"
-    gay_text += "🚑ѕυρρσят gяσυρ🚑", "t.me/LionXsupport")]]
-    gay_button = [[Button.url("Hᴇʀᴏᴋᴜ", "https://heroku.com/deploy?template=https://github.com/mdnoor786/lion-X"), Button.url("Hᴇʀᴏᴋᴜ", "https://heroku.com/deploy?template=https://github.com/mdnoor786/lion-X")]]
-    await borg.send_file(event.chat_id, ALV_PIC, captions=gay_text, buttons=gay_button)
-    
-@Lion.on(admin_cmd(outgoing=True, pattern="repo"))
-async def repo(event):
-  await borg.send_message(event.chat, "Rᴇᴘᴏsɪᴛᴏʀʏ ᴏғ ʟɪᴏɴ ᴜsᴇʀʙᴏᴛ", buttons=[[Button.url("✨Rᴇᴘᴏsɪᴛᴏʀʏ✨", "https://github.com/mdnoor786/LionX-UB")]])
+
     
     CMD_HELP.update({"αℓιvε": "➤ `.alive`\nUse - Check if your bot is working."})
