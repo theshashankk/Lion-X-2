@@ -68,7 +68,7 @@ async def amireallyalive(alive):
     (end - start).microseconds / 1000
     uptime = get_readable_time((time.time() - StartTime))
     if ALV_PIC:
-        fuking_text = "**ʏօօ!! ʟɨօռ ʊֆɛʀɮօȶ ɨֆ ǟʟɨʋɛ**\n\n"
+        fuking_text = f"**{CUSTOM_ALIVE)**\n\n"
         fuking_text += "**Aʟʟ sʏsᴛᴇᴍs ᴡᴏʀᴋɪɴɢ ᴘʀᴏᴘᴇʀʟʏ...🤓**\n"
         fuking_text += f"**Lɪᴏɴ Vᴇʀsɪᴏɴ** : `0.02.0`\n"
         fuking_text += f"**Pᴇʀᴏ Mᴀsᴛᴇʀ** : [Pᴇʀᴏ](https://t.me/tg://user?id={tag})\n"
