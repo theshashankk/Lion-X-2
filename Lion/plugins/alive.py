@@ -69,14 +69,15 @@ async def amireallyalive(alive):
     if ALV_PIC:
         fuking_text = "**ʏօօ!! ʏօʊʀ ʟɨօռ ʊֆɛʀɮօȶ ɨֆ ǟʟɨʋɛ**\n\n"
         fuking_text += "**му αℓℓ ѕуѕтєм ιѕ ѕмσσтℓу яυииιg**\n"
-        fuking_text += f"**ℓισи νєяѕισи**: 1.0\n"
+        fuking_text += f"**ℓισи νєяѕισи**: 0.0.1\n"
         fuking_text += "**тнιѕ вσт ιѕ fυℓℓу υρ-тσ-∂αтє**\n"
-        fuking_text += "**тєℓєтнσи νєяѕισи**: 1.2\n"
+        fuking_text += "f"**𝙿𝚢𝚝𝚑𝚘𝚗**: 3.9.2\n"
+        fuking_text += "**тєℓєтнσи νєяѕισи**: 1.21.1\n"
         fuking_text += f"**тникѕ fσя cнεcкιиg мε🤓**\n"
         fuking_text +="**Mʏ Dᴇᴠ**\n"
         fuking_text += "**[Sʜᴀsʜᴀɴᴋ xD](t.me/ShashankxD)\n"
         fuking_text += "**[Mᴅ Nᴏᴏʀ](t.me/SimpleBoy786)\n"
-        fuking_text += "**[Gɪᴛʜᴜʙ Rᴇᴘᴏsɪᴛᴏʀʏ](https://github.com/mdnoor786/LionX)\n"
+        fuking_text += "**[Gɪᴛʜᴜʙ Rᴇᴘᴏsɪᴛᴏʀʏ](https://github.com/mdnoor786/Lion-X)\n"
         await borg.send_file(alive.chat_id, ALV_PIC, caption=theshashank, link_preview=False)
         await alive.delete()
       """  For .alive command, check if the bot is running"""
