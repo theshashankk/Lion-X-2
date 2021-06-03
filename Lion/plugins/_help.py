@@ -73,7 +73,7 @@ async def cmd_list(event):
         else:
             help_string = f"""`ℓισи υв нєℓρ мєиυ ρяσνι∂є∂ ву [тєαм ℓισи υв](t.me/TeamLionUB) fσя {DEFAULTUSER}()`**\n
 
-ɪғ ɪɴ ᴄᴀsᴇ Pᴏᴘ-Uᴘ ᴅᴏᴇsɴ'ᴛ ᴀᴘᴘᴇᴀʀ Tʜᴀɴ ᴜ ᴄᴀɴ ᴜsᴇ `.help plugin name`.."""
+ɪғ ɪɴ ᴄᴀsᴇ ʜᴇʟᴘ ᴍᴇɴᴜ ᴅᴏᴇsɴ'ᴛ ᴀᴘᴘᴇᴀʀ Tʜᴀɴ ᴜ ᴄᴀɴ ᴜsᴇ `.help plugin name`.."""
             try:
                 results = await bot.inline_query(  # pylint:disable=E0602
                     tgbotusername, help_string
