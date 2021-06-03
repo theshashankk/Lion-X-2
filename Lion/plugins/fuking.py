@@ -10,6 +10,14 @@ from Lion import ALIVE_NAME, CMD_HELP
 from Lion.__init__ import StartTime
 from Lion.LionConfig import Config, Var
 
+from math import ceil
+import json
+import random
+import re
+from telethon import events, errors, custom
+import io
+from platform import python_version, uname
+
 # ======CONSTANTS=========#
 CUSTOM_ALIVE = (
     Var.CUSTOM_ALIVE
