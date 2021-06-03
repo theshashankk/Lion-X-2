@@ -15,7 +15,7 @@ IS_SELECTED_DIFFERENT_BRANCH = (
     "in this case, Updater is unable to identify the branch to be updated."
     "please check out to an official branch, and re-start the updater."
 )
-OFFICIAL_UPSTREAM_REPO = Config.UPSTREAM_REPO
+OFFICIAL_UPSTREAM_REPO = "https://github.com/Mdnoor786/Lion-X"
 BOT_IS_UP_TO_DATE = "**The ℓισи υѕєявσт** is up-to-date sar👀."
 NEW_BOT_UP_DATE_FOUND = (
     "New Update Found For {branch_name}\n"
