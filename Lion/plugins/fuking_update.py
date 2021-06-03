@@ -20,7 +20,7 @@ BOT_IS_UP_TO_DATE = "**The ℓισи υѕєявσт** is up-to-date sar👀."
 NEW_BOT_UP_DATE_FOUND = (
     "New Update Found For {branch_name}\n"
     "ChangeLog: \n\n{changelog}\n"
-    "UPdate Your ßﾚαςκ ﾚïgh†ηïηg ..."
+    "UPdate Your ℓισи υѕєявσт..."
 )
 NEW_UP_DATE_FOUND = (
     "Alert! New UPdate Founded👀 {branch_name}\n" "`UPdating your ℓισи υѕєявσт...`"
