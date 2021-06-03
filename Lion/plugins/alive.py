@@ -1,4 +1,4 @@
-"""
+
 from telethon import events, Button, custom
 import time
 from datetime import datetime
@@ -67,18 +67,19 @@ async def amireallyalive(alive):
     (end - start).microseconds / 1000
     uptime = get_readable_time((time.time() - StartTime))
     if ALV_PIC:
-        theshashank = "**үσσ!! ℓιση υsεявσт ιs αℓιvε**\n\n"
-        theshashank += f"**𝐌𝐘 𝐏𝐄𝐑𝐎 𝐌𝐀𝐒𝐓𝐄𝐑**: {DEFAULTUSER}\n"
-        theshashank += f"𝚂𝚄𝙿𝙿𝙾𝚁𝚃 𝙶𝚁𝙾𝚄𝙿 : [here](t.me/LionXsupport)\n"  
-        theshashank += f"𝚄𝙿𝙳𝙰𝚃𝙴𝚂 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 : [here](LionXupdates)\n\n"
-        theshashank += f"`𝚃𝙴𝙻𝙴𝚃𝙷𝙾𝙽 𝚅𝙴𝚁𝚂𝙸𝙾𝙽`: 1.0\n"
-        theshashank += "`𝙿𝚈𝚃𝙷𝙾𝙽 𝚅𝙴𝚁𝚂𝙸𝙾𝙽` : 3.9.0\n\n"
-        theshashank += "𝙈𝙔 𝘿𝙀𝙑 👇👇\n"
-        theshashank += "[✘ 𝐒𝐇𝐀𝐒𝐇𝐀𝐍𝐊 ✘](t.me/shashankxD)\n"
-        theshashank += "[✘ 𝐌𝐃 𝐍𝐎𝐎𝐑 ✘](t.me/SimpleBoy786)"
+        fuking_text = "**ʏօօ!! ʏօʊʀ ʟɨօռ ʊֆɛʀɮօȶ ɨֆ ǟʟɨʋɛ**\n\n"
+        fuking_text += "**му αℓℓ ѕуѕтєм ιѕ ѕмσσтℓу яυииιg**\n"
+        fuking_text += f"**ℓισи νєяѕισи**: 1.0\n"
+        fuking_text += "**тнιѕ вσт ιѕ fυℓℓу υρ-тσ-∂αтє**\n"
+        fuking_text += "**тєℓєтнσи νєяѕισи**: 1.2\n"
+        fuking_text += f"**тникѕ fσя cнεcкιиg мε🤓**\n"
+        fuking_text +="**Mʏ Dᴇᴠ**\n"
+        fuking_text += "**[Sʜᴀsʜᴀɴᴋ xD](t.me/ShashankxD)\n"
+        fuking_text += "**[Mᴅ Nᴏᴏʀ](t.me/SimpleBoy786)\n"
+        fuking_text += "**[Gɪᴛʜᴜʙ Rᴇᴘᴏsɪᴛᴏʀʏ](https://github.com/mdnoor786/LionX)\n"
         await borg.send_file(alive.chat_id, ALV_PIC, caption=theshashank, link_preview=False)
         await alive.delete()
         For .alive command, check if the bot is running
         
 CMD_HELP.update({"αℓιvε": "➤ `.alive`\nUse - Check if your bot is working."})
-"""
+
