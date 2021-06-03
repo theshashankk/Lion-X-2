@@ -62,7 +62,7 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "ℓιση υsεя"
 async def amireallyalive(alive):
     start = datetime.now()
     myid = bot.uid
-    """ For .alive command, check if the bot is running.  """
+    For .alive command, check if the bot is running.
     end = datetime.now()
     (end - start).microseconds / 1000
     uptime = get_readable_time((time.time() - StartTime))
