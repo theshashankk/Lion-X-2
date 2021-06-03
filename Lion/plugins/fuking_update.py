@@ -6,7 +6,7 @@ import git
 from git import Repo
 from git.exc import GitCommandError, InvalidGitRepositoryError, NoSuchPathError
 from Lion.LionConfig import Config
-from Lion.utils import CMD_HELP
+from Lion import CMD_HELP
 
 # -- Constants -- #
 IS_SELECTED_DIFFERENT_BRANCH = (
