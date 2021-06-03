@@ -100,4 +100,5 @@ async def amireallyalive(alive):
 @Lion.on(admin_cmd(outgoing=True, pattern="repo"))
 async def repo(event):
   await borg.send_message(event.chat, "Rᴇᴘᴏsɪᴛᴏʀʏ ᴏғ ʟɪᴏɴ ᴜsᴇʀʙᴏᴛ", buttons=[[Button.url("✨Rᴇᴘᴏsɪᴛᴏʀʏ✨", "https://github.com/mdnoor786/LionX-UB")]])
+    
     CMD_HELP.update({"αℓιvε": "➤ `.alive`\nUse - Check if your bot is working."})
