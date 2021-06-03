@@ -22,6 +22,11 @@ if Config.SUDO_USERS:
     sudo = "Enabled"
 else:
     sudo = "Disabled"
+    
+fuking_bot = (
+    Var.TG_BOT_USER_NAME_BF_HER
+    if Var.TG_BOT_USER_NAME_BF_HER
+    else "ℓισи υѕєявσт"
 # ======CONSTANTS=========#
 
 
