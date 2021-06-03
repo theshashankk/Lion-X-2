@@ -5,7 +5,7 @@ import sys
 import git
 from git import Repo
 from git.exc import GitCommandError, InvalidGitRepositoryError, NoSuchPathError
-from Lion.LLionConfig import Config
+from Lion.LionConfig import Config
 from Lion.utils import CMD_HELP
 
 # -- Constants -- #
