@@ -36,4 +36,4 @@ async def leave(e):
             await e.edit("`This is Not A Chat. Please use this in groups :/`")
 
 
-CMD_HELP.update({"bye": ".bye\nUse - Leave the group."})
+CMD_HELP.update({"bye": ".kickme\nUse - Leave the group."})
