@@ -10,7 +10,7 @@
     <a href="https://pypi.org/project/Telethon/"> <img src="https://img.shields.io/pypi/v/telethon?color=yellow&label=telethon&logo=python&logoColor=green&style=for-the-badge" /></a>
 </p>
 
-![hinata](https://user-images.githubusercontent.com/78837537/120152150-c37ad280-c20a-11eb-92ce-64b9124b05ed.jpg)
+Lion-X Logo = ./Lion-X Logo
 
 <a href="https://t.me/LionXupdates"><img src="https://img.shields.io/badge/Join-Updates%20Channel-536eff.svg?style=for-the-badge&logo=Telegram"></a>
 <a href="https://t.me/LionXsupport"><img src="https://img.shields.io/badge/Join-Support%20Group-536eff.svg?style=for-the-badge&logo=Telegram"></a>
