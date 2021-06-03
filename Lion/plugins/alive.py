@@ -78,7 +78,7 @@ async def amireallyalive(alive):
         fuking_text += f"**ᴘᴇʀᴏ ᴍᴀsᴛᴇʀ** : [{DEFAULTUSER}](tg://user?id={tag})\n"
         fuking_text += "**sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ** :[ʜᴇʀᴇ](t.me/LionXsupport)\n"
         fuking_text += "**ᴛᴇᴀᴍ ʟɪᴏɴ** :[ʜᴇʀᴇ](t.me/TeamLionUB)"
-        await borg.send_file(alive.chat_id, ALV_PIC, caption=fuking_text, link_preview=False)          """#Dont replace repo with real one tilk userbot not complete"""
+        await borg.send_file(alive.chat_id, ALV_PIC, caption=fuking_text, link_preview=False)          #Dont replace repo with real one tilk userbot not complete
         await alive.delete()
         """ For .alive command, check if the bot is running.  """
         
