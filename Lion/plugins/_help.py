@@ -71,9 +71,7 @@ async def cmd_list(event):
             else:
                 await event.edit(input_str + " 𝙸𝚂 𝙽𝙾𝚃 𝙰 𝚅𝙰𝙻𝙸𝙳 𝙿𝙻𝚄𝙶𝙸𝙽!!")
         else:
-            help_string = f"""`ℓισи υв нєℓρ мєиυ ρяσνι∂є∂ ву [тєαм ℓισи υв](t.me/TeamLionUB) fσя {DEFAULTUSER}`**\n
-
-ɪғ ɪɴ ᴄᴀsᴇ ʜᴇʟᴘ ᴍᴇɴᴜ ᴅᴏᴇsɴ'ᴛ ᴀᴘᴘᴇᴀʀ Tʜᴀɴ ᴜ ᴄᴀɴ ᴜsᴇ `.help plugin name`.."""
+            help_string = f"""`ℓισи υв нєℓρ мєиυ ρяσνι∂є∂ ву [тєαм ℓισи υв](t.me/TeamLionUB) fσя {DEFAULTUSER}`**\nɪғ ɪɴ ᴄᴀsᴇ ʜᴇʟᴘ ᴍᴇɴᴜ ᴅᴏᴇsɴ'ᴛ ᴀᴘᴘᴇᴀʀ Tʜᴀɴ ᴜ ᴄᴀɴ ᴜsᴇ `.help plugin name`"""
             try:
                 results = await bot.inline_query(  # pylint:disable=E0602
                     tgbotusername, help_string
