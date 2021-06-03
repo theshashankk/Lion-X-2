@@ -73,7 +73,7 @@ async def amireallyalive(alive):
         fuking_text += "**ʟɪᴏɴ ᴠᴇʀsɪᴏɴ** : `0.02.0`\n"
         fuking_text += f"**ʟᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ** : `{version.__version__}`\n"
         fuking_text += f"**ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ** : `{platform.python_version()}`\n"
-        fuking_text += "**ᴛʜɪs Bᴏᴛ ɪs ᴜᴘ-ᴛᴏ-ᴅᴀᴛᴇ...\n"
+        fuking_text += "**ᴛʜɪs Bᴏᴛ ɪs ᴜᴘ-ᴛᴏ-ᴅᴀᴛᴇ...**\n"
         fuking_text += f"**ʜᴇʀᴏᴋᴜ sᴛᴀᴛᴜs** : `cσииєcтє∂`\n"
         fuking_text += f"**ᴘᴇʀᴏ ᴍᴀsᴛᴇʀ** : [{DEFAULTUSER}](tg://user?id={tag})\n"
         fuking_text += "**sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ** :[ʜᴇʀᴇ](t.me/LionXsupport)\n"
