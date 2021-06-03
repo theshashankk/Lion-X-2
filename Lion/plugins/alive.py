@@ -17,7 +17,7 @@ CUSTOM_ALIVE = (
     if Var.CUSTOM_ALIVE
     else "Hey! I'm alive. All systems online and functioning normally!"
 )
-ALV_PIC = Var.ALIVE_PIC if Var.ALIVE_PIC else "https://telegra.ph/file/bfa06df35913425dbcbc1.jpg"
+ALV_PIC = Var.ALIVE_PIC if Var.ALIVE_PIC else "https://telegra.ph/file/af3b74010808a26480693.jpg"
 telemoji = Var.CUSTOM_ALIVE_EMOJI if Var.CUSTOM_ALIVE_EMOJI else "**✵**"
 if Config.SUDO_USERS:
     sudo = "Enabled"
@@ -69,13 +69,13 @@ async def amireallyalive(alive):
     uptime = get_readable_time((time.time() - StartTime))
     if ALV_PIC:
         fuking_text = "**ʏօօ!! ʟɨօռ ʊֆɛʀɮօȶ ɨֆ ǟʟɨʋɛ**\n\n"
-        fuking_text += "**Aʟʟ sʏsᴛᴇᴍs ᴡᴏʀᴋɪɴɢ ᴘʀᴏᴘᴇʀʟʏ...🤓**\n\n"
-        fuking_text += f"**Lɪᴏɴ Vᴇʀsɪᴏɴ** : `1.0`\n\n"
-        fuking_text += f"**Pᴇʀᴏ Mᴀsᴛᴇʀ** : [Pᴇʀᴏ](https://t.me/tg://user?id={tag})\n\n"
-        fuking_text += "**Tʜɪs Bᴏᴛ ɪs ᴜᴘ-ᴛᴏ-ᴅᴀᴛᴇ...**\n\n"
-        fuking_text += "**Tᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ** : `1.20`\n\n"
-        fuking_text += "**Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ** :[ʜᴇʀᴇ](LionXsupport)\n\n"
-        fuking_text += "**Tᴇᴀᴍ Lɪᴏɴ** :[ʜᴇʀᴇ](TeamLionUB)"
+        fuking_text += "**Aʟʟ sʏsᴛᴇᴍs ᴡᴏʀᴋɪɴɢ ᴘʀᴏᴘᴇʀʟʏ...🤓**\n"
+        fuking_text += f"**Lɪᴏɴ Vᴇʀsɪᴏɴ** : `1.0`\n"
+        fuking_text += f"**Pᴇʀᴏ Mᴀsᴛᴇʀ** : [Pᴇʀᴏ](https://t.me/tg://user?id={tag})\n"
+        fuking_text += "**Tʜɪs Bᴏᴛ ɪs ᴜᴘ-ᴛᴏ-ᴅᴀᴛᴇ...**\n"
+        fuking_text += "**Tᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ** : `1.20`\n"
+        fuking_text += "**Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ** :[ʜᴇʀᴇ](t.me/LionXsupport)\n"
+        fuking_text += "**Tᴇᴀᴍ Lɪᴏɴ** :[ʜᴇʀᴇ](t.me/TeamLionUB)"
         await borg.send_file(alive.chat_id, ALV_PIC, caption=fuking_text, link_preview=False)          #Dont replace repo with real one tilk userbot not complete
         await alive.delete()
         """ For .alive command, check if the bot is running.  """
