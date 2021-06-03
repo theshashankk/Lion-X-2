@@ -1,3 +1,4 @@
+"""
 from telethon import events, Button, custom
 import time
 from datetime import datetime
@@ -77,6 +78,7 @@ async def amireallyalive(alive):
         theshashank += "[✘ 𝐌𝐃 𝐍𝐎𝐎𝐑 ✘](t.me/SimpleBoy786)"
         await borg.send_file(alive.chat_id, ALV_PIC, caption=theshashank, link_preview=False)
         await alive.delete()
-        """ For .alive command, check if the bot is running.  """
+        For .alive command, check if the bot is running
         
 CMD_HELP.update({"αℓιvε": "➤ `.alive`\nUse - Check if your bot is working."})
+"""
