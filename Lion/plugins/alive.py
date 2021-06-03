@@ -56,6 +56,7 @@ def get_readable_time(seconds: int) -> str:
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "ℓιση υsεя"
 
+tag = borg.uid
 
 @Lion.on(admin_cmd(outgoing=True, pattern="alive"))
 @Lion.on(sudo_cmd(outgoing=True, pattern="alive", allow_sudo=True))
@@ -77,7 +78,7 @@ async def amireallyalive(alive):
         fuking_text += "**[Sʜᴀsʜᴀɴᴋ xD](t.me/ShashankxD)\n\n"
         fuking_text += "**[Mᴅ Nᴏᴏʀ](t.me/SimpleBoy786)\n\n"
         fuking_text += "**[Gɪᴛʜᴜʙ Rᴇᴘᴏsɪᴛᴏʀʏ](https://github.com/mdnoor786/LionX)\n\n"
-        fuking_button = [[Button.url("Mᴀsᴛᴇʀ", f"https://t.me/{bot.me.username}"), Button.url(f"{BOT} Rᴇᴘᴏ", "https://github.com/mdnoor786/LionX")]]
+        fuking_button = [[Button.url("Mᴀsᴛᴇʀ", f"https://t.me/tg://user?id={tag}"), Button.url(f"{BOT} Rᴇᴘᴏ", "https://github.com/mdnoor786/LionX")]]
         await borg.send_file(alive.chat_id, ALV_PIC, caption=fuking_text, buttons=fuking_button, link_preview=False)          #Dont replace repo with real one tilk userbot not complete
         await alive.delete()
         """ For .alive command, check if the bot is running.  """
