@@ -68,16 +68,17 @@ async def amireallyalive(alive):
     uptime = get_readable_time((time.time() - StartTime))
     if ALV_PIC:
         fuking_text = "**ʏօօ!! ʏօʊʀ ʟɨօռ ʊֆɛʀɮօȶ ɨֆ ǟʟɨʋɛ**\n\n"
-        fuking_text += "**му αℓℓ ѕуѕтєм ιѕ ѕмσσтℓу яυииιg**\n"
-        fuking_text += f"**ℓισи νєяѕισи**: 1.0\n"
-        fuking_text += "**тнιѕ вσт ιѕ fυℓℓу υρ-тσ-∂αтє**\n"
-        fuking_text += "**тєℓєтнσи νєяѕισи**: 1.2\n"
-        fuking_text += f"**тникѕ fσя cнεcкιиg мε🤓**\n"
-        fuking_text +="**Mʏ Dᴇᴠ**\n"
-        fuking_text += "**[Sʜᴀsʜᴀɴᴋ xD](t.me/ShashankxD)\n"
-        fuking_text += "**[Mᴅ Nᴏᴏʀ](t.me/SimpleBoy786)\n"
-        fuking_text += "**[Gɪᴛʜᴜʙ Rᴇᴘᴏsɪᴛᴏʀʏ](https://github.com/mdnoor786/LionX)\n"
-        await borg.send_file(alive.chat_id, ALV_PIC, caption=fuking_text, link_preview=False)
+        fuking_text += "**му αℓℓ ѕуѕтєм ιѕ ѕмσσтℓу яυииιg**\n\n"
+        fuking_text += f"**ℓισи νєяѕισи**: 1.0\n\n"
+        fuking_text += "**тнιѕ вσт ιѕ fυℓℓу υρ-тσ-∂αтє**\n\n"
+        fuking_text += "**тєℓєтнσи νєяѕισи**: 1.2\n\n"
+        fuking_text += f"**тникѕ fσя cнεcкιиg мε🤓**\n\n"
+        fuking_text +="**𝐌𝐘 𝐃𝐄𝐕**\n\n"
+        fuking_text += "**[Sʜᴀsʜᴀɴᴋ xD](t.me/ShashankxD)\n\n"
+        fuking_text += "**[Mᴅ Nᴏᴏʀ](t.me/SimpleBoy786)\n\n"
+        fuking_text += "**[Gɪᴛʜᴜʙ Rᴇᴘᴏsɪᴛᴏʀʏ](https://github.com/mdnoor786/LionX)\n\n"
+        fuking_button = [[Button.url("Mᴀsᴛᴇʀ", f"https://t.me/{bot.me.username}"), Button.url(f"{BOT} Rᴇᴘᴏ", "https://github.com/mdnoor786/LionX")]]
+        await borg.send_file(alive.chat_id, ALV_PIC, caption=fuking_text, buttons=fuking_button, link_preview=False)          #Dont replace repo with real one tilk userbot not complete
         await alive.delete()
         """ For .alive command, check if the bot is running.  """
         
