@@ -77,7 +77,7 @@ async def amireallyalive(alive):
     if ALV_PIC:
         fuking_text = f"**{CUSTOM_ALIVE)**\n\n"
         fuking_text += "**ᴀʟʟ sʏsᴛᴇᴍs ᴡᴏʀᴋɪɴɢ ᴘʀᴏᴘᴇʀʟʏ...🤓**\n"
-        fuking_text += "**ʟɪᴏɴ ᴠᴇʀsɪᴏɴ** : 0.02.0\n"
+        fuking_text += "**ʟɪᴏɴ ᴠᴇʀsɪᴏɴ** : `0.02.0`\n"
         fuking_text += f"**ʟᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ** : `{version.__version__}`\n"
         fuking_text += f"**ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ** : `{platform.python_version()}`\n"
         fuking_text += "**ᴛʜɪs Bᴏᴛ ɪs ᴜᴘ-ᴛᴏ-ᴅᴀᴛᴇ...**\n"
