@@ -68,18 +68,15 @@ async def amireallyalive(alive):
     (end - start).microseconds / 1000
     uptime = get_readable_time((time.time() - StartTime))
     if ALV_PIC:
-        fuking_text = "**ʏօօ!! ʏօʊʀ ʟɨօռ ʊֆɛʀɮօȶ ɨֆ ǟʟɨʋɛ**\n\n"
-        fuking_text += "**му αℓℓ ѕуѕтєм ιѕ ѕмσσтℓу яυииιg**\n\n"
-        fuking_text += f"**ℓισи νєяѕισи**: 1.0\n\n"
-        fuking_text += "**тнιѕ вσт ιѕ fυℓℓу υρ-тσ-∂αтє**\n\n"
-        fuking_text += "**тєℓєтнσи νєяѕισи**: 1.2\n\n"
-        fuking_text += f"**тникѕ fσя cнεcкιиg мε🤓**\n\n"
-        fuking_text +="**𝐌𝐘 𝐃𝐄𝐕**\n\n"
-        fuking_text += "**[Sʜᴀsʜᴀɴᴋ xD](t.me/ShashankxD)\n\n"
-        fuking_text += "**[Mᴅ Nᴏᴏʀ](t.me/SimpleBoy786)\n\n"
-        fuking_text += "**[Gɪᴛʜᴜʙ Rᴇᴘᴏsɪᴛᴏʀʏ](https://github.com/mdnoor786/LionX)\n\n"
-        fuking_button = [[Button.url("Mᴀsᴛᴇʀ", f"https://t.me/tg://user?id={tag}"), Button.url(f"Rᴇᴘᴏ", "https://github.com/mdnoor786/LionX")]]
-        await borg.send_file(alive.chat_id, ALV_PIC, caption=fuking_text, buttons=fuking_button, link_preview=False)          #Dont replace repo with real one tilk userbot not complete
+        fuking_text = "**ʏօօ!! ʟɨօռ ʊֆɛʀɮօȶ ɨֆ ǟʟɨʋɛ**\n\n"
+        fuking_text += "**Aʟʟ sʏsᴛᴇᴍs ᴡᴏʀᴋɪɴɢ ᴘʀᴏᴘᴇʀʟʏ...🤓**\n\n"
+        fuking_text += f"**Lɪᴏɴ Vᴇʀsɪᴏɴ** : `1.0`\n\n"
+        fuking_text += f"**Pᴇʀᴏ Mᴀsᴛᴇʀ** : @{bot.me.username}\n\n"
+        fuking_text += "**Tʜɪs Bᴏᴛ ɪs ᴜᴘ-ᴛᴏ-ᴅᴀᴛᴇ...**\n\n"
+        fuking_text += "**Tᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ** : `1.20`\n\n"
+        fuking_text += "**Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ** :[ʜᴇʀᴇ](LionXsupport)\n\n"
+        fuking_text += "**Tᴇᴀᴍ Lɪᴏɴ** :[ʜᴇʀᴇ](TeamLionUB)"
+        await borg.send_file(alive.chat_id, ALV_PIC, caption=fuking_text, link_preview=False)          #Dont replace repo with real one tilk userbot not complete
         await alive.delete()
         """ For .alive command, check if the bot is running.  """
         
