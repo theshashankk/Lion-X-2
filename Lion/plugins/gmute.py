@@ -29,13 +29,13 @@ async def startgmute(event):
     event.chat_id
     await event.get_chat()
     if is_muted(userid, "gmute"):
-        return await eor(event, "This user is already gmuted")
+        return await eor(event, "тнιѕ υѕєя ιѕ αℓяєα∂у gмυтє∂")
     try:
         mute(userid, "gmute")
     except Exception as e:
         await eor(event, "Error occured!\nError is " + str(e))
     else:
-        await eor(event, "Silence now. **Successfully gmuted that person**")
+        await eor(event, "Silence now. **ѕυ¢¢єѕѕfυℓℓу fυ¢кє∂ тнιѕ иιggα мσυтн**")
 
 
 @Lion.on(admin_cmd(outgoing=True, pattern=r"ungmute ?(\d+)?"))
@@ -62,13 +62,13 @@ async def endgmute(event):
         )
     event.chat_id
     if not is_muted(userid, "gmute"):
-        return await eor(event, "This user is not gmuted")
+        return await eor(event, "тнιѕ υѕєя ιѕ иσт gмυтє∂")
     try:
         unmute(userid, "gmute")
     except Exception as e:
         await eor(event, "Error occured!\nError is " + str(e))
     else:
-        await eor(event, "Successfully ungmuted that person")
+        await eor(event, "ѕυ¢¢єѕѕfυℓℓу ∂σиє уσυя тσ∂αу fυ¢к иσω gσ")
 
 
 @command(incoming=True)
