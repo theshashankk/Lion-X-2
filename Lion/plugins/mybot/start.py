@@ -118,8 +118,6 @@ async def owner(event):
                                                 data="telebroad")],
                                  [Button.url("Lɪᴏɴ Sᴜᴘᴘᴏʀᴛ",
                                              url="https://t.me/LionSupport")]
-                                 [Button.url("Tᴇᴀᴍ Lɪᴏɴ",
-                                             url="t.me/TeamLionUB")]
                              ])
 
 
