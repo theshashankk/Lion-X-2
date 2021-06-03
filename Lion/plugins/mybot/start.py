@@ -111,13 +111,15 @@ async def owner(event):
                              startowner,
                              buttons=[
                                  [Button.inline(
-                                     "Settings ⚙️", data="settings"),
+                                     "Sᴇᴛᴛɪɴɢs ⚙️", data="settings"),
                                   Button.inline(
-                                     "Stats ⚙️", data="stats")],
-                                 [Button.inline("Broadcast",
+                                     "Sᴛᴀᴛs ⚙️", data="stats")],
+                                 [Button.inline("Bʀᴏᴀᴅᴄᴀsᴛ",
                                                 data="telebroad")],
-                                 [Button.url("Support",
+                                 [Button.url("Lɪᴏɴ Sᴜᴘᴘᴏʀᴛ",
                                              url="https://t.me/LionSupport")]
+                                 [Button.url("Tᴇᴀᴍ Lɪᴏɴ",
+                                             url="t.me/TeamLionUB")]
                              ])
 
 
