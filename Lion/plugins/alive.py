@@ -76,15 +76,15 @@ async def amireallyalive(alive):
     uptime = get_readable_time((time.time() - StartTime))
     if ALV_PIC:
         fuking_text = f"**{CUSTOM_ALIVE)**\n\n"
-        fuking_text += "**Aʟʟ sʏsᴛᴇᴍs ᴡᴏʀᴋɪɴɢ ᴘʀᴏᴘᴇʀʟʏ...🤓**\n"
-        fuking_text += f"**Lɪᴏɴ Vᴇʀsɪᴏɴ** : `0.02.0`\n"
-        fuking_text += f"**Tᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ** : `{version.__version__}`\n"
-        fuking_text += f"**Pʏᴛʜᴏɴ Vᴇʀsɪᴏɴ** : `{platform.python_version()}`
-        fuking_text += "**Tʜɪs Bᴏᴛ ɪs ᴜᴘ-ᴛᴏ-ᴅᴀᴛᴇ...**\n"
-        fuking_text += f"**Hᴇʀᴏᴋᴜ sᴛᴀᴛᴜs**: ** {herokurk} **\n"
-        fuking_text += f"**Pᴇʀᴏ Mᴀsᴛᴇʀ** : [{DEFAULTUSER}](tg://user?id={tag})\n"
-        fuking_text += "**Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ** :[ʜᴇʀᴇ](t.me/LionXsupport)\n"
-        fuking_text += "**Tᴇᴀᴍ Lɪᴏɴ** :[ʜᴇʀᴇ](t.me/TeamLionUB)"
+        fuking_text += "**ᴀʟʟ sʏsᴛᴇᴍs ᴡᴏʀᴋɪɴɢ ᴘʀᴏᴘᴇʀʟʏ...🤓**\n"
+        fuking_text += f"**ʟɪᴏɴ ᴠᴇʀsɪᴏɴ** : `0.02.0`\n"
+        fuking_text += f"**ʟᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ** : `{version.__version__}`\n"
+        fuking_text += f"**ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ** : `{platform.python_version()}`
+        fuking_text += "**ᴛʜɪs Bᴏᴛ ɪs ᴜᴘ-ᴛᴏ-ᴅᴀᴛᴇ...**\n"
+        fuking_text += f"**ʜᴇʀᴏᴋᴜ sᴛᴀᴛᴜs**: ** {herokurk} **\n"
+        fuking_text += f"**ᴘᴇʀᴏ ᴀsᴛᴇʀ** : [{DEFAULTUSER}](tg://user?id={tag})\n"
+        fuking_text += "**sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ** :[ʜᴇʀᴇ](t.me/LionXsupport)\n"
+        fuking_text += "**ᴛᴇᴀᴍ ʟɪᴏɴ** :[ʜᴇʀᴇ](t.me/TeamLionUB)"
         await borg.send_file(alive.chat_id, ALV_PIC, caption=fuking_text, link_preview=False)          """#Dont replace repo with real one tilk userbot not complete"""
         await alive.delete()
         """ For .alive command, check if the bot is running.  """
