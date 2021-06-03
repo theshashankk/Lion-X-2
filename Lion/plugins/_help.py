@@ -21,7 +21,7 @@ from Lion.LionConfig import Config
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Lion User"
 CMD_HNDLR = Config.CMD_HNDLR
-CUSTOM_HELP_EMOJI = os.environ.get("CUSTOM_HELP_EMOJI", "🇮🇳")
+CUSTOM_HELP_EMOJI = os.environ.get("CUSTOM_HELP_EMOJI", "⫸")
 
 if CMD_HNDLR is None:
     CMD_HNDLR = "."
@@ -71,7 +71,9 @@ async def cmd_list(event):
             else:
                 await event.edit(input_str + " 𝙸𝚂 𝙽𝙾𝚃 𝙰 𝚅𝙰𝙻𝙸𝙳 𝙿𝙻𝚄𝙶𝙸𝙽!!")
         else:
-            help_string = f"""`𝙻𝙸𝙾𝙽 𝚄𝙱 𝙷𝙴𝙻𝙿𝙴𝚁 𝙵𝙾𝚁 {DEFAULTUSER} 𝚃𝙾 𝚁𝙴𝚅𝙴𝙰𝙻 𝙰𝙻𝙻 𝚃𝙷𝙴 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂 𝙾𝙵 `**[Lion](t.me/LionXsupport)**\n\n"""
+            help_string = f"""`ℓισи υв нєℓρ мєиυ ρяσνι∂є∂ ву [тєαм ℓισи υв](t.me/TeamLionUB) fσя {DEFAULTUSER}()`**\n
+
+ɪғ ɪɴ ᴄᴀsᴇ Pᴏᴘ-Uᴘ ᴅᴏᴇsɴ'ᴛ ᴀᴘᴘᴇᴀʀ Tʜᴀɴ ᴜ ᴄᴀɴ ᴜsᴇ `.help plugin name`.."""
             try:
                 results = await bot.inline_query(  # pylint:disable=E0602
                     tgbotusername, help_string
