@@ -70,10 +70,10 @@ async def amireallyalive(alive):
     if ALV_PIC:
         fuking_text = "**ʏօօ!! ʟɨօռ ʊֆɛʀɮօȶ ɨֆ ǟʟɨʋɛ**\n\n"
         fuking_text += "**Aʟʟ sʏsᴛᴇᴍs ᴡᴏʀᴋɪɴɢ ᴘʀᴏᴘᴇʀʟʏ...🤓**\n"
-        fuking_text += f"**Lɪᴏɴ Vᴇʀsɪᴏɴ** : `1.0`\n"
+        fuking_text += f"**Lɪᴏɴ Vᴇʀsɪᴏɴ** : `0.02.0`\n"
         fuking_text += f"**Pᴇʀᴏ Mᴀsᴛᴇʀ** : [Pᴇʀᴏ](https://t.me/tg://user?id={tag})\n"
         fuking_text += "**Tʜɪs Bᴏᴛ ɪs ᴜᴘ-ᴛᴏ-ᴅᴀᴛᴇ...**\n"
-        fuking_text += "**Tᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ** : `1.20`\n"
+        fuking_text += "**Tᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ** : `1.21.1`\n"
         fuking_text += "**Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ** :[ʜᴇʀᴇ](t.me/LionXsupport)\n"
         fuking_text += "**Tᴇᴀᴍ Lɪᴏɴ** :[ʜᴇʀᴇ](t.me/TeamLionUB)"
         await borg.send_file(alive.chat_id, ALV_PIC, caption=fuking_text, link_preview=False)          #Dont replace repo with real one tilk userbot not complete
