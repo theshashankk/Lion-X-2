@@ -77,10 +77,8 @@ async def amireallyalive(alive):
         fuking_text += "**[Sʜᴀsʜᴀɴᴋ xD](t.me/ShashankxD)\n"
         fuking_text += "**[Mᴅ Nᴏᴏʀ](t.me/SimpleBoy786)\n"
         fuking_text += "**[Gɪᴛʜᴜʙ Rᴇᴘᴏsɪᴛᴏʀʏ](https://github.com/mdnoor786/LionX)\n"
-        """ For .alive command, check if the bot is running.  """
         await borg.send_file(alive.chat_id, ALV_PIC, caption=theshashank, link_preview=False)
         await alive.delete()
-         
+        """ For .alive command, check if the bot is running.  """
         
 CMD_HELP.update({"αℓιvε": "➤ `.alive`\nUse - Check if your bot is working."})
-
