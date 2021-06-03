@@ -6,7 +6,7 @@ from io import BytesIO
 import requests
 from PIL import Image
 
-from Lion import ALIVE_NAME, CMD_HELP, lionver
+from Lion import ALIVE_NAME, CMD_HELP
 from Lion.__init__ import StartTime
 from Lion.LionConfig import Config, Var
 
@@ -100,4 +100,4 @@ async def amireallyalive(alive):
 @Lion.on(admin_cmd(outgoing=True, pattern="repo"))
 async def repo(event):
   await borg.send_message(event.chat, "Rᴇᴘᴏsɪᴛᴏʀʏ ᴏғ ʟɪᴏɴ ᴜsᴇʀʙᴏᴛ", buttons=[[Button.url("✨Rᴇᴘᴏsɪᴛᴏʀʏ✨", "https://github.com/mdnoor786/LionX-UB")]])
-    
+    CMD_HELP.update({"αℓιvε": "➤ `.alive`\nUse - Check if your bot is working."})
