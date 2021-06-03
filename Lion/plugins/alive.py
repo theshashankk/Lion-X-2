@@ -62,7 +62,7 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "ℓιση υsεя"
 async def amireallyalive(alive):
     start = datetime.now()
     myid = bot.uid
-    For .alive command, check if the bot is running.
+  """  For .alive command, check if the bot is running."""
     end = datetime.now()
     (end - start).microseconds / 1000
     uptime = get_readable_time((time.time() - StartTime))
@@ -79,7 +79,7 @@ async def amireallyalive(alive):
         fuking_text += "**[Gɪᴛʜᴜʙ Rᴇᴘᴏsɪᴛᴏʀʏ](https://github.com/mdnoor786/LionX)\n"
         await borg.send_file(alive.chat_id, ALV_PIC, caption=theshashank, link_preview=False)
         await alive.delete()
-        For .alive command, check if the bot is running
+      """  For .alive command, check if the bot is running"""
         
 CMD_HELP.update({"αℓιvε": "➤ `.alive`\nUse - Check if your bot is working."})
 
