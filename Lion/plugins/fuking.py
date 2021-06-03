@@ -10,13 +10,6 @@ from Lion import ALIVE_NAME, CMD_HELP
 from Lion.__init__ import StartTime
 from Lion.LionConfig import Config, Var
 
-from math import ceil
-import json
-import random
-import re
-from telethon import events, errors, custom
-import io
-from platform import python_version, uname
 
 # ======CONSTANTS=========#
 CUSTOM_ALIVE = (
@@ -80,9 +73,11 @@ async def amireallyalive(alive):
         fuking_text += "**тнιѕ вσт ιѕ fυℓℓу υρ-тσ-∂αтє**\n"
         fuking_text += "**тєℓєтнσи νєяѕισи**: 1.2\n"
         fuking_text += f"**тникѕ fσя cнεcкιиg мε🤓**\n"
-        fuking_button = [[Custom.Button.inline("Mʏ ᴅᴇᴠ✨", "https://github.com/Mdnoor786/Lion-X/graphs/contributors"")]]
-        fuking_button += [[Custom.Button.inline("Rᴇᴘᴏsɪᴛᴏʀʏ", "https://github.com/Mdnoor786/Lion-X")]]
-        await borg.send_file(event.chat_id, ALV_PIC, captions=fuking_text, buttons=fuking_button)
+        fuking_text +="**Mʏ Dᴇᴠ**\n"
+        fuking_text += "**[Sʜᴀsʜᴀɴᴋ xD](t.me/ShashankxD)\n"
+        fuking_text += "**[Mᴅ Nᴏᴏʀ](t.me/SimpleBoy786)\n"
+        fuking_text += "**[Gɪᴛʜᴜʙ Rᴇᴘᴏsɪᴛᴏʀʏ](https://github.com/mdnoor786/LionX)\n"
+        await borg.send_file(event.chat_id, ALV_PIC, captions=fuking_text, link_preview=False)
         await alive.delete()
   
 
