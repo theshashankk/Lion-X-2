@@ -71,7 +71,7 @@ async def amireallyalive(alive):
         fuking_text = "**ʏօօ!! ʟɨօռ ʊֆɛʀɮօȶ ɨֆ ǟʟɨʋɛ**\n\n"
         fuking_text += "**Aʟʟ sʏsᴛᴇᴍs ᴡᴏʀᴋɪɴɢ ᴘʀᴏᴘᴇʀʟʏ...🤓**\n\n"
         fuking_text += f"**Lɪᴏɴ Vᴇʀsɪᴏɴ** : `1.0`\n\n"
-        fuking_text += f"**Pᴇʀᴏ Mᴀsᴛᴇʀ** : @{bot.me.username}\n\n"
+        fuking_text += f"**Pᴇʀᴏ Mᴀsᴛᴇʀ** : [Pᴇʀᴏ](https://t.me/tg://user?id={tag})\n\n"
         fuking_text += "**Tʜɪs Bᴏᴛ ɪs ᴜᴘ-ᴛᴏ-ᴅᴀᴛᴇ...**\n\n"
         fuking_text += "**Tᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ** : `1.20`\n\n"
         fuking_text += "**Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ** :[ʜᴇʀᴇ](LionXsupport)\n\n"
