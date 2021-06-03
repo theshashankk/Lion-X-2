@@ -68,14 +68,14 @@ async def amireallyalive(alive):
     (end - start).microseconds / 1000
     uptime = get_readable_time((time.time() - StartTime))
     if ALV_PIC:
-        fuking_text = f"**{CUSTOM_ALIVE)**\n\n"
+        fuking_text = f"{CUSTOM_ALIVE)\n\n"
         fuking_text += "**ᴀʟʟ sʏsᴛᴇᴍs ᴡᴏʀᴋɪɴɢ ᴘʀᴏᴘᴇʀʟʏ...🤓**\n"
         fuking_text += "**ʟɪᴏɴ ᴠᴇʀsɪᴏɴ** : `0.02.0`\n"
         fuking_text += f"**ʟᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ** : `{version.__version__}`\n"
         fuking_text += f"**ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ** : `{platform.python_version()}`\n"
-        fuking_text += "**ᴛʜɪs Bᴏᴛ ɪs ᴜᴘ-ᴛᴏ-ᴅᴀᴛᴇ...**\n"
-        fuking_text += f"**ʜᴇʀᴏᴋᴜ sᴛᴀᴛᴜs**: **`cσииєcтє∂`**\n"
-        fuking_text += f"**ᴘᴇʀᴏ ᴀsᴛᴇʀ** : [{DEFAULTUSER}](tg://user?id={tag})\n"
+        fuking_text += "**ᴛʜɪs Bᴏᴛ ɪs ᴜᴘ-ᴛᴏ-ᴅᴀᴛᴇ...\n"
+        fuking_text += f"**ʜᴇʀᴏᴋᴜ sᴛᴀᴛᴜs** : `cσииєcтє∂`\n"
+        fuking_text += f"**ᴘᴇʀᴏ ᴍᴀsᴛᴇʀ** : [{DEFAULTUSER}](tg://user?id={tag})\n"
         fuking_text += "**sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ** :[ʜᴇʀᴇ](t.me/LionXsupport)\n"
         fuking_text += "**ᴛᴇᴀᴍ ʟɪᴏɴ** :[ʜᴇʀᴇ](t.me/TeamLionUB)"
         await borg.send_file(alive.chat_id, ALV_PIC, caption=fuking_text, link_preview=False)          """#Dont replace repo with real one tilk userbot not complete"""
