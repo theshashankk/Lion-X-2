@@ -53,13 +53,6 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 
-try:
-   Heroku = heroku3.from_key(HEROKU_API_KEY)                         
-   app = Heroku.app(HEROKU_APP_NAME)
-   herokurk = 'cσηηεcтε∂'
-except:
-	herokurk = 'ғαιℓε∂ тσ cσηηεcт'
-	pass 
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "ℓιση υsεя"
 
@@ -81,7 +74,7 @@ async def amireallyalive(alive):
         fuking_text += f"**ʟᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ** : `{version.__version__}`\n"
         fuking_text += f"**ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ** : `{platform.python_version()}`\n"
         fuking_text += "**ᴛʜɪs Bᴏᴛ ɪs ᴜᴘ-ᴛᴏ-ᴅᴀᴛᴇ...**\n"
-        fuking_text += f"**ʜᴇʀᴏᴋᴜ sᴛᴀᴛᴜs**: ** {herokurk} **\n"
+        fuking_text += f"**ʜᴇʀᴏᴋᴜ sᴛᴀᴛᴜs**: **`cσииєcтє∂`**\n"
         fuking_text += f"**ᴘᴇʀᴏ ᴀsᴛᴇʀ** : [{DEFAULTUSER}](tg://user?id={tag})\n"
         fuking_text += "**sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ** :[ʜᴇʀᴇ](t.me/LionXsupport)\n"
         fuking_text += "**ᴛᴇᴀᴍ ʟɪᴏɴ** :[ʜᴇʀᴇ](t.me/TeamLionUB)"
@@ -90,3 +83,4 @@ async def amireallyalive(alive):
         """ For .alive command, check if the bot is running.  """
         
 CMD_HELP.update({"αℓιvε": "➤ `.alive`\nUse - Check if your bot is working."})
+
