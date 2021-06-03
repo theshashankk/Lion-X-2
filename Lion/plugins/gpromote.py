@@ -28,7 +28,7 @@ async def get_full_user(event):
         if user.isnumeric():
             user = int(user)
         if not user:
-            await event.edit("`Itz not possible without an user ID`")
+            await event.edit("`ιт'z ησт ρσssιвℓε ωιтнσυт υsεя ι∂`")
             return
         if event.message.entities is not None:
             probable_user_mention_entity = event.message.entities[0]
@@ -40,7 +40,7 @@ async def get_full_user(event):
         try:
             user_obj = await event.client.get_entity(user)
         except Exception as err:
-            return await event.edit("Error... Please report at @Deviluserbot", str(err))           
+            return await event.edit("εяяσя... ρℓεαsε яερσят αт @Deviluserbot", str(err))           
     return user_obj, extra
 
 global hawk,moth
@@ -61,7 +61,7 @@ async def gben(userbot):
     i = 0
     sender = await dc.get_sender()
     me = await userbot.client.get_me()
-    await dark.edit("`promoting...`")
+    await dark.edit("`ρяσмσтιиg...`")
     my_mention = "[{}](tg://user?id={})".format(me.first_name, me.id)
     f"@{me.username}" if me.username else my_mention
     await userbot.get_chat()
@@ -75,13 +75,13 @@ async def gben(userbot):
     except:
         pass
     if me == user:
-       k = await dark.edit("U want to promote urself 😑😑 waao..")
+       k = await dark.edit("уσυ ωαит тσ ρяσмσтє уσυяѕєℓf 😑😑 ωαασ..")
        return
     try:
         if not rank:
             rank = "ㅤㅤ"
     except:
-        return await dark.edit(f"**Something W3NT Wrong 🤔**")
+        return await dark.edit(f"**ѕσмєтнιиg ω3ит ωяσиg 🤔**")
     if user:
         telchanel = [d.entity.id
                      for d in await userbot.client.get_dialogs()
@@ -97,11 +97,11 @@ async def gben(userbot):
           try:
              await userbot.client(EditAdminRequest(x, user, rgt, rank))
              i += 1
-             await dark.edit(f"**Promoted in Chats **: `{i}`")
+             await dark.edit(f"**ρяσмσтε∂ ιη cнαтs **: `{i}`")
           except:
              pass
     else:
-        await dark.edit(f"**Reply to a user you dumbo !!**")
+        await dark.edit(f"**яєρℓу тσ α υѕєя ∂υмвσ !!**")
     return await dark.edit(
         f"**Globally promoted [{user.first_name}](tg://user?id={user.id})\n On Chats😏 : {i} **"
     )
@@ -125,13 +125,13 @@ async def gben(userbot):
     except:
         pass
     if me == user:
-       k = await dark.edit("U want to demote urself 😑😑 waao..")
+       k = await dark.edit("уσυ ωαит тσ ∂ємσтє уσυяѕєℓf😑😑 ωαασ..")
        return
     try:
         if not rank:
             rank = "ㅤㅤ"
     except:
-        return await dark.edit(f"**Something W3NT Wrong 🤔**")
+        return await dark.edit(f"**ѕσмєтнιиg ω3ит ωяσиg 🤔**")
     if user:
         telchanel = [d.entity.id
                      for d in await userbot.client.get_dialogs()
@@ -147,12 +147,12 @@ async def gben(userbot):
           try:
              await userbot.client(EditAdminRequest(x, user, rgt, rank))
              i += 1
-             await dark.edit(f"**Demoted in Chats **: `{i}`")
+             await dark.edit(f"**∂ємσтє∂ ιи ¢нαтѕ **: `{i}`")
           except:
              pass
     else:
-        await dark.edit(f"**Reply to a user you dumbo !!**")
+        await dark.edit(f"**яєρℓу тσ α υѕєя ∂υмвσ !!**")
     return await dark.edit(
-        f"**Globally Demoted [{user.first_name}](tg://user?id={user.id})\n On Chats😏 : {i} **"
+        f"**gℓσвαℓℓу ∂ємσтє∂ [{user.first_name}](tg://user?id={user.id})\n σи ¢нαтѕ😏 : {i} **"
     )
 
