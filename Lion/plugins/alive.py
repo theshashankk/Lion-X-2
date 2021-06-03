@@ -7,7 +7,7 @@ from io import BytesIO
 import requests
 from PIL import Image
 
-from Lion import ALIVE_NAME, CMD_HELP, lionver, HEROKU_API_KEY, HEROKU_APP_NAME
+from Lion import ALIVE_NAME, CMD_HELP, lionver
 from Lion.__init__ import StartTime
 from Lion.LionConfig import Config, Var
 
