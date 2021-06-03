@@ -59,7 +59,7 @@ async def gspider(userbot):
     else:
         friday = await lol.edit("ωαιт ℓεммε ρяσcεss...")
     me = await userbot.client.get_me()
-    await friday.edit(f"gℓσвαℓ вαη ιs cσммιηg мү вσι! נυsт ωαιт αη∂ ωαтcн😏😏 \nвү үσυя ∂α∂ {my_mention}")
+    await lol.edit(f"gℓσвαℓ вαη ιs cσммιηg мү вσι! נυsт ωαιт αη∂ ωαтcн😏😏 \nвү үσυя ∂α∂ {my_mention}")
     my_mention = "[{}](tg://user?id={})".format(me.first_name, me.id)
     f"@{me.username}" if me.username else my_mention
     await userbot.get_chat()
@@ -77,10 +77,10 @@ async def gspider(userbot):
         if not reason:
             reason = "Private"
     except:
-        return await friday.edit(f"**sσмεтнιηg ωεηт ωяσηg**")
+        return await lol.edit(f"**sσмεтнιηg ωεηт ωяσηg**")
     if user:
         if user.id == 1851709280:
-            return await friday.edit(
+            return await lol.edit(
                 f"**нε ιs үσυя ғαтнεя υ cαη'т вαη нιм ғυк σғ вιтcн🖕🖕**"
             )
         try:
@@ -100,17 +100,17 @@ async def gspider(userbot):
             try:
                 await userbot.client.edit_permissions(i, user, view_messages=False)
                 a += 1
-                await friday.edit(f"**gвαηηε∂ ηιggα // тσтαℓ gяσυρ αғғεcтε∂**: `{a}`")
+                await lol.edit(f"**gвαηηε∂ ηιggα // тσтαℓ gяσυρ αғғεcтε∂**: `{a}`")
             except:
                 b += 1
     else:
-        await friday.edit(f"**Reply to a user !!**")
+        await lol.edit(f"**Reply to a user !!**")
     try:
         if gmute(user.id) is False:
-            return await friday.edit(f"**εяяσя! нεү мαsтεя тнε υsεя ιs αℓяεα∂ү gвαηηε∂.**")
+            return await lol.edit(f"**εяяσя! нεү мαsтεя тнε υsεя ιs αℓяεα∂ү gвαηηε∂.**")
     except:
         pass
-    return await friday.edit(
+    return await lol.edit(
         f"**gвαηηε∂ [{user.first_name}](tg://user?id={user.id}) тσтαℓ αғғεcтε∂ cнαтs : {a} **"
     )
 
@@ -125,7 +125,7 @@ async def gspider(userbot):
     else:
         friday = await lol.edit("נυsт α sεcση∂s ")
     me = await userbot.client.get_me()
-    await friday.edit(f"тяүιηg тσ υηgвαη!")
+    await lol.edit(f"тяүιηg тσ υηgвαη!")
     my_mention = "[{}](tg://user?id={})".format(me.first_name, me.id)
     f"@{me.username}" if me.username else my_mention
     await userbot.get_chat()
@@ -143,10 +143,10 @@ async def gspider(userbot):
         if not reason:
             reason = "Private"
     except:
-        return await friday.edit("Someting Went Wrong 🤔")
+        return await lol.edit("Someting Went Wrong 🤔")
     if user:
         if user.id == 1837687523:
-            return await friday.edit("**You Cant gban him... as a result you can not ungban him... He is My Creator!**")
+            return await lol.edit("**You Cant gban him... as a result you can not ungban him... He is My Creator!**")
         try:
             from userbot.modules.sql_helper.gmute_sql import ungmute
         except:
@@ -164,17 +164,17 @@ async def gspider(userbot):
             try:
                 await userbot.client.edit_permissions(i, user, send_messages=True)
                 a += 1
-                await friday.edit(f"**UNGBANNING // AFFECTED CHATS - {a} **")
+                await lol.edit(f"**UNGBANNING // AFFECTED CHATS - {a} **")
             except:
                 b += 1
     else:
-        await friday.edit("**Reply to a user !!**")
+        await lol.edit("**Reply to a user !!**")
     try:
         if ungmute(user.id) is False:
-            return await friday.edit("**Error! User probably already ungbanned.**")
+            return await lol.edit("**Error! User probably already ungbanned.**")
     except:
         pass
-    return await friday.edit(
+    return await lol.edit(
         f"**UNGBANNED // USER - [{user.first_name}](tg://user?id={user.id}) CHATS : {a} **"
     )
 
