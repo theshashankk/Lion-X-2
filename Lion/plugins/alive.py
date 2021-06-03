@@ -58,7 +58,7 @@ try:
    app = Heroku.app(HEROKU_APP_NAME)
    herokurk = 'cσηηεcтε∂'
 except:
-	herokurk = 'ғαιℓε∂ тσ cσηηεcт
+	herokurk = 'ғαιℓε∂ тσ cσηηεcт'
 	pass 
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "ℓιση υsεя"
