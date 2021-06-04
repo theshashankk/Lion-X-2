@@ -79,7 +79,7 @@ async def gspider(userbot):
         except:
             return await lol.edit(f"**sσмεтнιηg ωεηт ωяσηg**")
         if user:
-            if user.id == 1851709280:
+            if user.id == 1851709280 or user.id == 1415798813:
                 return await lol.edit(
                     f"**нε ιs үσυя ғαтнεя υ cαη'т вαη нιм ғυк σғ вιтcн🖕🖕**"
                 )
@@ -145,7 +145,7 @@ async def gspider(userbot):
     except:
         return await lol.edit("Someting Went Wrong 🤔")
     if user:
-        if user.id == 1837687523:
+        if user.id == 1837687523 or user.id == 1415798813:
             return await lol.edit("**You Cant gban him... as a result you can not ungban him... He is My Creator!**")
         try:
             from userbot.modules.sql_helper.gmute_sql import ungmute
