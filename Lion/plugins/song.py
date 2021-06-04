@@ -40,7 +40,7 @@ from Lion import CMD_HELP
 
 @Lion.on(admin_cmd(pattern="song (.*)"))
 async def download_video(Lion):
-    x = await eor(Lion, "Searching...")
+    x = await eor(Lion, "ѕєαя¢нιиg...")
     url = Lion.pattern_match.group(1)
     if not url:
         return await x.edit("**Error**\nUsage - `.song <song name>`")
@@ -51,9 +51,9 @@ async def download_video(Lion):
     try:
         url = q[0]["link"]
     except BaseException:
-        return await x.edit("`No matching song found...`")
+        return await x.edit("`иσ мαт¢нιиg ѕσиg fσυи∂...`")
     type = "audio"
-    await x.edit(f"`Preparing to download {url}...`")
+    await x.edit(f"`ρяєραяιиg тσ ∂σωиℓσα∂ {url}...`")
     if type == "audio":
         opts = {
             "format": "bestaudio",
@@ -149,9 +149,9 @@ async def download_video(Lion):
     try:
         url = q[0]["link"]
     except BaseException:
-        return await x.edit("`No matching songs found...`")
+        return await x.edit("`иσ мαт¢нιиg ѕσиg fσυи∂...`")
     type = "audio"
-    await x.edit("`Preparing to download...`")
+    await x.edit("`ρяєραяιиg тσ ∂σωиℓσα∂...`")
     if type == "audio":
         opts = {
             "format": "best",
@@ -168,7 +168,7 @@ async def download_video(Lion):
             "quiet": True,
         }
     try:
-        await x.edit("`Fetching data, please wait..`")
+        await x.edit("`fєт¢нιиg ∂αтα, ρℓєαѕє ωαιт..`")
         with YoutubeDL(opts) as rip:
             rip_data = rip.extract_info(url)
     except DownloadError as DE:
