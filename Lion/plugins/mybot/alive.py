@@ -1,4 +1,4 @@
-from Lion import bot
+"""from Lion import bot
 from Lion import ID
 import heroku3
 from telethon import events
@@ -103,3 +103,4 @@ async def ok(event):
         "<b>✪ αѕѕιѕтαит υρтנмє:</b> <code>{}</code>".format(telegram_ping, uptime),
         parse_mode="html",
     )
+"""
