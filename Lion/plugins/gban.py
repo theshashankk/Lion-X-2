@@ -2,6 +2,7 @@ from telethon.tl.functions.contacts import BlockRequest, UnblockRequest
 from Lion import CMD_HELP
 from Lion.utils import admin_cmd
 import html
+from Lion import ALIVE_NAME
 from telethon import events
 from telethon.tl.functions.photos import GetUserPhotosRequest
 from telethon.tl.functions.users import GetFullUserRequest
@@ -51,16 +52,15 @@ async def get_user_sender_id(user, event):
 
 @borg.on(admin_cmd(pattern="gban ?(.*)"))
 async def gspider(userbot):
-    lol = userbot
-    sender = await lol.get_sender()
-    me = await lol.client.get_me()
-    if  sender.id == me.id:
-        friday = await lol.reply("Eh, can not ban my owner sed.")
-    else:
+        lol = userbot
+        sender = await lol.get_sender()
+        me = await lol.client.get_me()
+   
         friday = await lol.edit("ωαιт ℓεммε ρяσcεss...")
         me = await userbot.client.get_me()
-        await lol.edit(f"gℓσвαℓ вαη ιs cσммιηg мү вσι! נυsт ωαιт αη∂ ωαтcн😏😏 \nвү үσυя ∂α∂ {my_mention}")
         my_mention = "[{}](tg://user?id={})".format(me.first_name, me.id)
+        await lol.edit(f"gℓσвαℓ вαη ιs cσммιηg мү вσι! נυsт ωαιт αη∂ ωαтcн😏😏 \nвү үσυя ∂α∂ {my_mention}")
+        
         f"@{me.username}" if me.username else my_mention
         await userbot.get_chat()
         a = b = 0
