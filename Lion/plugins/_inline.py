@@ -68,7 +68,7 @@ elif Var.LOAD_MYBOT == "False":
         )
     )
 
-CUSTOM_HELP_EMOJI = os.environ.get("CUSTOM_HELP_EMOJI", "🇮🇳")
+CUSTOM_HELP_EMOJI = os.environ.get("CUSTOM_HELP_EMOJI", "⚙️")
 HELP_ROWS = int(os.environ.get("HELP_ROWS", 6))
 HELP_COLOUMNS = int(os.environ.get("HELP_COLOUMNS", 4))
 
