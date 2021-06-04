@@ -109,13 +109,24 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                 file=TELEPIC,
                 text=TELEBT,
                 buttons=[
-                    [
-                        custom.Button.inline("𝚁𝙴𝚀𝚄𝙴𝚂𝚃 🥺, ", data="req"),
-                        custom.Button.inline("𝙲𝙷𝙰𝚃 💭", data="chat"),
-                    ],
-                    [custom.Button.inline("𝚃𝙾 𝚂𝙿𝙰𝙼 🚫", data="heheboi")],
-                    [custom.Button.inline("𝚆𝙷𝙰𝚃 𝙸𝚂 𝚃𝙷𝙸𝚂 ❓", data="pmclick")],
+                [custom.Button.inline("Wanna Spam Something?😉", data="heheboi")],
+                [
+                    custom.Button.inline(
+                        "My Friend❤️❤️",
+                        data="req",
+                    )
                 ],
+                [custom.Button.inline("Requesting🙏", data="req")],
+                [
+                    custom.Button.inline(
+                        "What is this ❓", 
+                        data="pmclick",
+                        
+                    )
+                        
+                ],
+
+            ],
             )
         elif event.query.user_id == bot.uid and query == "repo":
             result = builder.article(
@@ -210,6 +221,63 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             tosend = f"Hey {DEFAULTUSER}, [{first_name}](tg://user?id={ok}) is **requesting** something in PM!"
             await tgbot.send_message(LOG_GP, tosend)
 
+    @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"he_sucks")))
+async def lightning_is_better(lightning):
+    if lightning.query.user_id == bot.uid:
+        fck_bit = f"Oh! C'mon Master {DEFAULTUSER} Im Try To Get Rid Of This Nigga Pls Dont Touch"
+        await lightning.answer(fck_bit, cache_time=0, alert=True)
+        return
+    await lightning.get_chat()
+    lightning_id = lightning.query.user_id
+    await lightning.edit("Oh You Wanna Talk With My Master\n\nPls Wait Dear \n\n**Btw** **You Can Wait For My Master**")
+    await asyncio.sleep(2)
+    await lightning.edit(
+        "Name Which Type Of Friend?", buttons= [
+        [Button.inline("School", data="school")],
+        [Button.inline("Tg Causal Friend", data="tg_okay")],
+        ], 
+    )
+    light_text = "`Warning`- ❗️⚠️Don't send any message now wait kindly!!!❗️⚠️"
+    await bot.send_message(lightning.query.user_id, light_text)
+    
+    @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"tg_okay")))
+async def yeahbaba(lightning):
+        if lightning.query.user_id == bot.uid:
+            fck_bit = f"Oh! C'mon Master {DEFAULTUSER} "
+            await lightning.answer(fck_bit, cache_time=0, alert=True)
+            return
+        light_text = "**So You  Are TG Friend** Okay wait"
+        lightning_id = lightning.query.user_id
+        await asyncio.sleep(2)
+        await lightning.edit(f"`Informing To Master {DEFAULTUSER}`")
+        await asyncio.sleep(2)
+        await lightning.edit("`Done Informed`")
+        await bot.send_message(lightning.query.user_id, light_text)
+        await bot.send_message(
+        LIGHT_LOGS,
+        message=f"Hello, Master  [Friend](tg://user?id={lightning_id}). Your Casual Telegram Friend His Here To Chat pls See The Message [Tg Friend](tg://user?id={lightning_id}) Is Waiting.",
+    
+    )
+@tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"School")))
+async def yeahbaba(lightning):
+        if lightning.query.user_id == bot.uid:
+            fck_bit = f"Oh! C'mon Master {DEFAULTUSER} "
+            await lightning.answer(fck_bit, cache_time=0, alert=True)
+            return
+        light_text = "**So You  Are  Friend** Okay wait"
+        lightning_id = lightning.query.user_id
+        await asyncio.sleep(2)
+        await lightning.edit(f"`Informing To Master {DEFAULTUSER}`")
+        await asyncio.sleep(2)
+        await lightning.edit("`Done Informed`")
+        await bot.send_message(lightning.query.user_id, light_text)
+        await bot.send_message(
+        LIGHT_LOGS,
+        message=f"Hello, Master  [Friend](tg://user?id={lightning_id}). Your Casual Telegram Friend His Here To Chat pls See The Message [Tg Friend](tg://user?id={lightning_id}) Is Waiting.",
+        )
+
+
+    
     @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"chat")))
     async def on_pm_click(event):
         event.query.user_id
@@ -370,11 +438,11 @@ def paginate_help(page_number, loaded_plugins, prefix):
         ] + [
             (
                 custom.Button.inline(
-                    "⫷ Previous", data="{}_prev({})".format(prefix, modulo_page)
+                    " 🗡️քʀɛʋɨօʊֆ", data="{}_prev({})".format(prefix, modulo_page)
                 ),
-                custom.Button.inline("║ Close ║", data="close"),
+                custom.Button.inline("⚙️ Close ⚙️", data="close"),
                 custom.Button.inline(
-                    "Next ⫸", data="{}_next({})".format(prefix, modulo_page)
+                    "ռɛӼȶ 🗡️", data="{}_next({})".format(prefix, modulo_page)
                 ),
             )
         ]
