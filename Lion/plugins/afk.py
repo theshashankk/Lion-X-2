@@ -129,7 +129,7 @@ async def _(event):
     afk_time = None
     last_afk_message = {}
     afk_end = {}
-    tele = "False"
+    lion = "False"
     start_1 = datetime.now()
     afk_start = start_1.replace(microsecond=0)
     if not USER_AFK:
@@ -144,10 +144,10 @@ async def _(event):
             input_str = event.pattern_match.group(1)
             if url:
                 if input_str is not None:
-                    tele = "True"
+                    lion = "True"
                     reason = f"`{input_str}`[‎‏‏‎ ‎](https://telegra.ph/{url[0]})"
                 else:
-                    tele = "False"
+                    lion = "False"
                     reason = f"[‎‏‏‎ ‎](https://telegra.ph/{url[0]})"
             else:
                 if input_str is not None:
