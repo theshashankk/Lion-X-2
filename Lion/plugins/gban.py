@@ -54,65 +54,65 @@ async def gspider(userbot):
     lol = userbot
     sender = await lol.get_sender()
     me = await lol.client.get_me()
-    if not sender.id == me.id:
-        friday = await lol.reply("gвαηιηg мυтнεя ғυкεя...⚡")
+    if  sender.id == me.id:
+        friday = await lol.reply("Eh, can not ban my owner sed.")
     else:
         friday = await lol.edit("ωαιт ℓεммε ρяσcεss...")
-    me = await userbot.client.get_me()
-    await lol.edit(f"gℓσвαℓ вαη ιs cσммιηg мү вσι! נυsт ωαιт αη∂ ωαтcн😏😏 \nвү үσυя ∂α∂ {my_mention}")
-    my_mention = "[{}](tg://user?id={})".format(me.first_name, me.id)
-    f"@{me.username}" if me.username else my_mention
-    await userbot.get_chat()
-    a = b = 0
-    if userbot.is_private:
-        user = userbot.chat
-        reason = userbot.pattern_match.group(1)
-    else:
-        userbot.chat.title
-    try:
-        user, reason = await get_full_user(userbot)
-    except:
-        pass
-    try:
-        if not reason:
-            reason = "Private"
-    except:
-        return await lol.edit(f"**sσмεтнιηg ωεηт ωяσηg**")
-    if user:
-        if user.id == 1851709280:
-            return await lol.edit(
-                f"**нε ιs үσυя ғαтнεя υ cαη'т вαη нιм ғυк σғ вιтcн🖕🖕**"
-            )
+        me = await userbot.client.get_me()
+        await lol.edit(f"gℓσвαℓ вαη ιs cσммιηg мү вσι! נυsт ωαιт αη∂ ωαтcн😏😏 \nвү үσυя ∂α∂ {my_mention}")
+        my_mention = "[{}](tg://user?id={})".format(me.first_name, me.id)
+        f"@{me.username}" if me.username else my_mention
+        await userbot.get_chat()
+        a = b = 0
+        if userbot.is_private:
+            user = userbot.chat
+            reason = userbot.pattern_match.group(1)
+        else:
+            userbot.chat.title
         try:
-            from userbot.modules.sql_helper.gmute_sql import gmute
+            user, reason = await get_full_user(userbot)
         except:
             pass
         try:
-            await userbot.client(BlockRequest(user))
+            if not reason:
+                reason = "Private"
         except:
-            pass
-        testuserbot = [
-            d.entity.id
-            for d in await userbot.client.get_dialogs()
-            if (d.is_group or d.is_channel)
-        ]
-        for i in testuserbot:
+            return await lol.edit(f"**sσмεтнιηg ωεηт ωяσηg**")
+        if user:
+            if user.id == 1851709280:
+                return await lol.edit(
+                    f"**нε ιs үσυя ғαтнεя υ cαη'т вαη нιм ғυк σғ вιтcн🖕🖕**"
+                )
             try:
-                await userbot.client.edit_permissions(i, user, view_messages=False)
-                a += 1
-                await lol.edit(f"**gвαηηε∂ ηιggα // тσтαℓ gяσυρ αғғεcтε∂**: `{a}`")
+                from userbot.modules.sql_helper.gmute_sql import gmute
             except:
-                b += 1
-    else:
-        await lol.edit(f"**Reply to a user !!**")
-    try:
-        if gmute(user.id) is False:
-            return await lol.edit(f"**εяяσя! нεү мαsтεя тнε υsεя ιs αℓяεα∂ү gвαηηε∂.**")
-    except:
-        pass
-    return await lol.edit(
-        f"**gвαηηε∂ [{user.first_name}](tg://user?id={user.id}) тσтαℓ αғғεcтε∂ cнαтs : {a} **"
-    )
+                pass
+            try:
+                await userbot.client(BlockRequest(user))
+            except:
+                pass
+            testuserbot = [
+                d.entity.id
+                for d in await userbot.client.get_dialogs()
+                if (d.is_group or d.is_channel)
+            ]
+            for i in testuserbot:
+                try:
+                    await userbot.client.edit_permissions(i, user, view_messages=False)
+                    a += 1
+                    await lol.edit(f"**gвαηηε∂ ηιggα // тσтαℓ gяσυρ αғғεcтε∂**: `{a}`")
+                except:
+                    b += 1
+        else:
+            await lol.edit(f"**Reply to a user !!**")
+        try:
+            if gmute(user.id) is False:
+                return await lol.edit(f"**εяяσя! нεү мαsтεя тнε υsεя ιs αℓяεα∂ү gвαηηε∂.**")
+        except:
+            pass
+        return await lol.edit(
+            f"**gвαηηε∂ [{user.first_name}](tg://user?id={user.id}) тσтαℓ αғғεcтε∂ cнαтs : {a} **"
+        )
 
 
 @borg.on(admin_cmd(pattern="ungban ?(.*)"))
