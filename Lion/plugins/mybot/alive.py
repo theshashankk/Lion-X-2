@@ -12,7 +12,7 @@ from Lion import PHOTO, Lion, BOT, VERSION
 from Lion import bot
 @Lion.on(events.NewMessage(pattern=("/alive")))
 async def awake(event):
-  OP = f"нєуу !! тнιѕ ιѕ **{BOT}**вσт ву тєαм ℓισи\n\n"
+  OP = f"нєуу !! тнιѕ ιѕ уσυя αѕѕιѕтαит ву тєαм ℓισи\n\n"
   OP += "**Aʟʟ sʏsᴛᴇᴍs ᴡᴏʀᴋɪɴɢ ᴘʀᴏᴘᴇʀʟʏ...**\n\n"
   OP += f"**ᴀssɪsᴛᴀɴᴛ Vᴇʀsɪᴏɴ** : `{VERSION}`\n\n"
   OP += f"**Usᴇʀ** : @{bot.me.username}\n\n"
@@ -41,9 +41,9 @@ async def callback_query_handler(event):
 
 @Lion.on(events.callbackquery.CallbackQuery(data=re.compile(b"cback")))
 async def callback_query_handler(event):
-  OP = f"нєуу !! тнιѕ ιѕ **{BOT}**вσт ву тєαм ℓισи\n\n"
+  OP = f"нєуу !! тнιѕ ιѕ уσυя αѕѕנѕтαит ву тєαм ℓισи\n\n"
   OP += "**Aʟʟ sʏsᴛᴇᴍs ᴡᴏʀᴋɪɴɢ ᴘʀᴏᴘᴇʀʟʏ...**\n\n"
-  OP += f"**ᴀssɪsᴛᴀɴᴛ Vᴇʀsɪᴏɴ** : `{VERSION}`\n\n"
+  OP += f"**ᴀssɪsᴛᴀɴᴛ Vᴇʀsɪᴏɴ** : `1.0`\n\n"
   OP += f"**Usᴇʀ** : @{bot.me.username}\n\n"
   OP += "**ᴛʜɪs ʙᴏᴛ ɪs ᴜᴘ-ᴛᴏ-ᴅᴀᴛᴇ...**\n\n"
   OP += "**Tᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ** : `1.21.1`\n\n"
