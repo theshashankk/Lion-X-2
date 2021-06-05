@@ -25,7 +25,6 @@ pm_caption += f"► **Mʏ ᴍᴀsᴛᴇʀ** : {DEFAULTUSER} \n"
 pm_caption += "► **Lɪᴏɴ X ʟɪᴄᴇɴsᴇ** : [GNU General Public License v3.0](https://github.com/teamlion-X/Lion-X/blob/master/LICENSE)\n"
 pm_caption += "► **Cᴏᴘʏʀɪɢʜᴛ** :[LɪᴏɴX](https://github.com/teamlion-X/Lion-X)\n"
 light = [[Button.url("✧ʀᴇᴘᴏsɪᴛᴏʀʏ✧", "https://github.com/teamlion-X/Lion-X"), Button.url("Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ", "https://t.me/LɪᴏɴXsᴜᴘᴘᴏʀᴛ")]]
-light +=[[custom.Button.inline("Hᴇʟʟ", data="gibcmd")]]
 @tgbot.on(events.NewMessage(pattern="^/alive" , func=lambda e: e.sender_id == bot.uid))
 async def _(event):
     await tgbot.send_file(event.chat_id, PM_IMG, caption=pm_caption, buttons=light)
