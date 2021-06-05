@@ -120,7 +120,7 @@ By - {}
         rip_data["title"], rip_data["uploader"]
     )
     await x.edit(f"`{upteload}`")
-    await Lion.send_file(
+    await borg.send_file(
         Lion.chat_id,
         f"{rip_data['id']}.mp3",
         supports_streaming=True,
@@ -213,11 +213,11 @@ By - {}
         rip_data["title"], rip_data["uploader"]
     )
     await x.edit(f"`{upteload}`")
-    await Lion.send_file(
+    await borg.send_file(
         Lion.chat_id,
         f"{rip_data['id']}.mp4",
         supports_streaming=True,
-        caption=f"⫸ Song - {rip_data['title']}\n⫸ By - {rip_data['uploader']}\n",
+        caption=f"✘ Sᴏɴɢ - {rip_data['title']}\n✘ Bʏ - {rip_data['uploader']}\n",
     )
     os.remove(f"{rip_data['id']}.mp4")
     await x.delete()
