@@ -2,7 +2,7 @@
 
 import os
 from telethon import events, Button, custom
-from Lion.Lionconfig import Config
+from Lion.LionConfig import Config
 
 from Lion import ALIVE_NAME, bot 
 
