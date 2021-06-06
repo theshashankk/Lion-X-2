@@ -3,7 +3,7 @@ import time
 
 from telethon import version
 from userbot.utils import admin_cmd, sudo_cmd
-
+from Lion import Config, Var
 from Lion import StartTime
 
 # ======CONSTANTS=========#
