@@ -60,7 +60,7 @@ async def _(event):
                 ms_two = (end - start).seconds
                 os.remove(downloaded_file_name)
                 await okey.edit(
-                    "ι нαvε υρℓσα∂ε∂ тσ [𝐓𝐄𝐋𝐄𝐆𝐑𝐀𝐏𝐇](https://telegra.ph{} ιη {} sεcση∂s.".format(
+                    "ι нαvε υρℓσα∂ε∂ тσ [𝐓𝐄𝐋𝐄𝐆𝐑𝐀𝐏𝐇](https://telegra.ph{}) ιη {} sεcση∂s.".format(
                         media_urls[0], (ms + ms_two)
                     ),
                     link_preview=False,
