@@ -4,14 +4,8 @@ import time
 from telethon import version
 from userbot.utils import admin_cmd, sudo_cmd
 
-from Lion import StartTime
-from Lion.LionConfig import Var
+from Lion import ALIVE_NAME, CMD_HELP, StartTime
 
-# ======CONSTANTS=========#
-CUSTOM_ALIVE = Var.CUSTOM_ALIVE if Var.CUSTOM_ALIVE else "ʏօօ!! ʟɨօռ ʊֆɛʀɮօȶ ɨֆ ǟʟɨʋɛ!"
-ALIVE_NAME = Var.ALIVE_NAME if Var.ALIVE_NAME else "ℓιση x υsεя"
-# =========================#
-# 🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "ℓιση x υsεя"
 
 # Thanks to Sipak bro and Aryan..
@@ -38,7 +32,7 @@ async def hmm(yes):
     global fuk
     fuk = borg.uid
     await yes.delete()
-    uptime = await dcdef.get_readable_time((time.time() - StartTime))
+    uptime = await dcdef.get_readable_time((time.time() - StartTime.))
     pm_caption = "** ʟɨօռ Ӽ ʊֆɛʀɮօȶ ɨֆ օռʟɨռɛ **\n\n"
     pm_caption += "**Mʏ sʏsᴛᴇᴍ ɪs ᴘᴇʀғᴇᴄᴛʟʏ ʀᴜɴɴɪɢ**\n\n"
     pm_caption += "✗ Aʙᴏᴜᴛ ᴍʏ sʏsᴛᴇᴍ ✗\n\n"
