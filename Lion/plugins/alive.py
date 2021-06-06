@@ -4,7 +4,7 @@ import time
 from telethon import version
 from userbot.utils import admin_cmd, sudo_cmd
 
-from Lion import ALIVE_NAME, CMD_HELP, StartTime
+from Lion import ALIVE_NAME, StartTime
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "ℓιση x υsεя"
 
