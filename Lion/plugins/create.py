@@ -12,7 +12,7 @@ from Lion.utils import admin_cmd
 @Lion.on(admin_cmd(outgoing=True, pattern="create (b|g|c)(?: |$)(.*)"))
 async def telegraphs(grop):
 
-    """ For .create command, Creating New Group & Channel """
+    """For .create command, Creating New Group & Channel"""
 
     if not grop.text[0].isalpha() and grop.text[0] not in ("/", "#", "@", "!"):
 

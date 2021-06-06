@@ -1,4 +1,4 @@
-#© ultroid
+# © ultroid
 import glob
 import os
 import time
@@ -18,7 +18,11 @@ async def zipp(event):
         if hasattr(reply.media, "document"):
             file = reply.media.document
             image = await downloader(
-                reply.file.name, reply.media.document, xx, t, "ωαιт ℓεммε ∂σωηℓσα∂ιηg..."
+                reply.file.name,
+                reply.media.document,
+                xx,
+                t,
+                "ωαιт ℓεммε ∂σωηℓσα∂ιηg...",
             )
             file = image.name
         else:
@@ -108,14 +112,17 @@ async def azipp(event):
         if hasattr(reply.media, "document"):
             file = reply.media.document
             image = await downloader(
-                "zip/" + reply.file.name, reply.media.document, xx, t, "נυsт α sεcση∂ ℓεммε ∂σωηℓσα∂..."
+                "zip/" + reply.file.name,
+                reply.media.document,
+                xx,
+                t,
+                "נυsт α sεcση∂ ℓεммε ∂σωηℓσα∂...",
             )
             file = image.name
         else:
             file = await event.download_media(reply.media, "zip/")
-    await xx.edit(
-        f"∂σωηℓσα∂ε∂ `{file}` sυccsғυℓℓү...\n©тεαм ℓιση"
-    )
+    await xx.edit(f"∂σωηℓσα∂ε∂ `{file}` sυccsғυℓℓү...\n©тεαм ℓιση")
+
 
 @Lion.on(admin_cmd(pattern="dozip ?(.*)"))
 async def do_zip(event):

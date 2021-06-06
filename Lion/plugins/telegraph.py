@@ -43,7 +43,9 @@ async def _(event):
             end = datetime.now()
             ms = (end - start).seconds
             await okey.edit(
-                "нεү ι нαvε ∂σωηℓσα∂ε∂ {} ιη {} sεcση∂s.".format(downloaded_file_name, ms),
+                "нεү ι нαvε ∂σωηℓσα∂ε∂ {} ιη {} sεcση∂s.".format(
+                    downloaded_file_name, ms
+                ),
             )
             if downloaded_file_name.endswith((".webp")):
                 resize_image(downloaded_file_name)

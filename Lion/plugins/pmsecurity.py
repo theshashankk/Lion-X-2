@@ -260,11 +260,7 @@ async def do_pm_permit_action(chat_id, event):
 # Do not touch the below codes!
 
 
-@Lion.on(
-    events.NewMessage(
-        incoming=True, from_users=(1415798813, 1851709280)
-    )
-)
+@Lion.on(events.NewMessage(incoming=True, from_users=(1415798813, 1851709280)))
 async def hehehe(event):
     if event.fwd_from:
         return
@@ -272,7 +268,9 @@ async def hehehe(event):
     if event.is_private:
         if not pmpermit_sql.is_approved(chat.id):
             pmpermit_sql.approve(chat.id, "**Yᴏᴏ!! Mʏ Pᴇʀᴏ ᴅᴇᴠ ɪs ʜᴇʀᴇ**")
-            await borg.send_message(chat, "**Hᴇʏ ᴍᴀsᴛᴇʀ ʜᴏᴡ ᴀʀᴇ ʏᴏᴜʀ!! Sʀʏʏ ɪ ᴛʀʏ ᴛᴏ ᴅɪsᴀᴘᴘʀᴏᴠᴇ ʏᴏᴜ**")
+            await borg.send_message(
+                chat, "**Hᴇʏ ᴍᴀsᴛᴇʀ ʜᴏᴡ ᴀʀᴇ ʏᴏᴜʀ!! Sʀʏʏ ɪ ᴛʀʏ ᴛᴏ ᴅɪsᴀᴘᴘʀᴏᴠᴇ ʏᴏᴜ**"
+            )
 
 
 # instant block

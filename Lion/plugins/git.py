@@ -22,7 +22,7 @@ async def _(event):
 
         animation_chars = [
             "https://github.com/Mdnoor786/Lion-X",
-                    ]
+        ]
 
         for i in animation_ttl:
 

@@ -3,10 +3,6 @@ import os
 import sys
 
 import git
-from git import Repo
-from git.exc import GitCommandError, InvalidGitRepositoryError, NoSuchPathError
-from Lion.LionConfig import Config
-from Lion import CMD_HELP
 
 # -- Constants -- #
 IS_SELECTED_DIFFERENT_BRANCH = (
@@ -32,6 +28,7 @@ NO_HEROKU_APP_CFGD = "no heroku application found, but a key given? 😕 "
 HEROKU_GIT_REF_SPEC = "HEAD:refs/heads/main"
 RESTARTING_APP = "`Re-starting heroku application`"
 # -- Constants End -- #
+
 
 @Lion.on(admin_cmd("update", outgoing=True))
 async def updater(message):
@@ -67,7 +64,9 @@ async def updater(message):
     )
 
     if not changelog:
-        await message.edit("`No Update AvaiLAbLe if still you want to check just restart bot`")
+        await message.edit(
+            "`No Update AvaiLAbLe if still you want to check just restart bot`"
+        )
         return
     if message.text[8:] != "now":
         message_one = NEW_BOT_UP_DATE_FOUND.format(

@@ -106,9 +106,7 @@ async def unload(event):
         await event.edit(f"Lion has successfully unloaded {shortname}")
     except Exception as e:
         await event.edit(
-            "Lion has successfully unloaded {shortname}\n{}".format(
-                shortname, str(e)
-            )
+            "Lion has successfully unloaded {shortname}\n{}".format(shortname, str(e))
         )
 
 

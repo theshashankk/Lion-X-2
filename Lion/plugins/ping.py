@@ -6,9 +6,10 @@ from datetime import datetime
 
 from Lion import CMD_HELP
 from Lion.__init__ import StartTime
-from Lion.plugins import OWNER_ID, ALIVE_NAME
+from Lion.plugins import ALIVE_NAME, OWNER_ID
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "ℓιση υsεя"
+
 
 def get_readable_time(seconds: int) -> str:
     count = 0
@@ -57,4 +58,3 @@ async def _(event):
 
 
 CMD_HELP.update({"ping": ".ping\nUse - See the ping stats and uptime of userbot."})
-

@@ -23,7 +23,7 @@ DEVICES_DATA = (
 @Lion.on(admin_cmd(outgoing=True, pattern="magisk"))
 @Lion.on(sudo_cmd(pattern="magisk"))
 async def magisk(request):
-    """ magisk latest releases """
+    """magisk latest releases"""
     magisk_dict = {
         "Stable": "https://raw.githubusercontent.com/topjohnwu/magisk_files/master/stable.json",
         "Beta": "https://raw.githubusercontent.com/topjohnwu/magisk_files/master/beta.json",
@@ -44,7 +44,7 @@ async def magisk(request):
 @Lion.on(admin_cmd(outgoing=True, pattern=r"device(?: |$)(\S*)"))
 @Lion.on(sudo_cmd(pattern=r"device(?: |$)(\S*)"))
 async def device_info(request):
-    """ get android device basic info from its codename """
+    """get android device basic info from its codename"""
     textx = await request.get_reply_message()
     device = request.pattern_match.group(1)
     if device:
@@ -79,7 +79,7 @@ async def device_info(request):
 @Lion.on(admin_cmd(outgoing=True, pattern=r"codename(?: |)([\S]*)(?: |)([\s\S]*)"))
 @Lion.on(sudo_cmd(pattern=r"codename(?: |)([\S]*)(?: |)([\s\S]*)"))
 async def codename_info(request):
-    """ search for android codename """
+    """search for android codename"""
     textx = await request.get_reply_message()
     brand = request.pattern_match.group(1).lower()
     device = request.pattern_match.group(2).lower()
@@ -118,7 +118,7 @@ async def codename_info(request):
 @Lion.on(admin_cmd(outgoing=True, pattern=r"specs(?: |)([\S]*)(?: |)([\s\S]*)"))
 @Lion.on(sudo_cmd(pattern=r"specs(?: |)([\S]*)(?: |)([\s\S]*)"))
 async def devices_specifications(request):
-    """ Mobile devices specifications """
+    """Mobile devices specifications"""
     textx = await request.get_reply_message()
     brand = request.pattern_match.group(1).lower()
     device = request.pattern_match.group(2).lower()
@@ -179,7 +179,7 @@ async def devices_specifications(request):
 @Lion.on(admin_cmd(outgoing=True, pattern=r"twrp(?: |$)(\S*)"))
 @Lion.on(sudo_cmd(pattern=r"twrp(?: |$)(\S*)"))
 async def twrp(request):
-    """ get android device twrp """
+    """get android device twrp"""
     textx = await request.get_reply_message()
     device = request.pattern_match.group(1)
     if device:

@@ -24,7 +24,6 @@ from telethon import Button, custom, events, functions
 from telethon.tl.functions.users import GetFullUserRequest
 
 from Lion import ALIVE_NAME, CMD_HELP, CMD_LIST, CUSTOM_PMPERMIT, bot
-from Lion.plugins import lionstats
 from Lion.LionConfig import Var
 
 PMPERMIT_PIC = os.environ.get("PMPERMIT_PIC", None)
@@ -137,7 +136,11 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                 "𝚂𝙾𝚄𝚁𝙲𝙴 𝙲𝙾𝙳𝙴",
                 text="**Welcome to Lion**\n\n`Click below buttons for more`",
                 buttons=[
-                    [custom.Button.url("🚑 Support Group 🚑", "https://t.me/lionXsupport")],
+                    [
+                        custom.Button.url(
+                            "🚑 Support Group 🚑", "https://t.me/lionXsupport"
+                        )
+                    ],
                     [
                         custom.Button.url(
                             "👨‍💻Source Code‍💻", "https://github.com/Mdnoor786/Lion-X"
@@ -147,11 +150,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                             "https://heroku.com/deploy?template=https://github.com/Mdnoor786/Lion-X",
                         ),
                     ],
-                    [
-                        custom.Button.url(
-                            "Updates ↗️", "https://t.me/LionHelpChat"
-                        )
-                    ],
+                    [custom.Button.url("Updates ↗️", "https://t.me/LionHelpChat")],
                 ],
                 link_preview=False,
             )
@@ -209,7 +208,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                 first_name = first_name.replace("\u2060", "")
             tosend = f"Hey {DEFAULTUSER}, [{first_name}](tg://user?id={ok}) is **requesting** something in PM!"
             await tgbot.send_message(LOG_GP, tosend)
-            
+
     @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"chat")))
     async def on_pm_click(event):
         event.query.user_id

@@ -1,9 +1,5 @@
-from telethon import events
-from telethon.tl.functions.channels import EditAdminRequest
-from telethon.tl.types import ChatAdminRights
-
-from Lion.plugins.sql_helper.gban_sql import is_gbanned, gbaner, ungbaner, all_gbanned
 from . import *
+
 
 @Lion.on(admin_cmd(pattern=r"gkick ?(.*)"))
 @Lion.on(sudo_cmd(pattern=r"gkick ?(.*)", allow_sudo=True))

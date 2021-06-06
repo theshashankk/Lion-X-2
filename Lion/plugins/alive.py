@@ -1,23 +1,20 @@
 import platform
-from telethon import events, Button, custom, version
 import time
 from datetime import datetime
-from io import BytesIO
 
-import requests
-from PIL import Image
+from telethon import version
 
-from Lion import ALIVE_NAME, CMD_HELP, lionver
+from Lion import ALIVE_NAME, CMD_HELP
 from Lion.__init__ import StartTime
 from Lion.LionConfig import Config, Var
 
 # ======CONSTANTS=========#
-CUSTOM_ALIVE = (
-    Var.CUSTOM_ALIVE
-    if Var.CUSTOM_ALIVE
-    else "ʏօօ!! ʟɨօռ ʊֆɛʀɮօȶ ɨֆ ǟʟɨʋɛ!"
+CUSTOM_ALIVE = Var.CUSTOM_ALIVE if Var.CUSTOM_ALIVE else "ʏօօ!! ʟɨօռ ʊֆɛʀɮօȶ ɨֆ ǟʟɨʋɛ!"
+ALV_PIC = (
+    Var.ALIVE_PIC
+    if Var.ALIVE_PIC
+    else "https://telegra.ph/file/af3b74010808a26480693.jpg"
 )
-ALV_PIC = Var.ALIVE_PIC if Var.ALIVE_PIC else "https://telegra.ph/file/af3b74010808a26480693.jpg"
 telemoji = Var.CUSTOM_ALIVE_EMOJI if Var.CUSTOM_ALIVE_EMOJI else "**✵**"
 if Config.SUDO_USERS:
     sudo = "Enabled"
@@ -58,15 +55,16 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "ℓιση υsεя"
 
 tag = borg.uid
 
+
 @Lion.on(admin_cmd(outgoing=True, pattern="alive"))
 @Lion.on(sudo_cmd(outgoing=True, pattern="alive", allow_sudo=True))
 async def amireallyalive(alive):
     start = datetime.now()
-    myid = bot.uid
+    bot.uid
     """ For .alive command, check if the bot is running.  """
     end = datetime.now()
     (end - start).microseconds / 1000
-    uptime = get_readable_time((time.time() - StartTime))
+    get_readable_time((time.time() - StartTime))
     if ALV_PIC:
         fuking_text = f"ʟɨօռ Ӽ ʊֆɛʀɮօȶ ɨֆ օռʟɨռɛ\n\n"
         fuking_text += "**ᴀʟʟ sʏsᴛᴇᴍs ᴡᴏʀᴋɪɴɢ ᴘʀᴏᴘᴇʀʟʏ...🤓**\n"
@@ -78,9 +76,12 @@ async def amireallyalive(alive):
         fuking_text += f"**ᴘᴇʀᴏ ᴍᴀsᴛᴇʀ** : [{DEFAULTUSER}](tg://user?id={tag})\n"
         fuking_text += "**sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ** :[ʜᴇʀᴇ](t.me/LionXsupport)\n"
         fuking_text += "**ᴛᴇᴀᴍ ʟɪᴏɴ** :[ʜᴇʀᴇ](t.me/TeamLionUB)"
-        await borg.send_file(alive.chat_id, ALV_PIC, caption=fuking_text, link_preview=False)          #Dont replace repo with real one tilk userbot not complete
+        # Dont replace repo with real one tilk userbot not complete
+        await borg.send_file(
+            alive.chat_id, ALV_PIC, caption=fuking_text, link_preview=False
+        )
         await alive.delete()
         """ For .alive command, check if the bot is running.  """
-        
-CMD_HELP.update({"αℓιvε": "➤ `.alive`\nUse - Check if your bot is working."})
 
+
+CMD_HELP.update({"αℓιvε": "➤ `.alive`\nUse - Check if your bot is working."})

@@ -1,9 +1,11 @@
 import time
+
 from telethon.events import NewMessage
 from telethon.tl.custom import Dialog
 from telethon.tl.types import Channel, Chat, User
-from Lion.utils import admin_cmd, edit_or_reply, sudo_cmd
+
 from Lion import CMD_HELP
+from Lion.utils import admin_cmd, edit_or_reply, sudo_cmd
 
 
 @bot.on(admin_cmd(pattern="stats$"))
@@ -58,23 +60,25 @@ async def stats(
                 creator_in_groups += 1
         unread_mentions += dialog.unread_mentions_count
         unread += dialog.unread_count
-    stop_time = time.time() - start_time
+    time.time() - start_time
     full_name = inline_mention(await event.client.get_me())
-    response = f'**📍 ѕтαтѕ σf {full_name} 📍**\n**❅──────✧❅✦❅✧──────❅**\n'
-    response += f'**┣** ✘ **ρяιναтє chαt:** `{private_chats}` ✘\n'
-    response += f'**┣** ✘ **usєrs:** `{private_chats - bots}` ✘\n'
-    response += f'**┣** ✘ **вσts:** `{bots}` ✘\n**❅──────✧❅✦❅✧──────❅**\n**❅──────✧❅✦❅✧──────❅**\n'
-    response += f'**┣** ✘ **gяσυρ:** `{groups}` ✘\n'
-    response += f'**┣** ✘ **crєαtσr:** `{creator_in_groups}` ✘\n'
-    response += f'**┣** ✘ **α∂мנи:** `{admin_in_groups}` ✘ \n'
-    response += f'**┣** ✘ **α∂мιи яιgнтs:** `{admin_in_groups - creator_in_groups}` ✘\n**❅──────✧❅✦❅✧──────❅**\n**❅──────✧❅✦❅✧──────❅**\n'
-    response += f'**┣** ✘ **cнαииєℓ:** `{broadcast_channels}` ✘ \n'
-    response += f'**┣** ✘ **cяєαтσя:** `{creator_in_channels}` ✘ \n'
-    response += f'**┣** ✘ **α∂мιи:** `{admin_in_broadcast_channels}` ✘ \n'
-    response += f'**┣** ✘ **α∂мנи яιgнтѕ:** `{admin_in_broadcast_channels - creator_in_channels}` ᪥\n**❅──────✧❅✦❅✧──────❅**\n**❅──────✧❅✦❅✧──────❅**\n'
-    response += f'**┣** ✘ **υияєα∂ мєѕѕαgє:** `{unread}` ✘\n'
-    response += f'**┣** ✘ **υияєα∂ мєитισиѕ:** `{unread_mentions}` ✘\n**❅──────✧❅✦❅✧──────❅**\n'
-    response += f'📍 **ρσωєяє∂ ву [тεαм ℓιση](t.me/TeamLionUB)** 📍'
+    response = f"**📍 ѕтαтѕ σf {full_name} 📍**\n**❅──────✧❅✦❅✧──────❅**\n"
+    response += f"**┣** ✘ **ρяιναтє chαt:** `{private_chats}` ✘\n"
+    response += f"**┣** ✘ **usєrs:** `{private_chats - bots}` ✘\n"
+    response += f"**┣** ✘ **вσts:** `{bots}` ✘\n**❅──────✧❅✦❅✧──────❅**\n**❅──────✧❅✦❅✧──────❅**\n"
+    response += f"**┣** ✘ **gяσυρ:** `{groups}` ✘\n"
+    response += f"**┣** ✘ **crєαtσr:** `{creator_in_groups}` ✘\n"
+    response += f"**┣** ✘ **α∂мנи:** `{admin_in_groups}` ✘ \n"
+    response += f"**┣** ✘ **α∂мιи яιgнтs:** `{admin_in_groups - creator_in_groups}` ✘\n**❅──────✧❅✦❅✧──────❅**\n**❅──────✧❅✦❅✧──────❅**\n"
+    response += f"**┣** ✘ **cнαииєℓ:** `{broadcast_channels}` ✘ \n"
+    response += f"**┣** ✘ **cяєαтσя:** `{creator_in_channels}` ✘ \n"
+    response += f"**┣** ✘ **α∂мιи:** `{admin_in_broadcast_channels}` ✘ \n"
+    response += f"**┣** ✘ **α∂мנи яιgнтѕ:** `{admin_in_broadcast_channels - creator_in_channels}` ᪥\n**❅──────✧❅✦❅✧──────❅**\n**❅──────✧❅✦❅✧──────❅**\n"
+    response += f"**┣** ✘ **υияєα∂ мєѕѕαgє:** `{unread}` ✘\n"
+    response += (
+        f"**┣** ✘ **υияєα∂ мєитισиѕ:** `{unread_mentions}` ✘\n**❅──────✧❅✦❅✧──────❅**\n"
+    )
+    response += f"📍 **ρσωєяє∂ ву [тεαм ℓιση](t.me/TeamLionUB)** 📍"
     await alain.edit(response)
 
 

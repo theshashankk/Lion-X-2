@@ -84,7 +84,7 @@ async def _(event):
 
 @Lion.on(admin_cmd(pattern="delpfp ?(.*)"))
 async def remove_profilepic(delpfp):
-    """ For .delpfp command, delete your current profile picture in Telegram. """
+    """For .delpfp command, delete your current profile picture in Telegram."""
     group = delpfp.text[8:]
     if group == "all":
         lim = 0
