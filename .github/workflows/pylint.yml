@@ -33,5 +33,5 @@ jobs:
           commit_options: '--no-verify'
           repository: .
           commit_user_name: TeamlionUB
-          commit_user_email: 58950863+TeamLion-X@users.noreply.github.com
-          commit_author: TeamlionUB <58950863+TeamLion-X@users.noreply.github.com>
+          commit_user_email: TeamLion-X@users.noreply.github.com
+          commit_author: TeamlionUB <TeamLion-X@users.noreply.github.com>
