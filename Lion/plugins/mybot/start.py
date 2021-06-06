@@ -85,7 +85,7 @@ async def start_all(event):
                                   caption=startotherena,
                                   buttons=[
                                       [Button.url(
-                                          "Lion", url="https://github.com/MdNoor786/Lion")],
+                                          "Lion", url="https://github.com/TeamLion-X/Lion-X")],
                                       [Button.inline(
                                           "Whats this?", data="Lion")]
                                   ]
@@ -95,7 +95,7 @@ async def start_all(event):
                                      startotherena,
                                      buttons=[
                                          [Button.url(
-                                             "Lion", url="https://github.com/MdNoor786/Lion")],
+                                             "Lion", url="https://github.com/TeamLion-X/Lion-X")],
                                          [Button.inline(
                                              "Whats this?", data="Lion")]
                                      ]
@@ -143,7 +143,7 @@ async def logs(event):
         caption="**Heroku** Lion Logs",
         buttons=[
             [Button.url("View Online", f"{url}")],
-            [Button.url("Crashed?", "t.me/LionHelpChat")]
+            [Button.url("Crashed?", "t.me/LionXsupport")]
         ])
     await asyncio.sleep(5)
     return os.remove('logs.txt')
@@ -181,10 +181,10 @@ async def settings(event):
 async def settings(event):
     await event.edit("Browse through the available options:",
                      buttons=[
-                         [(Button.url("Repository", url="https://github.com/MdNoor786/Lion")),
-                          (Button.url("Deploy", url="https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2FMdNoor786%2FLion%2F&template=https%3A%2F%2Fgithub.com%2FMdNoor786%2FLion"))],
+                         [(Button.url("Repository", url="https://github.com/TeamLion-X/Lion-X")),
+                          (Button.url("Deploy", url="https://dashboard.heroku.com/new?template=https://github.com/TeamLion-X/Lion-X"))],
                          [Button.url("Support",
-                                     url="https://t.me/LionSupport")]
+                                     url="https://t.me/LionXSupport")]
                      ])
 
 
