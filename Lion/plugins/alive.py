@@ -4,7 +4,9 @@ import time
 from telethon import version
 from userbot.utils import admin_cmd, sudo_cmd
 
-from Lion import StartTime, Var
+from Lion.LionConfig import Config, Var
+
+from Lion import StartTime
 
 # ======CONSTANTS=========#
 CUSTOM_ALIVE = Var.CUSTOM_ALIVE if Var.CUSTOM_ALIVE else "ʏօօ!! ʟɨօռ ʊֆɛʀɮօȶ ɨֆ ǟʟɨʋɛ!"
