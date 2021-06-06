@@ -3,8 +3,8 @@ import time
 
 from telethon import version
 from userbot.utils import admin_cmd, sudo_cmd
-from Lion import Config, Var
-from Lion import StartTime
+
+from Lion import StartTime, Var
 
 # ======CONSTANTS=========#
 CUSTOM_ALIVE = Var.CUSTOM_ALIVE if Var.CUSTOM_ALIVE else "ʏօօ!! ʟɨօռ ʊֆɛʀɮօȶ ɨֆ ǟʟɨʋɛ!"
