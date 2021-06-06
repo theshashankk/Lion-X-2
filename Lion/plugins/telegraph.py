@@ -21,13 +21,13 @@ auth_url = r["auth_url"]
 async def _(event):
     if event.fwd_from:
         return
-    okey = await eor(event, "Scanning...")
+    okey = await eor(event, "scαηηιηg...")
     if not os.path.isdir(Config.TMP_DOWNLOAD_DIRECTORY):
         os.makedirs(Config.TMP_DOWNLOAD_DIRECTORY)
     if Var.PRIVATE_GROUP_ID:
         await borg.send_message(
             Var.PRIVATE_GROUP_ID,
-            "Created New Telegraph account {} for the current session. \n**Do not give this url to anyone, even if they say they are from Telegram!**".format(
+            "ι нαvε cяεαтε∂ α ηεω тεℓεgяαρн αccσυηт {} ғσя тнε cυяяεηт sεssιση. \n**ρℓεαsε ∂ση'т gιvε тнιs ℓιηк тσ αηүσηε!**".format(
                 auth_url
             ),
         )
@@ -43,7 +43,7 @@ async def _(event):
             end = datetime.now()
             ms = (end - start).seconds
             await okey.edit(
-                "Downloaded to {} in {} seconds.".format(downloaded_file_name, ms),
+                "нεү ι нαvε ∂σωηℓσα∂ε∂ {} ιη {} sεcση∂s.".format(downloaded_file_name, ms),
             )
             if downloaded_file_name.endswith((".webp")):
                 resize_image(downloaded_file_name)
@@ -58,7 +58,7 @@ async def _(event):
                 ms_two = (end - start).seconds
                 os.remove(downloaded_file_name)
                 await okey.edit(
-                    "Uploaded to this [Telegraph Page](https://telegra.ph{}) in {} seconds.".format(
+                    "ι нαvε υρℓσα∂ε∂ тσ [𝐓𝐄𝐋𝐄𝐆𝐑𝐀𝐏𝐇](https://telegra.ph{} ιη {} sεcση∂s.".format(
                         media_urls[0], (ms + ms_two)
                     ),
                     link_preview=False,
@@ -88,13 +88,13 @@ async def _(event):
             ms = (end - start).seconds
             link = f"https://telegra.ph/{response['path']}"
             await okey.edit(
-                f"**link : ** [telegraph]({link})\
-                 \n**Time Taken : **`{ms} seconds.`",
+                f"**ℓιηк : ** [telegraph]({link})\
+                 \n*тιмε тαкεη : **`{ms} sεcση∂s.`",
                 link_preview=True,
             )
     else:
         await okey.edit(
-            "`Reply to a message to get a permanent telegra.ph link. (Inspired by @ControllerBot)`",
+            "яερℓү тσ α мεssαgε тσ gεт ρεямαηεηт тεℓεgяαρн ℓιηк.`",
         )
 
 
