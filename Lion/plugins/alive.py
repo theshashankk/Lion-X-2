@@ -5,7 +5,14 @@ from telethon import version
 from userbot.utils import admin_cmd, sudo_cmd
 
 from Lion import StartTime
-
+# ======CONSTANTS=========#
+CUSTOM_ALIVE = Var.CUSTOM_ALIVE if Var.CUSTOM_ALIVE else "ʏօօ!! ʟɨօռ ʊֆɛʀɮօȶ ɨֆ ǟʟɨʋɛ!"
+ALIVE_NAME = (
+    Var.ALIVE_NAME
+    if Var.ALIVE_NAME
+    else "ℓιση x υsεя"
+)
+# =========================#
 # 🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "ℓιση x υsεя"
 
