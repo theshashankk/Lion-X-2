@@ -32,7 +32,7 @@ async def hmm(yes):
     global fuk
     fuk = borg.uid
     await yes.delete()
-    uptime = await dcdef.get_readable_time((time.time() - StartTime.))
+    uptime = await dcdef.get_readable_time((time.time() - StartTime))
     pm_caption = "** ʟɨօռ Ӽ ʊֆɛʀɮօȶ ɨֆ օռʟɨռɛ **\n\n"
     pm_caption += "**Mʏ sʏsᴛᴇᴍ ɪs ᴘᴇʀғᴇᴄᴛʟʏ ʀᴜɴɴɪɢ**\n\n"
     pm_caption += "✗ Aʙᴏᴜᴛ ᴍʏ sʏsᴛᴇᴍ ✗\n\n"
