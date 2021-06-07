@@ -75,16 +75,16 @@ async def on_afk(event):
     if USER_AFK and not (await event.get_sender()).bot:
         msg = None
         if reason is not None and lion == "True":
-            message_to_reply = "**AFK**\n{}\n\n**Last active** `{}` **ago.**\n\n**Reason** : {}".format(
-                CUSTOM_AFK, endtime, reason
+            message_to_reply = "**AFK**\nмү ρεяσ мαsтεя ιs σғғℓιηε\n\n**ℓαsт αcтιvε** `{}` **αgσ.**\n\n**яεαsση** : {}".format(
+                endtime, reason
             )
         elif lion == "False":
-            message_to_reply = "**AFK**\n{}\n\n**Last active** `{}` **ago.**\n\n**Reason** - {}".format(
-                CUSTOM_AFK, endtime, reason
+            message_to_reply = "**AFK**\nмү ρεяσ мαsтεя ιs σғғℓιηε\n\n**ℓαsт αcтιvε** `{}` **αgσ.**\n\n**яεαsση** - {}".format(
+                endtime, reason
             )
         else:
-            message_to_reply = "**AFK**\n{}\n\n**Last active** {} **ago.**".format(
-                CUSTOM_AFK, endtime
+            message_to_reply = "**AFK**\nмү ρεяσ мαsтεя ιs σғғℓιηε\n\n**ℓαsт αcтιvε** {} **αgσ.**".format(
+                endtime
             )
         if event.chat_id not in Config.UB_BLACK_LIST_CHAT:
             msg = await event.reply(message_to_reply)
@@ -95,14 +95,14 @@ async def on_afk(event):
         if Var.PRIVATE_GROUP_ID:
             await asyncio.sleep(5)
             if not event.is_private:
-                mssgtosend = f"#AFK \nYou were tagged in `{chat.title}`"
+                mssgtosend = f"#AFK \nүσυ ωεяε тαggε∂ ιη `{chat.title}`"
                 try:
                     await tgbot.send_message(
                         Var.PRIVATE_GROUP_ID,
                         mssgtosend,
                         buttons=[
                             Button.url(
-                                "Go to Message",
+                                "gσ тσ мεssαgε",
                                 url=f"https://t.me/c/{chat.id}/{event.message.id}",
                             )
                         ],
