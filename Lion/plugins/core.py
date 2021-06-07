@@ -56,7 +56,7 @@ async def send(event):
         end = datetime.now()
         time_taken_in_ms = (end - start).seconds
         await pro.edit(
-            f"**✘ Plugin Name:** `{input_str}` ✘\n**⫸ Uploaded in {time_taken_in_ms} seconds.**\n**⫸ Uploaded by:** [{DEFAULTUSER}](tg://user?id={hmm})\n\n© @LionXsupport"
+            f"**✘ ρℓυgιη ηαмε:** `{input_str}` ✘\n**⫸ тιмε тαкεη тσ υρℓσα∂ {time_taken_in_ms} sεcση∂s.**\n**⫸ υρℓσα∂ε∂ вү:** [{DEFAULTUSER}](tg://user?id={hmm})\n\n© @LionXsupport"
         )
         await asyncio.sleep(DELETE_TIMEOUT)
     else:
