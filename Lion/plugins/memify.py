@@ -46,7 +46,7 @@ async def drawText(image_path, text):
     if os.name == "nt":
         fnt = "Japanese 3017.ttf"
     else:
-        fnt = "/resources/Japanese 3017.ttf"
+        fnt = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
     m_font = ImageFont.truetype(fnt, int((70 / 640) * i_width))
     if ";" in text:
         upper_text, lower_text = text.split(";")
