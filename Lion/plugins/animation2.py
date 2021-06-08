@@ -4867,7 +4867,7 @@ async def _(event):
 
 CMD_HELP.update(
     {
-        "CipherXFun": ".slash\
+        "animation2": ".slash\
 \n\n.para\
 \n\n.question\
 \n\n.oof\
