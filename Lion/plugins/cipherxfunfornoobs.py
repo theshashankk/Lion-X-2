@@ -5,15 +5,16 @@ import time
 from collections import deque
 
 from telethon import events
-from Lion.utils import admin_cmd as Lion_on_cmd
 
 from Lion import CMD_HELP
-from Lion.utils import register
 from Lion import bot as Lion
+from Lion.utils import admin_cmd as Lion_on_cmd
+from Lion.utils import register
+
 
 @Lion.on(events.NewMessage(pattern=r"\.slash", outgoing=True))
 async def kek(keks):
-    """ Check yourself ;)"""
+    """Check yourself ;)"""
     uio = ["/", "\\"]
     for i in range(1, 15):
         time.sleep(0.3)
@@ -22,7 +23,7 @@ async def kek(keks):
 
 @Lion.on(events.NewMessage(pattern=r"\.para", outgoing=True))
 async def kek(keks):
-    """ Check yourself ;)"""
+    """Check yourself ;)"""
     uio = [")", "("]
     for i in range(1, 15):
         time.sleep(0.3)
@@ -485,7 +486,7 @@ async def _(event):
 async def _(event):
     if event.fwd_from:
         return
-    deq = deque(list("☁️⛈Ř/~\İŇ🌬⚡🌪"))
+    deq = deque(list("☁️⛈Ř/~\\İŇ🌬⚡🌪"))
     for _ in range(64):
         await asyncio.sleep(0.1)
         await event.edit("".join(deq))
@@ -762,11 +763,11 @@ async def test(event):
        ☁  ✈         ☁    🚁    ☁    ☁        ☁          ☁     ☁   ☁
 
 🏬🏨🏫🏢🏤🏥🏦🏪🏫
-              🌲/     l🚍\🌳👭
-           🌳/  🚘 l  🏃 \🌴 👬                       👬  🌴/            l  🚔    \🌲
+              🌲/     l🚍\\🌳👭
+           🌳/  🚘 l  🏃 \\🌴 👬                       👬  🌴/            l  🚔    \\🌲
       🌲/   🚖     l               \
-   🌳/🚶           |   🚍         \ 🌴🚴🚴
-🌴/                    |                     \🌲"""
+   🌳/🚶           |   🚍         \\ 🌴🚴🚴
+🌴/                    |                     \\🌲"""
     )
 
 
@@ -4818,12 +4819,12 @@ async def gtfo(e):
             "\n....................,/¯../ "
             "\n.................../..../ "
             "\n............./´¯/'...'/´¯¯`·¸ "
-            "\n........../'/.../..../......./¨¯\ "
+            "\n........../'/.../..../......./¨¯\\ "
             "\n........('(...´...´.... ¯~/'...') "
-            "\n.........\.................'...../ "
-            "\n..........''...\.......... _.·´ "
-            "\n............\..............( "
-            "\n..............\.............\..."
+            "\n.........\\.................'...../ "
+            "\n..........''...\\.......... _.·´ "
+            "\n............\\..............( "
+            "\n..............\\.............\\..."
         )
 
 
