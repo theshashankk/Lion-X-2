@@ -1,6 +1,5 @@
- 
 """
-credits to @mrconfused and @sandy1709 Bhadwa Hai Sandy But Kam Ka Banda Hai 
+credits to @mrconfused and @sandy1709 Bhadwa Hai Sandy But Kam Ka Banda Hai
 """
 #    Copyright (C) 2020  sandeep.n(π.$)
 #    This program is free software: you can redistribute it and/or modify
@@ -19,10 +18,10 @@ import os
 import pybase64
 from telegraph import exceptions, upload_file
 from telethon.tl.functions.messages import ImportChatInviteRequest as Get
-from Lion import bot
-from Lion import CMD_HELP
-from Lion.utils import admin_cmd
+
+from Lion import CMD_HELP, bot
 from Lion.helper import *
+from Lion.utils import admin_cmd
 
 
 @bot.on(admin_cmd(pattern="threats(?: |$)(.*)"))
@@ -187,7 +186,7 @@ async def catbot(catmemes):
     else:
         await catmemes.edit(
             "**Syntax :** reply to image or sticker with `.phub (username)|(text in comment)`"
-               )
+        )
         return
     replied = await catmemes.get_reply_message()
     if not os.path.isdir("./temp/"):
