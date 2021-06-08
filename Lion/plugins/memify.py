@@ -24,7 +24,7 @@ async def handler(event):
         await eor(event, "Reply to a image/sticker.")
         return
     file = await borg.download_media(reply_message, Var.TEMP_DOWNLOAD_DIRECTORY)
-    a = await event.reply("Memifying this image! (」ﾟﾛﾟ)｣ ")
+    a = await event.reply("Memifying this image! ( ╹▽╹ ) ")
     text = str(event.pattern_match.group(1)).strip()
     if len(text) < 1:
         return await a.edit("Usage:- memify upper text ; lower text")
@@ -44,9 +44,9 @@ async def drawText(image_path, text):
     os.remove(image_path)
     i_width, i_height = img.size
     if os.name == "nt":
-        fnt = "arial.ttf"
+        fnt = "Japanese 3017.ttf"
     else:
-        fnt = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
+        fnt = "/resources/Japanese 3017.ttf"
     m_font = ImageFont.truetype(fnt, int((70 / 640) * i_width))
     if ";" in text:
         upper_text, lower_text = text.split(";")
@@ -140,7 +140,7 @@ async def drawText(image_path, text):
                 fill=(255, 255, 255),
             )
             current_h += u_height + pad
-    image_name = "memify.webp"
+    image_name = "Lionmmf.webp"
     webp_file = os.path.join(Var.TEMP_DOWNLOAD_DIRECTORY, image_name)
     img.save(webp_file, "webp")
     return webp_file
