@@ -48,12 +48,12 @@
   },
    "CMD_HNDLR": {
    "description": "Used to invoke commands, leave blank for default, (dot)",
-   "value": "",
+   "value": ".",
    "required": false
   },  
    "SUDO_HNDLR": {
    "description": "Used to invoke sudo commands, leave blank for default",
-   "value": "",
+   "value": ".",
    "required": false
   },  
   "GIT_REPO_NAME": {
