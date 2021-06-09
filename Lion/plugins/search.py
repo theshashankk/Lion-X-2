@@ -21,7 +21,7 @@ from Lion.utils import admin_cmd
 @Lion.on(admin_cmd(outgoing=True, pattern=r"gs (.*)"))
 @Lion.on(sudo_cmd(allow_sudo=True, pattern=r"gs (.*)"))
 async def gsearch(q_event):
-    """ For .google command, do a Google search from @LionHelp. """
+    """For .google command, do a Google search from @LionHelp."""
     match = q_event.pattern_match.group(1)
     page = findall(r"page=\d+", match)
     try:
