@@ -12,7 +12,7 @@ from Lion import CMD_HELP
 async def install(event):
     if event.fwd_from:
         return
-    lion = await eor(event, "`Searching for all plugins...`")
+    tele = await eor(event, "`Searching for all plugins...`")
     cmd = "ls Lion/plugins"
     process = await asyncio.create_subprocess_shell(
         cmd, stdout=asyncio.subprocess.PIPE, stderr=asyncio.subprocess.PIPE
@@ -23,8 +23,8 @@ async def install(event):
     o = "\n".join(_o)
     OUTPUT = (
         OUTPUT
-    ) = f"Here is the list of plugins found in 'master' branch of Lion.\n{o}\n\nUse .help <cmd_name> to learn how a paticular plugin works.\nConsider joining @LionXsupport for help!"
-    await lion.edit("`Plugins extracted, pasting it...`")
+    ) = f"Here is the list of plugins found in 'master' branch of Lion.\n{o}\n\nUse .help <cmd_name> to learn how a paticular plugin works.\nConsider joining @LionSupport for help!"
+    await tele.edit("`Plugins extracted, pasting it...`")
     message = OUTPUT
     url = "https://del.dog/documents"
     r = requests.post(url, data=message.encode("UTF-8")).json()

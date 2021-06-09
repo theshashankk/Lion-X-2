@@ -1,7 +1,7 @@
 # Copyright (C) 2019 The Raphielscape Company LLC.
 # Licensed under the Raphielscape Public License, Version 1.b (the "License");
 # you may not use this file except in compliance with the License.
-# @LionXsupport
+# @LionSupport
 
 """ Userbot module containing various scrapers. """
 import os
@@ -25,7 +25,7 @@ LANG = "en"
 async def carbon_api(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
 
-        """A Wrapper for carbon.now.sh"""
+        """ A Wrapper for carbon.now.sh """
         await eor(e, "`Processing..`")
         CARBON = "https://carbon.now.sh/?l={lang}&code={code}"
         global CARBONLANG

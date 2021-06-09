@@ -26,7 +26,7 @@ from Lion.utils import admin_cmd, sudo_cmd
 @Lion.on(admin_cmd(pattern="chatinfo(?: |$)(.*)", outgoing=True))
 @Lion.on(sudo_cmd(pattern="chatinfo(?: |$)(.*)"))
 async def info(event):
-    ok = await eor(event, "`Analysing the chat...`")
+    ok = await eor(event, "`αηαℓүsιηg тнε cнαт...`")
     chat = await get_chatinfo(event)
     caption = await fetch_info(chat, event)
     try:
