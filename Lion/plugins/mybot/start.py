@@ -44,7 +44,7 @@ telegraph = Telegraph()
 r = telegraph.create_account(short_name=Config.TELEGRAPH_SHORT_NAME)
 auth_url = r["auth_url"]
 ################--CONSTANTS-END-#################
-
+poto = "https://telegra.ph/file/28ed48fae7e23192af2cc.jpg"
 # start-others
 
 
@@ -169,6 +169,7 @@ async def settings(event):
 async def settings(event):
     await event.delete()
     await tgbot.send_message(event.chat_id,
+                             poto,
                              f"This is the personal help bot of {LION_NAME}. You can contact me using this bot if necessary, or if I missed out your PM.",
                              buttons=[
                                      [Button.inline(
