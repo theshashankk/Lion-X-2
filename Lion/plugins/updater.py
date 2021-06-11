@@ -5,7 +5,7 @@ from os import environ, execle, path, remove
 from git import Repo
 from git.exc import GitCommandError, InvalidGitRepositoryError, NoSuchPathError
 
-from Lion import admin_cmd
+from userbot.utils import admin_cmd
 from Lion.LionConfig import *
 
 config = Config
