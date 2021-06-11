@@ -19,6 +19,7 @@ import os
 from Lion import ALIVE_NAME, CMD_HELP, CMD_HNDLR, CMD_LIST
 from Lion.LionConfig import Config
 
+HELP_PIC = str(HELP_PIC) if HELP PIC else "https://telegra.ph/file/28ed48fae7e23192af2cc.jpg"
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Lion User"
 CMD_HNDLR = Config.CMD_HNDLR
 CUSTOM_HELP_EMOJI = os.environ.get("CUSTOM_HELP_EMOJI", "⫸")
@@ -45,6 +46,7 @@ async def cmd_list(event):
                     out_file.name = "cmd.txt"
                     await tgbot.send_file(
                         event.chat_id,
+                        HELP_PIC,
                         out_file,
                         force_document=True,
                         allow_cache=False,
