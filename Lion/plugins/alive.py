@@ -2,6 +2,7 @@ import asyncio
 import time
 
 from telethon import version
+from telethon import events, Button, custom
 from userbot.utils import admin_cmd, sudo_cmd
 
 from Lion import ALIVE_NAME, StartTime
@@ -40,12 +41,12 @@ async def hmm(yes):
     pm_caption += f"✗ **𝙏𝙀𝙇𝙀𝙏𝙃𝙊𝙉 𝙑𝙀𝙍𝙎𝙄𝙊𝙉** ☞ {version.__version__}\n"
     pm_caption += "✗ **𝙎𝙐𝙋𝙋𝙊𝙍𝙏 𝘾𝙃𝘼𝙉𝙉𝙀𝙇** ☞ [ᴊᴏɪɴ](https://t.me/TeamLionUB)\n"
     pm_caption += "✗ **𝙇𝙄𝘾𝙀𝙉𝙎𝙀**  ☞ [𝚃𝙴𝙰𝙼 𝙻𝙸𝙾𝙽 𝚄𝙱](https://github.com/TeamLion-X)\n"
-    pm_caption += (
-        "✗ **𝘾𝙊𝙋𝙔𝙍𝙄𝙂𝙃𝙏 𝘽𝙔** ☞ [𝙻𝙸𝙾𝙽 𝚄𝙱](https://github.com/teamlion-X/Lion-X)\n\n"
-    )
+    pm_caption += "✗ **𝘾𝙊𝙋𝙔𝙍𝙄𝙂𝙃𝙏 𝘽𝙔** ☞ [𝙻𝙸𝙾𝙽 𝚄𝙱](https://github.com/teamlion-X/Lion-X)\n\n"
     pm_caption += f"✗ **𝙇𝙄𝙊𝙉 𝙐𝙋𝙏𝙄𝙈𝙀** ☞ {uptime}\n\n"
     pm_caption += f"✗ **𝙈𝙔 𝙋𝙀𝙍𝙊 𝙈𝘼𝙎𝙏𝙀𝙍** ☞ [{DEFAULTUSER}](tg://user?id={fuk})\n"
-    on = await borg.send_file(yes.chat_id, file=file1, caption=pm_caption)
+    pm_button = [[Button.url("𝚁𝙴𝙿𝙾𝚂𝙸𝚃𝙾𝚁𝚈", "https://github.com/TeamLion-X/Lion-X")]]
+    pm_button += [[custom.Button.inline("𝙿𝙸𝙽𝙶", data="ZYPHER")]]
+    on = await tgbot.send_file(yes.chat_id, file=file1, caption=pm_caption)
 
     await asyncio.sleep(edit_time)
     ok = await borg.edit_message(yes.chat_id, on, file=file2)
@@ -67,3 +68,12 @@ async def hmm(yes):
 
     await asyncio.sleep(edit_time)
     ok7 = await borg.edit_message(yes.chat_id, ok6, file=file4)
+
+    
+ #-##-##-##-##-###-##################   
+@tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"ZYPHER")))
+async def callback_query_handler(event):
+# kanger ki gand me 6 inch ka gajar
+  pro_b = [[Button.url("🚑 Support Group 🚑", "t.me/LionXsupport")]]
+    await tgbot.edit(text=f"█░░ █ █▀█ █▄░█\n█▄▄ █ █▄█ █░▀█\n\n✘ **ριиg** : `{ms}`\n✘ **υρтιмє** : `{uptime}`\n✘ **𝐌𝐘 𝐏𝐄𝐑𝐎 𝐌𝐀𝐒𝐓𝐄𝐑** : [{DEFAULTUSER}](tg://user?id={OWNER_ID})\n\n© 𝙻𝙸𝙾𝙽 𝚇 𝚄𝚂𝙴𝚁𝙱𝙾𝚃", buttons=pro_b)
+####
