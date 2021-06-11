@@ -13,7 +13,7 @@ POTO = "https://telegra.ph/file/28ed48fae7e23192af2cc.jpg"
 LIONOP = Var.PRIVATE_GROUP_ID
 
 
-@ultroid_cmd(pattern="update$")
+@Lion.on(events.callbackquery.CallbackQuery(data=re.compile(b"update"))
 async def _(e):
     m = await updater()
     branch = (Repo.init()).active_branch
@@ -41,8 +41,7 @@ async def _(e):
         )
 
 
-@callback("updtavail")
-@owner
+@Lion.on(events.callbackquery.CallbackQuery(data=re.compile(b"updtavail"))
 async def updava(event):
     await event.delete()
     await tgbot.send_file(
