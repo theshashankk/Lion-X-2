@@ -14,7 +14,7 @@ LIONOP = Var.PRIVATE_GROUP_ID
 
 
 @Lion.on(events.callbackquery.CallbackQuery(data=re.compile(b"update"))
-async def _(e):
+async def updaterr(event):
     m = await updater()
     branch = (Repo.init()).active_branch
     if m:
