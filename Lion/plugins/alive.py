@@ -4,9 +4,8 @@ import time
 from telethon import Button, version
 from userbot.utils import admin_cmd, sudo_cmd
 
-from Lion import ALIVE_NAME, StartTime
+from Lion import ALIVE_NAME, StartTime, lionver
 from Lion.helper import functions as dcdef
-from Lion.plugins import lion_version
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "ℓιση x υsεя"
 
@@ -38,7 +37,7 @@ async def hmm(yes):
     pm_caption = "** ʟɨօռ Ӽ ʊֆɛʀɮօȶ ɨֆ օռʟɨռɛ **\n\n"
     pm_caption += "**Mʏ sʏsᴛᴇᴍ ɪs ᴘᴇʀғᴇᴄᴛʟʏ ʀᴜɴɴɪɢ**\n\n"
     pm_caption += "✗ Aʙᴏᴜᴛ ᴍʏ sʏsᴛᴇᴍ ✗\n\n"
-    pm_caption += f"✘ **𝙇𝙄𝙊𝙉 𝙓 𝙑𝙀𝙍𝙎𝙄𝙊𝙉**: `{lion_version}`\n"
+    pm_caption += f"✘ **𝙇𝙄𝙊𝙉 𝙓 𝙑𝙀𝙍𝙎𝙄𝙊𝙉**: `{lionver}`\n"
     pm_caption += f"✗ **𝙏𝙀𝙇𝙀𝙏𝙃𝙊𝙉 𝙑𝙀𝙍𝙎𝙄𝙊𝙉** ☞ {version.__version__}\n"
     pm_caption += "✗ **𝙎𝙐𝙋𝙋𝙊𝙍𝙏 𝘾𝙃𝘼𝙉𝙉𝙀𝙇** ☞ [ᴊᴏɪɴ](https://t.me/TeamLionUB)\n"
     pm_caption += "✗ **𝙇𝙄𝘾𝙀𝙉𝙎𝙀**  ☞ [𝚃𝙴𝙰𝙼 𝙻𝙸𝙾𝙽 𝚄𝙱](https://github.com/TeamLion-X)\n"
