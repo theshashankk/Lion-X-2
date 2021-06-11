@@ -136,6 +136,11 @@
    "value": "",
    "required": false
   },
+  "HELP_PIC": {
+   "description": "telegra.ph link of the image you want to set in help menu",
+   "value": "",
+   "required": "false"
+  },
   "PMPERMIT_PIC": {
   "description": "telegra.ph link to theimage you want as pmpermit pic, leave blank for default one!",
   "value": "",
