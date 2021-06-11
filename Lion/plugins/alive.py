@@ -5,6 +5,7 @@ from telethon import Button, version
 from userbot.utils import admin_cmd, sudo_cmd
 
 from Lion import ALIVE_NAME, StartTime
+from Lion.plugins import lion_version
 from Lion.helper import functions as dcdef
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "ℓιση x υsεя"
