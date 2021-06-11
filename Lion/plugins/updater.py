@@ -1,3 +1,4 @@
+"""
 import asyncio
 import os
 import sys
@@ -146,3 +147,4 @@ async def deploy_start(tgbot, message, refspec, remote):
     await remote.push(refspec=refspec)
     await tgbot.disconnect()
     os.execl(sys.executable, sys.executable, *sys.argv)
+"""
