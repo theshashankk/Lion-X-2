@@ -55,6 +55,7 @@ class Var(object):
             "SUPPORT_USERS", "").split())
     # custom vars
     ALIVE_PIC = os.environ.get("ALIVE_PIC", None)
+    HELP_PIC = os.environ.get("HELP_PIC", None)
     CUSTOM_ALIVE = os.environ.get("CUSTOM_ALIVE", None)
     CUSTOM_ALIVE_EMOJI = os.environ.get("CUSTOM_ALIVE_EMOJI", None)
     CUSTOM_AFK = os.environ.get("CUSTOM_AFK", None)
