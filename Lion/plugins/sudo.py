@@ -66,7 +66,9 @@ async def tb(event):
         newsudo = f"{sudousers} {target}"
     else:
         newsudo = f"{target}"
-    await ok.edit(f"Aᴅᴅᴇᴅ `{target}` ᴀs ᴀ sᴜᴅᴏ ᴜsᴇʀ. ɴᴏᴡ ʀᴇsᴛᴀʀᴛɪɴɢ ʟɪᴏɴ X.. ɢɪᴍᴍᴇ sᴏᴍᴇ ᴍɪɴᴜᴛᴇs...")
+    await ok.edit(
+        f"Aᴅᴅᴇᴅ `{target}` ᴀs ᴀ sᴜᴅᴏ ᴜsᴇʀ. ɴᴏᴡ ʀᴇsᴛᴀʀᴛɪɴɢ ʟɪᴏɴ X.. ɢɪᴍᴍᴇ sᴏᴍᴇ ᴍɪɴᴜᴛᴇs..."
+    )
     heroku_var[Lion] = newsudo
 
 
