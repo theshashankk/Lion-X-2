@@ -48,7 +48,7 @@ async def handler(event):
 
 @Lion.on(admin_cmd(pattern="addsudo(?: |$)"))
 async def tb(event):
-    ok = await eor(event, "Adding user as a sudo...")
+    ok = await eor(event, "α∂∂ιηg υsεя αs sυ∂σ υsεя...")
     Lion = "SUDO_USERS"
     if Var.HEROKU_APP_NAME is not None:
         app = Heroku.app(Var.HEROKU_APP_NAME)
@@ -66,7 +66,7 @@ async def tb(event):
         newsudo = f"{sudousers} {target}"
     else:
         newsudo = f"{target}"
-    await ok.edit(f"Added `{target}` as a sudo user. Restarting.. Give me a minute...")
+    await ok.edit(f"Aᴅᴅᴇᴅ `{target}` ᴀs ᴀ sᴜᴅᴏ ᴜsᴇʀ. ɴᴏᴡ ʀᴇsᴛᴀʀᴛɪɴɢ ʟɪᴏɴ X.. ɢɪᴍᴍᴇ sᴏᴍᴇ ᴍɪɴᴜᴛᴇs...")
     heroku_var[Lion] = newsudo
 
 
