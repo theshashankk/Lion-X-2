@@ -45,7 +45,7 @@ async def hmm(yes):
     pm_caption += f"✗ **𝙇𝙄𝙊𝙉 𝙐𝙋𝙏𝙄𝙈𝙀** ☞ {uptime}\n\n"
     pm_caption += f"✗ **𝙈𝙔 𝙋𝙀𝙍𝙊 𝙈𝘼𝙎𝙏𝙀𝙍** ☞ [{DEFAULTUSER}](tg://user?id={fuk})\n"
     pm_button = [[Button.url("𝚁𝙴𝙿𝙾𝚂𝙸𝚃𝙾𝚁𝚈", "https://github.com/TeamLion-X/Lion-X")]]
-    on = await tgbot.send_file(yes.chat_id, file=file1, caption=pm_caption, buttons=pm_button)
+    on = await borg.send_file(yes.chat_id, file=file1, caption=pm_caption, buttons=pm_button)
 
     await asyncio.sleep(edit_time)
     ok = await borg.edit_message(yes.chat_id, on, file=file2)
