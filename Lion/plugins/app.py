@@ -11,6 +11,7 @@ from Lion import CMD_HELP
 
 lion_version = "V2.0"
 
+
 @Lion.on(admin_cmd(pattern="app (.*)"))
 @Lion.on(sudo_cmd(pattern="app (.*)", allow_sudo=True))
 async def apk(event):
