@@ -17,7 +17,7 @@
 import os
 
 from Lion import ALIVE_NAME, CMD_HELP, CMD_HNDLR, CMD_LIST
-from Lion.LionConfig import Config
+from Lion.LionConfig import Config, Var
 
 Help_poto = Var.HELP_PIC if Var.HELP_PIC else "https://telegra.ph/file/28ed48fae7e23192af2cc.jpg"
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Lion User"
