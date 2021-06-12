@@ -6,7 +6,7 @@ from asyncio.subprocess import PIPE as asyncPIPE
 from os import remove
 from shutil import which
 
-from Lion import ALIVE_NAME, CMD_HELP, telever
+from Lion import ALIVE_NAME, CMD_HELP, lionver
 
 # ================= CONSTANT =================
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Lion"
