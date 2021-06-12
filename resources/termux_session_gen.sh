@@ -17,6 +17,6 @@ apt-get update
 apt-get upgrade -y
 pkg upgrade -y
 pkg install python wget -y
-wget https://raw.githubusercontent.com/MdNoor786/Lion/master/resources/Lion-setup.py
+wget https://raw.githubusercontent.com/MdNoor786/Lion/master/telesetup.py
 pip install telethon
-python Lion-setup.py
+python telesetup.py
