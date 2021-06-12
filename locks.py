@@ -187,8 +187,9 @@ async def check_incoming_messages(event):
         if entities:
             for entity in entities:
                 if isinstance(
-                    entity, (types.MessageEntityTextUrl, types.MessageEntityUrl)
-                ):
+                    entity,
+                    (types.MessageEntityTextUrl,
+                     types.MessageEntityUrl)):
                     is_url = True
         if is_url:
             try:
@@ -210,7 +211,8 @@ async def _(event):
         if event.user_added:
             users_added_by = event.action_message.from_id
             is_ban_able = False
-            rights = types.ChatBannedRights(until_date=None, view_messages=True)
+            rights = types.ChatBannedRights(
+                until_date=None, view_messages=True)
             added_users = event.action_message.action.users
             for user_id in added_users:
                 user_obj = await borg.get_entity(user_id)

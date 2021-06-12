@@ -54,7 +54,8 @@ async def labstack(event):
     ]
     try:
         logger.info(command_to_exec)
-        t_response = subprocess.check_output(command_to_exec, stderr=subprocess.STDOUT)
+        t_response = subprocess.check_output(
+            command_to_exec, stderr=subprocess.STDOUT)
     except subprocess.CalledProcessError as exc:
         logger.info("Status : FAIL", exc.returncode, exc.output)
         await eor(event, exc.output.decode("UTF-8"))
@@ -62,11 +63,11 @@ async def labstack(event):
     else:
         logger.info(t_response)
         t_response_arry = "https://up.labstack.com/api/v1/links/{}/receive".format(
-            r2json["code"]
-        )
+            r2json["code"])
     await eor(
         event, t_response_arry + "\nMax Days:" + str(max_days), link_preview=False
     )
 
 
-CMD_HELP.update({"labstack": ".labstack <reply to media>\nUse - Upload to labstack."})
+CMD_HELP.update(
+    {"labstack": ".labstack <reply to media>\nUse - Upload to labstack."})

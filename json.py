@@ -35,4 +35,5 @@ async def _(event):
         await eor(event, "`{}`".format(the_real_message))
 
 
-CMD_HELP.update({"json": ".json <reply>\nUse - Get json encoding of the mssg."})
+CMD_HELP.update(
+    {"json": ".json <reply>\nUse - Get json encoding of the mssg."})

