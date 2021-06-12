@@ -1,6 +1,5 @@
 import asyncio
 import os
-from asyncio import sleep
 
 from telegraph import Telegraph, upload_file
 
