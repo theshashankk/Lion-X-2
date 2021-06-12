@@ -1,5 +1,6 @@
 import asyncio
 import os
+from asyncio import sleep
 
 from telegraph import Telegraph, upload_file
 
@@ -139,30 +140,30 @@ async def spam_function(event, sandy, cat, sleeptimem, sleeptimet, DelaySpam=Fal
                 await event.client(hmm)
         except BaseException:
             pass
-        if BOTLOG:
+        if LOGGER:
             if DelaySpam is not True:
                 if event.is_private:
                     await event.client.send_message(
-                        BOTLOG_CHATID,
+                        LOGGER_GROUP,
                         "#SPAM\n"
                         + f"Spam was executed successfully in [User](tg://user?id={event.chat_id}) chat with {counter} times with below message",
                     )
                 else:
                     await event.client.send_message(
-                        BOTLOG_CHATID,
+                        LOGGER_GROUP,
                         "#SPAM\n"
                         + f"Spam was executed successfully in {event.chat.title}(`{event.chat_id}`) with {counter} times with below message",
                     )
             else:
                 if event.is_private:
                     await event.client.send_message(
-                        BOTLOG_CHATID,
+                        LOGGER_GROUP,
                         "#DELAYSPAM\n"
                         + f"Delay spam was executed successfully in [User](tg://user?id={event.chat_id}) chat with {counter} times with below message with delay {sleeptimet} seconds",
                     )
                 else:
                     await event.client.send_message(
-                        BOTLOG_CHATID,
+                        LOGGER_GROUP,
                         "#DELAYSPAM\n"
                         + f"Delay spam was executed successfully in {event.chat.title}(`{event.chat_id}`) with {counter} times with below message with delay {sleeptimet} seconds",
                     )
@@ -170,18 +171,18 @@ async def spam_function(event, sandy, cat, sleeptimem, sleeptimet, DelaySpam=Fal
             sandy = await event.client.send_file(BOTLOG_CHATID, sandy)
             await _catutils.unsavegif(event, sandy)
         return
-    if BOTLOG:
+    if LOGGER:
         if DelaySpam is not True:
             if event.is_private:
                 await event.client.send_message(
-                    BOTLOG_CHATID,
+                    LOGGER_GROUP,
                     "#SPAM\n"
                     + f"Spam was executed successfully in [User](tg://user?id={event.chat_id}) chat with {counter} messages of \n"
                     + f"`{spam_message}`",
                 )
             else:
                 await event.client.send_message(
-                    BOTLOG_CHATID,
+                    LOGGER_GROUP,
                     "#SPAM\n"
                     + f"Spam was executed successfully in {event.chat.title}(`{event.chat_id}`) chat  with {counter} messages of \n"
                     + f"`{spam_message}`",
@@ -189,14 +190,14 @@ async def spam_function(event, sandy, cat, sleeptimem, sleeptimet, DelaySpam=Fal
         else:
             if event.is_private:
                 await event.client.send_message(
-                    BOTLOG_CHATID,
+                    LOGGER_GROUP,
                     "#DELAYSPAM\n"
                     + f"Delay Spam was executed successfully in [User](tg://user?id={event.chat_id}) chat with delay {sleeptimet} seconds and with {counter} messages of \n"
                     + f"`{spam_message}`",
                 )
             else:
                 await event.client.send_message(
-                    BOTLOG_CHATID,
+                    LOGGER_GROUP,
                     "#DELAYSPAM\n"
                     + f"Delay spam was executed successfully in {event.chat.title}(`{event.chat_id}`) chat with delay {sleeptimet} seconds and with {counter} messages of \n"
                     + f"`{spam_message}`",
@@ -251,16 +252,16 @@ async def stickerpack_spam(event):
     for m in reqd_sticker_set.documents:
         await event.client.send_file(event.chat_id, m)
         await asyncio.sleep(0.7)
-    if BOTLOG:
+    if LOGGER:
         if event.is_private:
             await event.client.send_message(
-                BOTLOG_CHATID,
+                LOGGER_GROUP,
                 "#SPSPAM\n"
                 + f"Sticker Pack Spam was executed successfully in [User](tg://user?id={event.chat_id}) chat with pack ",
             )
         else:
             await event.client.send_message(
-                BOTLOG_CHATID,
+                LOGGER_GROUP,
                 "#SPSPAM\n"
                 + f"Sticker Pack Spam was executed successfully in {event.chat.title}(`{event.chat_id}`) chat with pack",
             )
@@ -274,16 +275,16 @@ async def tmeme(event):
     message = cspam.replace(" ", "")
     for letter in message:
         await event.respond(letter)
-    if BOTLOG:
+    if LOGGER:
         if event.is_private:
             await event.client.send_message(
-                BOTLOG_CHATID,
+                LOGGER_GROUP,
                 "#CSPAM\n"
                 + f"Letter Spam was executed successfully in [User](tg://user?id={event.chat_id}) chat with : `{message}`",
             )
         else:
             await event.client.send_message(
-                BOTLOG_CHATID,
+                LOGGER_GROUP,
                 "#CSPAM\n"
                 + f"Letter Spam was executed successfully in {event.chat.title}(`{event.chat_id}`) chat with : `{message}`",
             )
@@ -297,16 +298,16 @@ async def tmeme(event):
     await event.delete()
     for word in message:
         await event.respond(word)
-    if BOTLOG:
+    if LOGGER:
         if event.is_private:
             await event.client.send_message(
-                BOTLOG_CHATID,
+                LOGGER_GROUP,
                 "#WSPAM\n"
                 + f"Word Spam was executed successfully in [User](tg://user?id={event.chat_id}) chat with : `{message}`",
             )
         else:
             await event.client.send_message(
-                BOTLOG_CHATID,
+                LOGGER_GROUP,
                 "#WSPAM\n"
                 + f"Word Spam was executed successfully in {event.chat.title}(`{event.chat_id}`) chat with : `{message}`",
             )
