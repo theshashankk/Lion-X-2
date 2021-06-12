@@ -150,5 +150,5 @@ async def check_media(reply_message):
         return data
 
 
-CMD_HELP.update({"deepfryer": ".deepfry <reply to pic>\nUse - Deepfry the picture."})
+
 """
