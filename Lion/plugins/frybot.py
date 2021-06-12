@@ -6,8 +6,8 @@ from Lion import CMD_HELP
 from Lion.utils import admin_cmd
 
 
-@Lion.on(admin_cmd(pattern="frybot ?(.*)"))
-@Lion.on(sudo_cmd(pattern="frybot ?(.*)", allow_sudo=True))
+@Lion.on(admin_cmd(pattern=r"frybot"))
+@Lion.on(sudo_cmd(pattern=r"frybot", allow_sudo=True))
 async def _(event):
     if event.fwd_from:
         return
