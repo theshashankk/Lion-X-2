@@ -1,2 +1,2 @@
 # Lion-X
-> V2
+> Telethon based userbot (•~•)
