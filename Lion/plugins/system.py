@@ -65,7 +65,7 @@ async def bot_ver(event):
             )
         else:
             await event.edit(
-                f"Shame that you don't have git, you're running - {telever} anyway!"
+                f"Shame that you don't have git, you're running - {lionver} anyway!"
             )
 
 
