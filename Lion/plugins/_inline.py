@@ -328,7 +328,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                 © Lion".format(
                 plugin_name
             )
-            if len(help_string) >= 1024:
+            if len(help_string) >= 280:
                 oops = "List too long!\nCheck your saved messages!"
                 await event.answer(oops, cache_time=0, alert=True)
                 help_string += "\n\nThis will be auto-deleted in 1 minute!"
